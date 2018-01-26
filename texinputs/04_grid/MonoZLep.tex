@@ -1,0 +1,117 @@
+\paragraph{Technical setup}
+Simulated event samples for the mono-Z signature are produced with Madgraph5\_aMC@NLO version 2.4.3, interfaced with Pythia version 8.2.2.6 for parton showering. The NNPDF3.0 PDF set is used at LO precision with the value of the strong coupling constant set to $\alpha_{S}(M_{Z}) = 0.130$ (NNPDF30\_lo\_as\_0130). Only contributions from gluon-gluon initial states and \lp\lm$\chi\overline{\chi}$ final states are considered, where l = e or $\mu$. No additional matrix element partons are considered and diagrams with an intermediate s-channel SM Higgs boson are explicitly rejected to increas the calculation efficiency (generate g g $>$ xd xd~ l+ l- / h1). 
+
+\paragraph{Event selection}
+Three consecutive stages of event selection are considered:
+\begin{itemize}
+\item Inclusive: Lepton \pt and $\eta$ requirements corresponding to the typical experimental trigger acceptance are applied.
+
+\item Preselection: A dilepton candidate with an invariant mass in a window around the Z mass is required, and a minimum transverse momentum of the $\chi\overline{\chi}$ system is required.
+
+\item Final selection: Requirements on the main variables used in the relevant analyses are added: The angular separation in the transverse plane between the $\chi\overline{\chi}$ and \lp\lm systems $\Delta\Phi(ll,\MET)$, the relative transverse momentum difference between them $|p_{T,ll} - \MET|/p_{T,ll}$ and the angular separation between the leptons $\Delta R(ll)$. Additionally, the \MET requirement is tightened.
+\end{itemize}
+
+The exact event selection criteria are listed in Tab.~\ref{tab:monozll_selection}.
+
+\begin{table}
+\centering
+\caption{Event selection requirements for the analysis of the Mono-Z signature with leptonic Z decays.
+        The requirements are inspired to follow those used in typical experimental analyses.}
+\begin{tabular}{c | c |r l}
+Selection stage & Quantity & Requirement \\\hline
+
+
+\multirow{ 2}{*}{Inclusive}         & lepton $\left|\eta\right|$                    & $< 2.5$ \\
+                                    & leading (trailing) lepton \pt                 & $> 25 (20)$ GeV \\\hline
+
+\multirow{ 2}{*}{Preselection}      & $\left|m_{ll}-m_{Z,\mathrm{nominal}}\right|$  & $< 15$ GeV\\
+                                    & \MET                                          & $> 40$ GeV \\\hline
+
+\multirow{ 3}{*}{Final selection}   & $\Delta\Phi(ll,\MET)$                         & $>2.7$\\
+                                    &$|p_{T,ll} - \MET|/p_{T,ll}$                   & $<0.4$\\
+                                    &  $\Delta R(ll)$                               & $<1.8$\\
+\end{tabular}
+
+
+\label{tab:monozll_selection}
+
+\end{table}
+
+
+\paragraph{Results}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/monoz/leptonic/xs_2d_inclusive_26300.pdf}
+\caption{Inclusive cross-sections for $pp\rightarrow \lp\lm\chi\overline{\chi}$ in the \ma-\mA scan. Maximal cross-sections are observed for the region of $\ma < \mA$ for values of $\ma\gtrsim100$ GeV.  In the $\ma\approx\mA$-region, the cross-section is suppressed by destructive interference. Finally, for a region with inverted mass hierarchy $\ma>\mA$, cross-sections of the order of multiple \ifb are observed, as long as $|\ma-\mA|$ remains sufficiently large.}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_xsec_ll.pdf}
+\caption{Inclusive cross sections for the \ma-tanBeta scan.  \mA fixed to 600 GeV and sinTheta to 0.35} 
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/monoz/leptonic/acceptance.pdf}
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/monoz/leptonic/xs_2d_dmwg-final_26300_yield40fb.pdf}
+\caption{Acceptance and event yields in the  \ma-\mA plane after applying the final selection. Event yields assume an integrated luminosity of $40~\ifb$. The acceptance is maximal for $\mA > \ma$, where it reaches 50 \%. In the inverted mass region $\mA < \ma$, lower values of 10-30\% are observed. In the intermediate region around $\mA \approx \ma + \mZ$, the acceptance is strongly suppressed as the a and Z bosons are produced approximately at rest.}
+\label{fig:monoz_ll_acceptance}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_ae_ll.pdf}
+\caption{Acceptances across the \ma-tanBeta scan.  Acceptance is flat over tanBeta for constant values of \ma.}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_yield_ll.pdf}
+\caption{Event yield in the \ma-tanBeta grid, for an integrated luminosity of $40~\ifb$.  The number of expected events diminshes with increasing tanBeta and \ma.  \mA fixed to 600 GeV and sinTheta to 0.35}
+\end{figure}
+
+
+\begin{figure}
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/monoz/leptonic/mA_Scan.pdf}
+\caption{The position of the Jacobian peak in the \MET distribution depends on the difference between \mH and \ma.  For fixed values of \ma and \mA = \mH, increaseing \mA shifts the peak towards higher enrgies, and decreasing \mA shifts it lower.  For small mass splittings between \mH and \ma, most events will fail to pass the \MET selection criteria.}   
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/SinThetaScan_mH600ma250_MET.pdf}
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/SinThetaScan_mH700ma350_MET.pdf}
+\caption{Performing one dimensional scans of sinTheta shows that it has little impact on the events' kinematic distributions.  The first scan is performed at \mA = 600 GeV and \ma = 250 GeV, the second at \mA = 700 GeV \ma = 350 GeV.  In both cases tanBeta = 1.0.}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/inclusive_h_mz_lep.pdf}
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/inclusive_h_m_med_dm.pdf}
+\caption{Distributions of the invariant mass of the dilepton (left) and $\chi\overline{\chi}$ systems (right) with no selection applied in addition to the generation cuts. The $M_{ll}$ distribution is centered around the Z boson mass independent of the chosen parameter point, indicating that there is no contribtion from $\gamma*$ exchange. The $M_{\chi\overline{\chi}}$ distribution }
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/presel_h_balance.pdf}
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/presel_h_dphi_met_ll.pdf}
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/presel_h_dr_ll.pdf}
+\caption{Distributions of the main selection variables after preselection: \pt balance (top panel), $\Delta\Phi$ (middle) and $\Delta R$ (bottom). The shown parameter points illustrate the different qualitative behavior in the three different mass regions. }
+\end{figure}
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/dmwg-final_h_pt_med_dm.pdf}
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/dmwg-final_h_mt_total.pdf}
+\caption{\MET and  MT distributions in the signal region. The \MET distribution shows a Jacobian structure in the $\mA > \ma$ regime, the location of which strongly depends on $\mA$. In the region of inverted mass hierarchy $\mA < \ma$, the spectrum is less structured and does not fall off as steeply towards higher values. For a small mass splitting of $\ma-\mA\approx M_{Z}$, the spectrum is shifted to much lower values of \MET. The MT distribution allows to access the resonant nature of the process. Clear mass peaks are present for the normal mass hierarchy. In the inverted region, the MT distribution is more sensitive to the mass difference $\ma-\mA$ than the \MET distribution, allowing to differentiate between signal hypotheses that give near-identical \MET distributions. }
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/mAma_Significance_ll.pdf}
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_Significance_ll.pdf}
+\caption{Expected signficicances are calculated using published background estimates and assuming a reconstruction efficiency of 75\%.  The LHC is expected to be sensitive to regions with significances greater than 2.}
+\end{figure}
+
