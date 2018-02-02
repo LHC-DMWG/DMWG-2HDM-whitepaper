@@ -5,7 +5,8 @@ The PDF set used for these simulations is the NNPDF  collaboration's NNPDF30\_lo
 For the matrix element calculation in MG5, the five-flavor scheme is chosen, and the b-quark mass set to zero.
 
 The matrix element generated for the parton-level studies is $ g g \rightarrow h  \chi \bar{\chi}$. %ref to feynmangraph, else cite Bauer:2017ota
-For the $\ma-\tanb$ scan (\autoref{fig:monoHbb_sensi_full_ma_tanb}), the matrix element $b \bar{b} \rightarrow h  \chi \bar{\chi}$ is also generated.
+For the $\ma-\tanb$ scan (\autoref{fig:monoHbb_tanb_scan_met}, \autoref{fig:monoHbb_sensi_full_ma_tanb}), 
+the matrix element $b \bar{b} \rightarrow h  \chi \bar{\chi}$ is also generated.
 The additional matrix element is generated because at high $\tanb$ and for a Yukawa sector of type II,
 the $b \bar{b}$ initiated process can have an amplitude as large as, or even larger than, the gluon fusion initiated process \cite{Bauer:2017ota}.
 However, gluon fusion dominates the remaining parameter space, so for all other scans the $b\bar{b}$ initiated process is neglected.
@@ -78,10 +79,9 @@ events at parton level for five representative models with different $\sinp$ and
  fixed $\mA = \mH = \mHc = 600 $~GeV, $\ma = 200$~GeV, $ \mDM = 10$~GeV, $\tanb = 1$, 
 and $ \lap1 = \lap2 = \lam3 = 3 $. 
 The shape of the $\MET$ distribution does not change much  
-for $\sinp \leq 0.7$, then changes significantly for $\sinp> 0.7$. 
-When $\sinp=0.9$, the non-resonant production with 3-body decay 
-$gg \rightarrow h \chi \bar{\chi}$, producing a \MET peak 
-at around 60~GeV, starts to dominate.
+for $\sinp < 0.7$, then changes significantly for $\sinp\geq 0.7$. 
+When $\sinp=0.9$, the diagram $gg\rightarrow a\rightarrow A^*h \rightarrow \chi \bar{\chi} h$, 
+producing a \MET peak at around 60~GeV, starts to dominate.
 %
 }
 \label{fig:monoHbb_sinp_scan_mA600_ma200_met}
@@ -112,10 +112,12 @@ $\tanb$ for $\mA = \mH = \mHc = 600 $ GeV]
 Missing transverse momentum distribution of $h\rightarrow bb + \MET$ signal 
 events at parton level with different $\tanb$ and
  fixed $\mA = \mH = \mHc = 600 $~GeV, $ \mDM = 10$~GeV, $\sinp = 0.35$, 
-and $ \lap1 = \lap2 = \lam3 = 3 $. The values of $\ma$ are set to 100, 200, 350, 
-and 500~GeV, respectively.
+and $ \lap1 = \lap2 = \lam3 = 3 $. The values of $\ma$ are set to 100, 200, 
+350, and 500~GeV, respectively.
 The shapes of the $\MET$ distributions for different $\tanb$ are similar when 
-$\mA < \mh+\ma$.
+$\mA < \mh+\ma$. Note, in these figures, both the contributions of $gg$ and $b\bar{b}$ 
+initiated processes are included and a combined histogram is produced 
+according to their corresponding cross sections.
 }
 \label{fig:monoHbb_tanb_scan_met}
 \end{figure}
@@ -127,7 +129,7 @@ The masses $\mA$ and $\ma$ of the pseudoscalars $A$ and $a$ affect the $\monohbb
 \end{itemize}
 The latter effect can be seen in \autoref{fig:monoHbb_xsec_bins_mA_ma}. The former is crucial to searches for \monohbb such as  \cite{Aaboud:2017yqz},
 since the $\MET$ observable© can be used to reduce many standard model backgrounds. 
-Standard model backgrounds  are often characterized by low  $\MET$), unlike Dark Matter signal processes with potentially very high $\MET$.
+Standard model backgrounds  are often characterized by low  $\MET$, unlike Dark Matter signal processes with potentially very high $\MET$.
 
 The Jacobian peak is the result of a resonantly produced pseudoscalar $A$ decaying in the $1 \rightarrow 2$ decay $A\rightarrow a h$, 
 where the $h$ proceeds to decay into a mostly visible final state ($h\rightarrow b \bar{b} \rightarrow \mathrm{hadrons}$), 
@@ -173,6 +175,34 @@ differs significantly from the one below threshold, since amplitudes involving d
 make up a larger fraction of all signal events. Below threshold ($\mDM > \ma/2$), 
 the signal cross-section quickly drops by several orders of magnitude. In this regime, 
 the shape of the $\MET$ distribution changes with $\mDM$ continuously.
+
+%%%%% text related to scan of sinp
+The sine of the mixing angle between the two pseudoscalars $A$ and $a$, $\sinp$,
+affects not only the cross section, but also the shape of the \MET\ distribution 
+(\autoref{fig:monoHbb_sinp_scan_mA600_ma200_met}). 
+For the resonant diagram $gg\rightarrow A \rightarrow ah \rightarrow \chi\bar{\chi}h$, 
+the product of cross section times branching ratios 
+${\cal B}(A\rightarrow ah){\cal B}(a \rightarrow \chi\bar{\chi})$ 
+scales with $\sin^2\theta\cos^6\theta$, while for the diagram 
+$gg\rightarrow a \rightarrow A^*h \rightarrow \chi\bar{\chi}h$, the 
+product of cross section times branching ratios 
+${\cal B}(a\rightarrow Ah){\cal B}(A \rightarrow \chi\bar{\chi})$ 
+scales with $\sin^6\theta\cos^2\theta$. Therefore, at small \sinp, the resonant 
+diagram $A\rightarrow ah$ is the dominant production mode and the \MET\ distribution 
+has a Jacobian peak following \autoref{eq:monoH_peak_met}; while at large \sinp, the 
+$a\rightarrow A^*h$ diagram starts to dominate and produces a second peak at a lower 
+\MET\ value.
+
+%%% text related to tanbeta-ma scan
+The shape of \MET\ distribution also has a non-trivial dependence on \tanb\ 
+(\autoref{fig:monoHbb_tanb_scan_met}).
+As discussed in the sensitivity study later, at small \tanb, the Yukawa coupling 
+to top quark is large and the signal production mode is dominated by the 
+non-resonant 3-body processes $gg\rightarrow h\chi\bar{\chi}$, which gives a broad 
+and soft \MET\ spectrum. As \tanb increases, the contribution of 
+resonant production increases as well and the Jacobian peak also appears.
+When the pseudoscalar $A$ is produced off-shell, i.e. when $\mA<\ma+\mh$, the shapes 
+of \MET\ distributions become similar and the dependence on \tanb disappears.
 
 
 \subparagraph{Sensitivity estimate}
