@@ -5,7 +5,7 @@ The PDF set used for these simulations is the NNPDF  collaboration's NNPDF30\_lo
 For the matrix element calculation in MG5, the five-flavor scheme is chosen, and the b-quark mass set to zero.
 
 The matrix element generated for the parton-level studies is $ g g \rightarrow h  \chi \bar{\chi}$. %ref to feynmangraph, else cite Bauer:2017ota
-For the $\ma-\tanb$ scan (\autoref{fig:monoHbb_sensi_full_ma_tanb}), the matrix element $b \bar{b} \rightarrow h  \chi \bar{\chi}$ is also generated.
+For the $\ma-\tanb$ scan (\autoref{fig:monoHbb_sensi_full_ma_tanb}), the maxtrix element $b \bar{b} \rightarrow h  \chi \bar{\chi}$ is also generated.
 The additional matrix element is generated because at high $\tanb$ and for a Yukawa sector of type II,
 the $b \bar{b}$ initiated process can have an amplitude as large as, or even larger than, the gluon fusion initiated process \cite{Bauer:2017ota}.
 However, gluon fusion dominates the remaining parameter space, so for all other scans the $b\bar{b}$ initiated process is neglected.
@@ -79,8 +79,7 @@ events at parton level for five representative models with different $\sinp$ and
 and $ \lap1 = \lap2 = \lam3 = 3 $. 
 The shape of the $\MET$ distribution does not change much  
 for $\sinp \leq 0.7$, then changes significantly for $\sinp> 0.7$. 
-When $\sinp=0.9$, the non-resonant production with 3-body decay 
-$gg \rightarrow h \chi \bar{\chi}$, producing a \MET peak 
+When $\sinp=0.9$, the non-resonant production with 3-body decay, producing a \MET peak 
 at around 60~GeV, starts to dominate.
 %
 }
@@ -126,7 +125,7 @@ The masses $\mA$ and $\ma$ of the pseudoscalars $A$ and $a$ affect the $\monohbb
 \item by changing the overall signal cross-section
 \end{itemize}
 The latter effect can be seen in \autoref{fig:monoHbb_xsec_bins_mA_ma}. The former is crucial to searches for \monohbb such as  \cite{Aaboud:2017yqz},
-since the $\MET$ observable© can be used to reduce many standard model backgrounds. 
+since the $\MET$ observebal√© can be used to reduce many standard model backgrounds. 
 Standard model backgrounds  are often characterized by low  $\MET$), unlike Dark Matter signal processes with potentially very high $\MET$.
 
 The Jacobian peak is the result of a resonantly produced pseudoscalar $A$ decaying in the $1 \rightarrow 2$ decay $A\rightarrow a h$, 
@@ -158,13 +157,13 @@ The mass of the heavy neutral\footnote{For simplicity, we only consider the case
 scalar $H$ has an indirect effect on the rate and kinematics of the signal. 
 This is caused by  $\mH$ changing the widths and couplings of  the pseudoscalars $A$ and $a$. 
 Changing $\mH$ can scale the signal cross-section up or down, and change the 
-fraction of resonant vs. non-resonant signal events (\autoref{fig:monoHbb_mH_scan_met}). 
+fraction of resonant vs. non-resonat signal events (\autoref{fig:monoHbb_mH_scan_met}). 
 The choice $\mH (= \mHc) = \mA$ gives a measurable cross-section for many signal points as well as a significant fraction of resonant signal events.
 
 The mass  $\mH$ of the Dark Matter fermion $\mDM$ can change the cross-section and shape of the $\MET$ distribution,
-depending on the place of $\mDM$ in the mass hierarchy (\autoref{fig:monoHbb_mDM_scan_met}). 
+dependending on the place of $\mDM$ in the mass hierachy (\autoref{fig:monoHbb_mDM_scan_met}). 
 If the Dark Matter is above the production threshold ($\mDM < \ma/2$), changing it has no effect on either kinematics or cross-section. 
-The only exception is the case $\ma/2 > \mDM > \ma/2 - M_h$ (given a sufficiently heavy scalar $a$). With such values of $\mDM$
+The only excpetion is the case $\ma/2 > \mDM > \ma/2 - M_h$ (given a sufficiently heavy scalar $a$). With such values of $\mDM$
 non-resonantly producing an $h$ simultaneously with an on-shell $a (\rightarrow \chi \bar{\chi})$ becomes kinematically forbidden. 
 However, this contribution is negligible for most of the parameter points in the scans presented here. 
 If the Dark Matter is on threshold ($\mDM = \ma/2$), the signal cross section is significantly enhanced. 
@@ -303,7 +302,7 @@ This estimate  is provided in \cite{Aaboud:2017yqz} in terms of a single accepta
 The value of $\mathcal{A\times\epsilon}$ corresponds to the probability
  that an event generated at parton level in a given $\MET$ bin is reconstructed in that same $\MET$ bin and passes all selections.
 The limits with minimal model dependence are provided separately for each of the four $\MET$ bins used in \cite{Aaboud:2017yqz}.
-Thus, the simulated events are binned into those bins (\autoref{fig:monoHbb_xsec_bins_mA_ma}).
+Thus, the simulated evebts are binned into those bins (\autoref{fig:monoHbb_xsec_bins_mA_ma}).
 Then the simulated cross-section in one $\MET$ bin is compared to the 
 limit with minimal model dependence in that $\MET$ bin (\autoref{fig:monoHbb_sensi_bins_mA_ma}). 
 In this way, one gets four separate sensitivity estimates.
@@ -313,7 +312,7 @@ This is desired for the purpose of estimating sensitivity when designing the gri
 since one expects that the full search will be able to exclude those models. 
 But for actually excluding models based on the limits with minimal model dependence, the sum is not appropriate.
 A better choice for the purpose of exclusion is e.g. the sensitivity of the most sensitive bin.} (\autoref{fig:monoHbb_sensi_full_mA_ma}).
-Thus the sensitivity is estimated as
+Thus the sensitvity is estimated as
 \begin{align}
 \label{eq:monoHbb_sensi}
 \begin{split}
@@ -367,7 +366,7 @@ corresponding to the lower $b$-quark mass.
 At this point $b\bar{b}$ initiated processes start to dominate the production cross-section and drive the increase in sensitivity.
 
 The sensitivity to models with varying $\sinp$ is shown in Figs. \ref{fig:monoHbb_sensi_full_sinp_1} and \ref{fig:monoHbb_sensi_full_sinp_2}.
-The sensitivity is $0$ at $\sinp=0$ and $\sinp=1$, since those values correspond to no mixing, and thus no coupling.
+The sensitivity is $0$ at $\sinp=0$ and $\sinp=1$, since those values correspod to no mixing, and thus no coupling.
 So the sensitivity is in general not monotonous in $\sinp$ (\autoref{fig:monoHbb_sensi_full_sinp_1}).
 For intermediate values, $\sinp$ influences the couplings of the pseudoscalars to  Dark Matter, as well as to standard model fermions, 
 and also the coupling strength of trilinear scalar vertices such as $g_{Aah}$ \cite{Bauer:2017ota}. 
