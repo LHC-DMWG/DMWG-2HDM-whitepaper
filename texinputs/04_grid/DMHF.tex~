@@ -41,8 +41,8 @@ In the following sections,  the most important signatures involving either visib
 %%%%-----------------------------------------------------------------------------------------
 %%%%-----------------------------------------------------------------------------------------
 %%%%-----------------------------------------------------------------------------------------
-\subsubsection{Recasting existing tt+\met and bb+\met signatures}
-\label{subsub:hfttrecast}
+\subsection{Recasting existing tt+\met and bb+\met signatures}
+\label{sub:hfttrecast}
 These two signatures are dominantly produced in diagrams involving the invisible decays of the two CP-odd scalars. 
 Their relevance is therefore determined by the two pseudoscalar masses, $m(A)$ and $m(a)$ and it is a function of 
 $sin\theta$ and $tan\beta$. 
@@ -131,7 +131,7 @@ between the production of the two bosons.
 %%%%-----------------------------------------------------------------------------------------
 %%%%-----------------------------------------------------------------------------------------
 %%%%-----------------------------------------------------------------------------------------
-\paragraph{Motivations for an high $tan\beta$ scan for bb+\met}
+\subsubsection{Motivations for an high $tan\beta$ scan for bb+\met}
 
 The projection of sensitivity in $tan\beta$ for benchmark \#2,  based on the CMS results for bb+MET [arXiv:1706.02581]
 are shown in Figure~\ref{DMHF:bbscan}. The reach for an upper bound on tan(beta) with bb+MET shows 
@@ -151,7 +151,7 @@ good potential, for $tan\beta$ values above 10.
 %%%%-----------------------------------------------------------------------------------------
 %%%%-----------------------------------------------------------------------------------------
 \clearpage
-\subsubsection{Motivation for a dedicated tW+\met search}
+\subsection{Motivation for a dedicated tW+\met search}
 
 The sensitivity of the LHC experiments to the associated 
 production of dark matter with a single top has been recently studied \cite{Pani:2017qyd} in the framework
@@ -231,7 +231,7 @@ assuming $sin\theta = 0.35$ and $m(A) = m(H^\pm) = m(H) = 500$ GeV.}
 %%%%-----------------------------------------------------------------------------------------
 %%%%-----------------------------------------------------------------------------------------
 %%%%-----------------------------------------------------------------------------------------
-\subsubsection{Uncovered signatures with $tt h+\met$}
+\subsection{Uncovered signatures with $tt h+\met$}
 
 As discussed in Section~\ref{sub:hfttrecast}, the production of the
 heavy mediator $A$ gives a sizeable contribution to the $tt+\met$  
@@ -265,7 +265,7 @@ heavy flavour dark matter searches.
 %%%%-----------------------------------------------------------------------------------------
 %%%%-----------------------------------------------------------------------------------------
 %%%%-----------------------------------------------------------------------------------------
-\subsubsection{Top pair resonant searches}
+\subsection{Top pair resonant searches}
 
 Heavy scalar and pseudoscalar bosons decaying dominantly into top-quark pairs can be
 searched for by studying the resulting \ttbar\ invariant mass
@@ -282,7 +282,7 @@ effective vertex.
 %%%%-----------------------------------------------------------------------------------------
 %%%%-----------------------------------------------------------------------------------------
 %%%%-----------------------------------------------------------------------------------------
-\subsubsection{Four tops final states}
+\subsection{Four tops final states}
 
 Work in progress
 

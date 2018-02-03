@@ -1,6 +1,7 @@
 \paragraph{Technical setup}
 Simulated event samples for the mono-Z signature are produced with Madgraph5\_aMC@NLO version 2.4.3, interfaced with Pythia version 8.2.2.6 for parton showering. The NNPDF3.0 PDF set is used at LO precision with the value of the strong coupling constant set to $\alpha_{S}(M_{Z}) = 0.130$ (NNPDF30\_lo\_as\_0130). Only contributions from gluon-gluon initial states and \lp\lm$\chi\overline{\chi}$ final states are considered, where l = e or $\mu$. No additional matrix element partons are considered and diagrams with an intermediate s-channel SM Higgs boson are explicitly rejected to increas the calculation efficiency (generate g g $>$ xd xd~ l+ l- / h1). 
 
+
 \paragraph{Event selection}
 Three consecutive stages of event selection are considered:
 \begin{itemize}
@@ -39,6 +40,21 @@ Selection stage & Quantity & Requirement \\\hline
 
 
 \paragraph{Results}
+The overall cross-sections in the \tanb and mass scans are shown in Fig.~\ref{fig:xs_inclusive}.
+In the mass scan, maximal cross-sections are observed for the region of $\ma < \mA$ for values of $\ma\gtrsim100$ GeV. Towards higher values of both \ma and \mA, the cross-sections fall off, reaching values smaller than $1$ fb at $\ma\approx450$ GeV or $\mA\approx1.1$ TeV. In the $\ma\approx\mA$-region, the cross-section is suppressed by destructive interference. For the region with inverted mass hierarchy $\ma>\mA$, cross-sections of the order of multiple fb are observed, as long as $|\ma-\mA|$ remains sufficiently large.
+In the \tanb scan, cross-sections smoothly fall with increasing $\ma$ as well as $\tanb$. Cross-sections are typically larger than 1 fb up to $\tanb\approx5$. The dependence on $\ma$ is modulated by the value of \tanb: Crossing the $\ma$ range from $100$ to $400$ GeV, cross-sections are reduced by a factor $\approx7$ for small $\tanb\approx1$, but only a factor $\approx2$ for higher values of $\tanb\approx5$.
+
+
+To assess the kinematic behavior of the signal, the distributions of the kinematic variables that are most relevant to the Mono-Z signature are studied as a function of the model parameters.
+
+The distribution of the invariant masses of the dilepton and $\chi\chi$ systems are shown in Fig.~\ref{fig:monoz_kin_inclusive}. Independent of the of parameters, the dilepton mass spectrum is centered at the Z peak, without any nonresonant contribution. The $M_{\chi\chi}$ distribution illustrates the signal contributions from different diagrams. For $\mA>\ma$, DM is dominantly produced from on-shell $a$ boson production. In the inverted mass region $\mA<\ma$, the situation is reversed, and $A$ diagrams dominate.
+
+After applying the preselection requirements, the distributions of kinematic variables are shown in Fig.~\ref{fig:monoz_kin_presel}. In the region of $\mA>\ma$, distinct Jacobian peaks are visible in the distributions of the mediator \pt, the width of which generally increases with the $\ma$ and $\mA$. Significant portions of the spectrum are situated at relatively high boosts ($\MET>200 GeV$), which is more easily accessible experimentally.
+This behavior is constrasted by the distributions in the inverted mass regions, which show nearly no distinct features and are mainly located at low mediator \pt. For $\mA~\ma+m_{Z}$, both the a and Z bosons are produced close to at rest, leading to an event population with overall low boost. These qualitative trends are consistend between the observables studied here.
+Finally, the distributions of the $\MET$ and $\MT$ variables after final selection are shown in Fig.~\ref{monoz_kin_final}. Traditionally, the Mono-Z search has relied on the $\MET$ distribution for signal extraction. While the presence of the Jacobian peak structure in the distribution facilitates signal-background separation, it may be beneficial to also consider the $\MT$ distribution. Although only transverse information is available, the resonant structure of the signal is significantly enhanced in the $\MT$ variable, which may enhance the sensitivity of a specialized search strategy.
+
+The \tanb and $\sin(\theta)$ variables have no effect on the distributions of kinematic variables (Fig.~\ref{fig:monoz_kin_tanb_sintheta}).
+
 
 \begin{figure}
 \centering
