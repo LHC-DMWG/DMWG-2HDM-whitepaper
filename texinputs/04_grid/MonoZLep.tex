@@ -44,6 +44,8 @@ The overall cross-sections in the \tanb and mass scans are shown in Fig.~\ref{fi
 In the mass scan, maximal cross-sections are observed for the region of $\ma < \mA$ for values of $\ma\gtrsim100$ GeV. Towards higher values of both \ma and \mA, the cross-sections fall off, reaching values smaller than $1$ fb at $\ma\approx450$ GeV or $\mA\approx1.1$ TeV. In the $\ma\approx\mA$-region, the cross-section is suppressed by destructive interference. For the region with inverted mass hierarchy $\ma>\mA$, cross-sections of the order of multiple fb are observed, as long as $|\ma-\mA|$ remains sufficiently large.
 In the \tanb scan, cross-sections smoothly fall with increasing $\ma$ as well as $\tanb$. Cross-sections are typically larger than 1 fb up to $\tanb\approx5$. The dependence on $\ma$ is modulated by the value of \tanb: Crossing the $\ma$ range from $100$ to $400$ GeV, cross-sections are reduced by a factor $\approx7$ for small $\tanb\approx1$, but only a factor $\approx2$ for higher values of $\tanb\approx5$.
 
+Acceptances for the mass and \tanb scans are shown in Figures \ref{fig:monoz_ll_acceptance} and \ref{fig:monoz_ll_tanbma_acceptance}.  
+In the mass scan, from \ma=100, \mA=250 to \ma=350, \mA=450 we can see that for mass points where the Jacobian Peak is below the \MET cut of the ananalysis, acceptances drop sharply approaching 0.  Above this region, acceptances are grouped into bands for fixed values of \mA - \ma.  For heavy \mA values, acceptance change more gradually and reach a maximum value of 50\%.  In the inverted mass region, acceptances are generally lower than the rest of the mass scan, but for light values of \mA, can reach acceptances as high as 30\%.  In the \tanb scan, acceptance is largely independent of \tanb and is constant for equal values of \ma.  
 
 To assess the kinematic behavior of the signal, the distributions of the kinematic variables that are most relevant to the Mono-Z signature are studied as a function of the model parameters.
 
@@ -53,7 +55,7 @@ After applying the preselection requirements, the distributions of kinematic var
 This behavior is constrasted by the distributions in the inverted mass regions, which show nearly no distinct features and are mainly located at low mediator \pt. For $\mA~\ma+m_{Z}$, both the a and Z bosons are produced close to at rest, leading to an event population with overall low boost. These qualitative trends are consistend between the observables studied here.
 Finally, the distributions of the $\MET$ and $\MT$ variables after final selection are shown in Fig.~\ref{monoz_kin_final}. Traditionally, the Mono-Z search has relied on the $\MET$ distribution for signal extraction. While the presence of the Jacobian peak structure in the distribution facilitates signal-background separation, it may be beneficial to also consider the $\MT$ distribution. Although only transverse information is available, the resonant structure of the signal is significantly enhanced in the $\MT$ variable, which may enhance the sensitivity of a specialized search strategy.
 
-The \tanb and $\sin(\theta)$ variables have no effect on the distributions of kinematic variables (Fig.~\ref{fig:monoz_kin_tanb_sintheta}).
+The \tanb and $\sin(\theta)$ variables have minimal effect on the distributions of kinematic variables (Fig.~\ref{fig:monoz_kin_tanb_sintheta}).
 
 
 \begin{figure}
@@ -77,8 +79,9 @@ The \tanb and $\sin(\theta)$ variables have no effect on the distributions of ki
 \end{figure}
 
 \begin{figure}
+\label{fig:monoz_ll_tanbma_acceptance}
 \includegraphics[width=\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_ae_ll.pdf}
-\caption{Acceptances across the \ma-tanBeta scan.  Acceptance is flat over tanBeta for constant values of \ma.}
+\caption{Acceptances across the \ma-\tanb scan.  Acceptance is flat over \tanb for constant values of \ma.}
 \end{figure}
 
 \begin{figure}
@@ -91,6 +94,17 @@ The \tanb and $\sin(\theta)$ variables have no effect on the distributions of ki
 \includegraphics[width=\textwidth]{texinputs/04_grid/figures/monoz/leptonic/mA_Scan.pdf}
 \caption{The position of the Jacobian peak in the \MET distribution depends on the difference between \mH and \ma.  For fixed values of \ma and \mA = \mH, increaseing \mA shifts the peak towards higher enrgies, and decreasing \mA shifts it lower.  For small mass splittings between \mH and \ma, most events will fail to pass the \MET selection criteria.}   
 \end{figure}
+
+\begin{figure}
+\includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/leptonic/SinThetaScan_xsecs.pdf}
+\caption{For two different mass points, this figure shows the cross section $pp\rightarrow\chi\chi\ell\ell$ as a function of \sinp. 
+For $\ma < 350$ GeV, $a$ decays solely to dark matter particles.  
+As a consequence, the mixing angle only impacts the heavy scalar's branching fraction to $aZ$ and 
+cross section strictly increases with \sinp.  
+For \ma above 350 \GeV, \ttbar~ decays become accesible, introducing additional \sinp and \cosp dependences for the branching fraction 
+of $a\rightarrow\chi\chi$.  Above 350 GeV for large values of \sinp, there is a turnover point where the reduced $a\rightarrow\chi\chi$ branching fraction outweights the increased $H \rightarrow aZ$ branching and the net cross section decreases.}
+\end{figure}
+
 
 \begin{figure}
 \includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/SinThetaScan_mH600ma250_MET.pdf}
@@ -124,18 +138,36 @@ The \tanb and $\sin(\theta)$ variables have no effect on the distributions of ki
 \end{figure}
 
 
-Equation for significance \cite{Cowan:2012}
+Expected significances for 2HDMa models are calculated using generator level signal samples and background estimates from recent $Z(\ell \ell) + \MET$ searches analyzing 36.1 \ifb of data \cite{Aaboud:2017bja}.
+
+Following the Asimov approximation, the expected significance for the ratio of likelihoods is given by equation \ref{eq:significance} and is valid even for $s$ not $\ll b$ \cite{Cowan:2010js}.  
+This equation is modified to account for systematic uncertainties on the background (\ref{eq:significance_wsyst}) \cite{Cowan:2012}, and the total significance is taken as the per bin significances summed in quadrature.
+
+For the signal events a reconstruction efficiency of 75\% is assumed.  To be consistent with the background estimates, the ATLAS selection cuts are used.  The significances are calulated for bins of \MET.  A conservative 20\% systematic is assumed for \MET < and 10\% for MET >.
+
+The expected significnaces are shown  in Figure \ref{fig:expected_significance_monozll}, the LHC should be sensitive to models with a significance greater than 2. 
 
 \begin{equation}
-\label{eqn:significance_wsyst}
-Z_A = \sqrt{ 2 \cdot \bigg( (s+b) \ln[\frac{ (s+b) (b+\sigma_b^2) } {b^2 + (s+b) \sigma_b^2} ]- \frac{b^2}{\sigma_b^2} \ln[1 + \frac{\sigma_b^2 s}{b(b+\sigma_b^2)} ] \bigg) }
+\label{eq:significance}
+Z = \sqrt{2 \bigg( (s+b) \ln{1 + \frac{s}{b}} - S \bigg) }
+\end{equation}
+
+
+\begin{equation}
+\label{eq:significance_wsyst}
+Z^\prime_{bin} = \sqrt{ 2 \cdot \bigg( (s+b) \ln[\frac{ (s+b) (b+\sigma_b^2) } {b^2 + (s+b) \sigma_b^2} ]- \frac{b^2}{\sigma_b^2} \ln[1 + \frac{\sigma_b^2 s}{b(b+\sigma_b^2)} ] \bigg) }
+\end{equation}
+
+\begin{equation}
+\mathcal{S} = \sqrt{\sum_{bin} (Z^\prime_{bin})^2}
 \end{equation}
 
 
 \begin{figure}
+\label{fig:expected_significance_monozll}
 \centering
-\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/mAma_Significance_ll.pdf}
-\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_Significance_ll.pdf}
+\includegraphics[width=0.9\textwidth]{texinputs/04_grid/figures/monoz/leptonic/mAma_Significance_ll.pdf}
+\includegraphics[width=0.9\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_Significance_ll.pdf}
 \caption{Expected signficicances are calculated using published background estimates and assuming a reconstruction efficiency of 75\%.  The LHC is expected to be sensitive to regions with significances greater than 2.}
 \end{figure}
 
