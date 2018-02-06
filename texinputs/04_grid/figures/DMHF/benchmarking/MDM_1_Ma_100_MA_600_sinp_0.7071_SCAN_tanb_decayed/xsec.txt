@@ -1,0 +1,55 @@
+DM Mass Sample: tan#beta=0.25
+*
+* SUMMARY
+*------------------------------------------
+
+* *  Events total    :250000
+* *  Cross-section   :0.028146
+* *  Acceptance 
+
+* * Dilepton   : 1
+*------------------------------------------
+DM Mass Sample: tan#beta=0.35
+*
+* SUMMARY
+*------------------------------------------
+
+* *  Events total    :250000
+* *  Cross-section   :0.0143111
+* *  Acceptance 
+
+* * Dilepton   : 1
+*------------------------------------------
+DM Mass Sample: tan#beta=1.0
+*
+* SUMMARY
+*------------------------------------------
+
+* *  Events total    :250000
+* *  Cross-section   :0.00176408
+* *  Acceptance 
+
+* * Dilepton   : 1
+*------------------------------------------
+DM Mass Sample: tan#beta=5.0
+*
+* SUMMARY
+*------------------------------------------
+
+* *  Events total    :250000
+* *  Cross-section   :6.8908e-05
+* *  Acceptance 
+
+* * Dilepton   : 1
+*------------------------------------------
+DM Mass Sample: tan#beta=20.0
+*
+* SUMMARY
+*------------------------------------------
+
+* *  Events total    :240000
+* *  Cross-section   :3.05192e-06
+* *  Acceptance 
+
+* * Dilepton   : 1
+*------------------------------------------
