@@ -1,0 +1,33 @@
+DM Mass Sample: M_{h_{3}}=300 GeV
+*
+* SUMMARY
+*------------------------------------------
+
+* *  Events total    :250000
+* *  Cross-section   :0.02099
+* *  Acceptance 
+
+* * Dilepton   : 1
+*------------------------------------------
+DM Mass Sample: M_{h_{3}}=500 GeV
+*
+* SUMMARY
+*------------------------------------------
+
+* *  Events total    :250000
+* *  Cross-section   :0.00344798
+* *  Acceptance 
+
+* * Dilepton   : 1
+*------------------------------------------
+DM Mass Sample: M_{h_{3}}=750 GeV
+*
+* SUMMARY
+*------------------------------------------
+
+* *  Events total    :250000
+* *  Cross-section   :0.00106015
+* *  Acceptance 
+
+* * Dilepton   : 1
+*------------------------------------------
