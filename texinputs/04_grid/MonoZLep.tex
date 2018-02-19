@@ -1,3 +1,6 @@
+Mono-Z analyses use events with a reconstructed Z boson recoiling symmetrically against \MET to detect the production of invisible particles.
+In previous LHC analyses~\cite{Aaboud:2017bja,Sirunyan:2017qfc}, the DM interpretations of the analysis results have focused on either invisible decays of the SM-like Higgs bosons or topologies where the Z boson is produced as initial-state radiation (ISR) off a quark. The ISR-based topologies generically favor radiation of a gluon or photon rather than a massive gauge boson, thus limiting the discovery sensitive of a Z-based approach compared to monojet and mono-photon searches. In contrast, the model studies in this document generates the mono-Z signature dominantly via the all-bosonic H-a-Z vertex, which can lead to enhancements of the mono-Z sensitivity compared to jet and photon signature. In this section, the behavior and experimental accessibility of the model in Z+\MET events is studied.
+
 \paragraph{Technical setup}
 Simulated event samples for the mono-Z signature are produced with Madgraph5\_aMC@NLO version 2.4.3, interfaced with Pythia version 8.2.2.6 for parton showering. The NNPDF3.0 PDF set is used at LO precision with the value of the strong coupling constant set to $\alpha_{S}(M_{Z}) = 0.130$ (NNPDF30\_lo\_as\_0130). Only contributions from gluon-gluon initial states and \lp\lm$\chi\overline{\chi}$ final states are considered, where l = e or $\mu$. No additional matrix element partons are considered and diagrams with an intermediate s-channel SM Higgs boson are explicitly rejected to increas the calculation efficiency (generate g g $>$ xd xd~ l+ l- / h1). 
 
@@ -39,53 +42,52 @@ Selection stage & Quantity & Requirement \\\hline
 \end{table}
 
 
-\paragraph{Results}
-The overall cross-sections in the \tanb and mass scans are shown in Fig.~\ref{fig:xs_inclusive}.
+\paragraph{Cross-sections, kinematic distributions and acceptance}
+The overall cross-sections in the \tanb and mass scans are shown in Fig.~\ref{fig:monoz_ll_xs_inclusive}.
 In the mass scan, maximal cross-sections are observed for the region of $\ma < \mA$ for values of $\ma\gtrsim100$ GeV. Towards higher values of both \ma and \mA, the cross-sections fall off, reaching values smaller than $1$ fb at $\ma\approx450$ GeV or $\mA\approx1.1$ TeV. In the $\ma\approx\mA$-region, the cross-section is suppressed by destructive interference. For the region with inverted mass hierarchy $\ma>\mA$, cross-sections of the order of multiple fb are observed, as long as $|\ma-\mA|$ remains sufficiently large.
 In the \tanb scan, cross-sections smoothly fall with increasing $\ma$ as well as $\tanb$. Cross-sections are typically larger than 1 fb up to $\tanb\approx5$. The dependence on $\ma$ is modulated by the value of \tanb: Crossing the $\ma$ range from $100$ to $400$ GeV, cross-sections are reduced by a factor $\approx7$ for small $\tanb\approx1$, but only a factor $\approx2$ for higher values of $\tanb\approx5$.
 
 Acceptances for the mass and \tanb scans are shown in Figures \ref{fig:monoz_ll_acceptance} and \ref{fig:monoz_ll_tanbma_acceptance}.  
-In the mass scan, from \ma=100, \mA=250 to \ma=350, \mA=450 we can see that for mass points where the Jacobian Peak is below the \MET cut of the ananalysis, acceptances drop sharply approaching 0.  Above this region, acceptances are grouped into bands for fixed values of \mA - \ma.  For heavy \mA values, acceptance change more gradually and reach a maximum value of 50\%.  In the inverted mass region, acceptances are generally lower than the rest of the mass scan, but for light values of \mA, can reach acceptances as high as 30\%.  In the \tanb scan, acceptance is largely independent of \tanb and is constant for equal values of \ma.  
+In the mass scan, from $\ma=100$, $\mA=250$ to $\ma=350$, $\mA=450$, we can see that for mass points where the Jacobian Peak is below the \MET cut of the ananalysis, acceptances drop sharply approaching zero.  Above this region, the acceptance curves are grouped into bands for fixed values of $\mA-\ma$.  For large values of \mA, the acceptance changes more gradually and reaches a maximum value of 50\%.  In the inverted mass region, the acceptance is generally lower than in the rest of the mass scan, but can reach values as large as 30\% for for light values of \mA.  In the \tanb scan, the acceptance is largely independent of \tanb and is constant for equal values of \ma.  
 
 To assess the kinematic behavior of the signal, the distributions of the kinematic variables that are most relevant to the Mono-Z signature are studied as a function of the model parameters.
 
-The distribution of the invariant masses of the dilepton and $\chi\chi$ systems are shown in Fig.~\ref{fig:monoz_kin_inclusive}. Independent of the of parameters, the dilepton mass spectrum is centered at the Z peak, without any nonresonant contribution. The $M_{\chi\chi}$ distribution illustrates the signal contributions from different diagrams. For $\mA>\ma$, DM is dominantly produced from on-shell $a$ boson production. In the inverted mass region $\mA<\ma$, the situation is reversed, and $A$ diagrams dominate.
+The distribution of the invariant masses of the dilepton and $\chi\chi$ systems are shown in Fig.~\ref{fig:monoz_kin_inclusive}. Independent of the of parameters, the dilepton mass spectrum is centered at the Z peak, without any nonresonant contribution. The $M_{\chi\chi}$ distribution illustrates the signal contributions from different diagrams. For $\mA>\ma$, DM is dominantly produced from on-shell $a$ boson production. In the inverted mass region $\mA<\ma$, the situation is reversed, and $H$ diagrams dominate.
 
-After applying the preselection requirements, the distributions of kinematic variables are shown in Fig.~\ref{fig:monoz_kin_presel}. In the region of $\mA>\ma$, distinct Jacobian peaks are visible in the distributions of the mediator \pt, the width of which generally increases with the $\ma$ and $\mA$. Significant portions of the spectrum are situated at relatively high boosts ($\MET>200 GeV$), which is more easily accessible experimentally.
-This behavior is constrasted by the distributions in the inverted mass regions, which show nearly no distinct features and are mainly located at low mediator \pt. For $\mA~\ma+m_{Z}$, both the a and Z bosons are produced close to at rest, leading to an event population with overall low boost. These qualitative trends are consistend between the observables studied here.
-Finally, the distributions of the $\MET$ and $\MT$ variables after final selection are shown in Fig.~\ref{monoz_kin_final}. Traditionally, the Mono-Z search has relied on the $\MET$ distribution for signal extraction. While the presence of the Jacobian peak structure in the distribution facilitates signal-background separation, it may be beneficial to also consider the $\MT$ distribution. Although only transverse information is available, the resonant structure of the signal is significantly enhanced in the $\MT$ variable, which may enhance the sensitivity of a specialized search strategy.
+After applying the preselection requirements, the distributions of kinematic variables are shown in Fig.~\ref{fig:monoz_kin_presel}. In the region of $\mA>\ma$, distinct Jacobian peaks are visible in the distributions of the mediator \pt, the width of which generally increases with values of $\ma$ and $\mA$. Significant portions of the spectrum are situated at relatively high boosts ($\MET>\unit[200]{GeV}$), which is more easily accessible experimentally.
+This behavior is contrasted by the distributions in the inverted mass regions, which show nearly no distinct features and are mainly located at low mediator \pt. For $\mA\approx\ma+m_{Z}$, both the a and Z bosons are produced approximately at rest, leading to an event population with overall low boost. These qualitative trends are consistent between the observables studied here.
+Finally, the distributions of the $\MET$ and $\MT$ variables after final selection are shown in Fig.~\ref{fig:monoz_kin_final}. Traditionally, the Mono-Z search has relied on the $\MET$ distribution for signal extraction. While the presence of the Jacobian peak structure in the distribution facilitates signal-background separation, it may be beneficial to also consider the $\MT$ distribution. Although only transverse information is available, the resonant structure of the signal is significantly enhanced in the $\MT$ variable, which may enhance the sensitivity of a specialized search strategy.
 
 The \tanb and $\sin(\theta)$ variables have minimal effect on the distributions of kinematic variables (Fig.~\ref{fig:monoz_kin_tanb_sintheta}).
 
+\paragraph{Conclusions} The Mono-Z(ll) provides experimental coverage of the pseudoscalar 2HDM model for a broad part of the parameter space. The light pseudoscalar \a can be probed up to mass values of $\approx\unit[350]{GeV}$, depending on the choice of other parameters. The Mono-Z is sensitive mostly in the region of low values of $\tanb<4$.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{texinputs/04_grid/figures/monoz/leptonic/xs_2d_inclusive_26300.pdf}
-\caption{Inclusive cross-sections for $pp\rightarrow \lp\lm\chi\overline{\chi}$ in the \ma-\mA scan. Maximal cross-sections are observed for the region of $\ma < \mA$ for values of $\ma\gtrsim100$ GeV.  In the $\ma\approx\mA$-region, the cross-section is suppressed by destructive interference. Finally, for a region with inverted mass hierarchy $\ma>\mA$, cross-sections of the order of multiple \ifb are observed, as long as $|\ma-\mA|$ remains sufficiently large.}
+\includegraphics[width=0.8\textwidth]{texinputs/04_grid/figures/monoz/leptonic/xs_2d_inclusive_26300.pdf}
+\includegraphics[width=0.8\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_xsec_ll.pdf}
+\caption{Inclusive cross-sections for $pp\rightarrow \lp\lm\chi\overline{\chi}$ in the \ma-\mA (top) and \ma-\tanb scans (bottom).}
+\label{fig:monoz_ll_xs_inclusive}
 \end{figure}
 
 
 \begin{figure}
-\centering
-\includegraphics[width=\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_xsec_ll.pdf}
-\caption{Inclusive cross sections for the \ma-tanBeta scan.  \mA fixed to 600 GeV and sinTheta to 0.35} 
-\end{figure}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{texinputs/04_grid/figures/monoz/leptonic/acceptance.pdf}
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/monoz/leptonic/acceptance_dmwg-final_26300.pdf}
 \includegraphics[width=\textwidth]{texinputs/04_grid/figures/monoz/leptonic/xs_2d_dmwg-final_26300_yield40fb.pdf}
 \caption{Acceptance and event yields in the  \ma-\mA plane after applying the final selection. Event yields assume an integrated luminosity of $40~\ifb$. The acceptance is maximal for $\mA > \ma$, where it reaches 50 \%. In the inverted mass region $\mA < \ma$, lower values of 10-30\% are observed. In the intermediate region around $\mA \approx \ma + \mZ$, the acceptance is strongly suppressed as the a and Z bosons are produced approximately at rest.}
 \label{fig:monoz_ll_acceptance}
 \end{figure}
 
 \begin{figure}
-\label{fig:monoz_ll_tanbma_acceptance}
-\includegraphics[width=\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_ae_ll.pdf}
+\centering
+\includegraphics[width=0.9\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_ae_ll.pdf}
 \caption{Acceptances across the \ma-\tanb scan.  Acceptance is flat over \tanb for constant values of \ma.}
+\label{fig:monoz_ll_tanbma_acceptance}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_yield_ll.pdf}
+\centering
+\includegraphics[width=0.9\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_yield_ll.pdf}
 \caption{Event yield in the \ma-tanBeta grid, for an integrated luminosity of $40~\ifb$.  The number of expected events diminshes with increasing tanBeta and \ma.  \mA fixed to 600 GeV and sinTheta to 0.35}
 \end{figure}
 
@@ -115,8 +117,9 @@ of $a\rightarrow\chi\chi$.  Above 350 GeV for large values of \sinp, there is a 
 
 \begin{figure}
 \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/leptonic/dm_scan_met_ll.pdf}
-\label{fig:dm_scan_ll}
+
 \caption{In the DM mass scan, for $\mDM < \frac{\mH}{2}$, the DM mass has no effect on cross section or kinematic distributions, at $\mDM = \frac{\mH}{2}$ a resonant enhancement to the cross section occurs, and in the off-shell region where  $\mDM > \frac{\mH}{2}$ cross section steeply drops and the \MET distribution becomes more disperse.}
+\label{fig:dm_scan_ll}
 \end{figure}
 
 
@@ -125,6 +128,7 @@ of $a\rightarrow\chi\chi$.  Above 350 GeV for large values of \sinp, there is a 
 \includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/inclusive_h_mz_lep.pdf}
 \includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/inclusive_h_m_med_dm.pdf}
 \caption{Distributions of the invariant mass of the dilepton (left) and $\chi\overline{\chi}$ systems (right) with no selection applied in addition to the generation cuts. The $M_{ll}$ distribution is centered around the Z boson mass independent of the chosen parameter point, indicating that there is no contribtion from $\gamma*$ exchange. The $M_{\chi\overline{\chi}}$ distribution }
+\label{fig:monoz_kin_inclusive}
 \end{figure}
 
 
@@ -134,6 +138,7 @@ of $a\rightarrow\chi\chi$.  Above 350 GeV for large values of \sinp, there is a 
 \includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/presel_h_dphi_met_ll.pdf}
 \includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/presel_h_dr_ll.pdf}
 \caption{Distributions of the main selection variables after preselection: \pt balance (top panel), $\Delta\Phi$ (middle) and $\Delta R$ (bottom). The shown parameter points illustrate the different qualitative behavior in the three different mass regions. }
+\label{fig:monoz_kin_presel}
 \end{figure}
 
 
@@ -142,8 +147,10 @@ of $a\rightarrow\chi\chi$.  Above 350 GeV for large values of \sinp, there is a 
 \includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/dmwg-final_h_pt_med_dm.pdf}
 \includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/dmwg-final_h_mt_total.pdf}
 \caption{\MET and  MT distributions in the signal region. The \MET distribution shows a Jacobian structure in the $\mA > \ma$ regime, the location of which strongly depends on $\mA$. In the region of inverted mass hierarchy $\mA < \ma$, the spectrum is less structured and does not fall off as steeply towards higher values. For a small mass splitting of $\ma-\mA\approx M_{Z}$, the spectrum is shifted to much lower values of \MET. The MT distribution allows to access the resonant nature of the process. Clear mass peaks are present for the normal mass hierarchy. In the inverted region, the MT distribution is more sensitive to the mass difference $\ma-\mA$ than the \MET distribution, allowing to differentiate between signal hypotheses that give near-identical \MET distributions. }
+\label{fig:monoz_kin_final}
 \end{figure}
 
+\paragraph{Expected significance}
 
 Expected significances for 2HDMa models are calculated using generator level signal samples and background estimates from recent $Z(\ell \ell) + \MET$ searches analyzing 36.1 \ifb of data \cite{Aaboud:2017bja}.
 
@@ -152,7 +159,7 @@ This equation is modified to account for systematic uncertainties on the backgro
 
 For the signal events a reconstruction efficiency of 75\% is assumed.  To be consistent with the background estimates, the ATLAS selection cuts are used.  The significances are calulated for bins of \MET.  A conservative 20\% systematic is assumed for \MET < and 10\% for MET >.
 
-The expected significnaces are shown  in Figure \ref{fig:expected_significance_monozll}, the LHC should be sensitive to models with a significance greater than 2. 
+The expected significances are shown  in Figure \ref{fig:expected_significance_monozll}, the LHC should be sensitive to models with a significance greater than 2.
 
 \begin{equation}
 \label{eq:significance}
@@ -171,10 +178,10 @@ Z^\prime_{bin} = \sqrt{ 2 \cdot \bigg( (s+b) \ln[\frac{ (s+b) (b+\sigma_b^2) } {
 
 
 \begin{figure}
-\label{fig:expected_significance_monozll}
 \centering
 \includegraphics[width=0.9\textwidth]{texinputs/04_grid/figures/monoz/leptonic/mAma_Significance_ll.pdf}
 \includegraphics[width=0.9\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_Significance_ll.pdf}
-\caption{Expected signficicances are calculated using published background estimates and assuming a reconstruction efficiency of 75\%.  The LHC is expected to be sensitive to regions with significances greater than 2.}
+\caption{Expected significances are calculated using published background estimates and assuming a reconstruction efficiency of 75\%.  The LHC is expected to be sensitive to regions with significances greater than 2.}
+\label{fig:expected_significance_monozll}
 \end{figure}
 
