@@ -52,9 +52,6 @@ For \ma < 350 GeV they are not accesible and cross section strictly increases wi
 %For \ma <350 GeV they are not accesible,  and only the heavy scalar's branching fraction to $aZ$ is relevant.  This branching fraction stricly increases with \sinp.  For \ma > 350 \GeV, the branching fraction of $a \rightarrow \chi \chi$ also becomes important, and there is a turnover point were the cross section decreases.
 
 
-
-
-
 Acceptances for the mass and \tanb scans are shown in Figures \ref{fig:monoz_ll_acceptance} and \ref{fig:monoz_ll_tanbma_acceptance}.  
 In the mass scan, for points where the Jacobian Peak is below the analysis's \MET cut, from $\ma = 100$ $\mA = 200$ to $\ma = 300$ $\mA = 400$, 
 acceptance drops sharply approaching zero.  Above this region, acceptance curves are grouped into bands for fixed values of $\mA-\ma$.  
@@ -79,7 +76,7 @@ pt. For $\mA\approx\ma+m_{Z}$, both the a and Z bosons are produced approximatel
 
 Finally, the distributions of the $\MET$ and $\MT$ variables after final selection are shown in Fig.~\ref{fig:monoz_kin_final}. Traditionally, the Mono-Z search has relied on the $\MET$ distribution for signal extraction. While the presence of the Jacobian peak structure in the distribution facilitates signal-background separation, it may be beneficial to also consider the $\MT$ distribution. Although only transverse information is available, the resonant structure of the signal is significantly enhanced in the $\MT$ variable, which may enhance the sensitivity of a specialized search strategy.
 
-The \tanb and $\sin(\theta)$ variables have minimal effects on the distributions of kinematic variables (Fig.~\ref{fig:monoz_kin_tanb_sintheta}).
+The \tanb and \sinp variables have minimal effect on the distributions of kinematic variables (Fig.~\ref{fig:monoz_kin_tanb_sintheta}).  For small values of $\tanb$ there is a slight softening and broadening of the \MET distribution due to the increased contribution from non-resonant $z+a$ production.
 
 
 \paragraph{Expected significance}
@@ -147,6 +144,7 @@ Z^\prime_{bin} = \sqrt{ 2 \cdot \bigg( (s+b) \ln[\frac{ (s+b) (b+\sigma_b^2) } {
 \end{figure}
 
 \begin{figure}
+\centering
 \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/leptonic/SinThetaScan_xsecs.pdf}
 \caption{For two different mass points, this figure shows the cross section $pp\rightarrow\chi\chi\ell\ell$ as a function of \sinp. 
 For $\ma < 350$ GeV, $a$ decays solely to dark matter particles.  
@@ -159,15 +157,19 @@ of $a\rightarrow\chi\chi$.  For \ma above 350 GeV for large values of \sinp, the
 
 
 \begin{figure}
-\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/SinThetaScan_mH600ma250_MET.pdf}
-\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/SinThetaScan_mH700ma350_MET.pdf}
-\caption{Performing one dimensional scans of sinTheta shows that it has little impact on the events' kinematic distributions.  The first scan is performed at \mA = 600 GeV and \ma = 250 GeV, the second at \mA = 700 GeV \ma = 350 GeV.  In both cases tanBeta = 1.0.}
+\centering
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/TanbScan_mH600ma150_MET.pdf} 
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/SinpScan_mH600ma250_MET.pdf} 
+%\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/SinThetaScan_mH600ma250_MET.pdf}
+%\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/leptonic/SinThetaScan_mH700ma350_MET.pdf}
+\caption{Performing one dimensional scans of $\tan{\beta}$ for fixed \mA =600 \GeV and \ma = 150 \GeV (left) and $\sin{\theta}$ for fixed \mA = 600 \GeV and \ma = 250 \GeV (right) shows these parameter have little impact on the event's kinematic distributions.  For small values of \tanb, there is a slight softening and broadening of the \MET distribution due to the increased contribution from the top box diagram.}
+\label{fig:monoz_kin_tanb_sintheta}
 \end{figure}
 
 
 \begin{figure}
+\centering
 \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/leptonic/dm_scan_met_ll.pdf}
-
 \caption{In the DM mass scan, for $\mDM < \frac{\mH}{2}$, the DM mass has no effect on cross section or kinematic distributions, at $\mDM = \frac{\mH}{2}$ a resonant enhancement to the cross section occurs, and in the off-shell region where  $\mDM > \frac{\mH}{2}$ cross section steeply drops and the \MET distribution becomes more disperse.}
 \label{fig:dm_scan_ll}
 \end{figure}
