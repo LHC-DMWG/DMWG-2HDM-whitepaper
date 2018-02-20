@@ -478,6 +478,64 @@ effective vertex.
 
 Work in progress
 
+\subsubsection{2HDM+scalar sensitivity studies}
+
+The sensitivity of the tt+\met all-hadronic signature~\ref{Aaboud:2018hf}
+to the Type-II model with two Higgs doublets plus a 
+scalar portal to dark matter $S_1$ described in~\ref{Bell:2016ekl} has been investigated.
+The signature has been chosen as is the one providing the best sensitivity across the majority of the 
+mass range for $S_1$ which is most difficult to address. 
+
+The choice of the parameters for this model largely reflects that of the $2HDM+p$ model.
+In particular, the masses of the heavier scalar $S_2$ and the masses of the charged Higgs and the CP-odd
+scalar have been set to 600 GeV. The value of the mixing angle has been set to $\cos{\theta}=0.35$. 
+The mass of the light scalar $S_1$ is scanned between $200$ and $340$ GeV, and $\tan\beta$ is scanned 
+between 0.2 and 1. Across the whole $\tan\beta$ and mass range considered the widths of both the light and the heavy 
+scalars do not exceed $15\%$ of the mass of the corresponding particle. 
+
+The procedure to extract the results follows closely the procedure described in Sec.~\ref{subsub:hfttrecast}, 
+but with the light and heavy pseudo-scalars a and A replaced by the light and heavy scalars
+ $S_1$ and $S_2$, respectively.
+The formula to rescale the results of the acceptance is therefore turned into:
+
+\begin{equation}
+Acc_{2HDM}(m(S_1),M(S_2))=\frac{\sigma_{S_1} \times Acc_{DMSIMP}(m(S_{1}))+
+\sigma_{S_2} \times Acc_{DMSIMP}(m(S_{2}))}{\sigma_{S_1}+\sigma_{S_2}}
+\label{rewS}
+\end{equation}
+
+
+The validity of this re-scaling has been validated by comparing the acceptance 
+to the simplified models to the acceptance to the $2HDM+S_1$ models, before and 
+after applying the rescaling of Eq.~\ref{rewS}. The results are shown if Fig.~\ref{fig:rescS1} across the whole
+mass range for the light scalar $S_1$ considered, for the minimum and maximum values of 
+$\tan\beta$ taken into account. 
+It has to be noted that the acceptance to simplified models and $2HDM+S_1$ is very similar even 
+before applying the rescaling of Eq.~\ref{rewS}.
+This is due to the fact that the ratio between the cross-section of $S_2$ and the cross-section of $S_1$
+becomes appreciable (i.e. above sub-percent level) only for models with $m(S_1)>300$ GeV
+ and $\tan\beta > 0.4$.\\
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/DMHF/THDMs/rescalingS1tgb02.pdf}
+   \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/DMHF/THDMs/rescalingS1tgb10.pdf}
+\caption{Validation of the re-scaling formula as a function of $m(S_1)$ for the minimum and maximum values of $\tan{\beta}$ considered.}
+ \label{fig:rescS1}
+\end{figure}
+
+Fig.~\ref{fig:resultsS1} shows the results of the recasting of the simplified model results in the context of the 
+$2HDM+S_1$ model. For the choice of parameters made, models with scalar mediator between 100 and 360 GeV 
+can be excluded for $\tan\beta = 0.2$, while for $\tan\beta = 1$ masses between 100 and 120 GeV are excluded.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/DMHF/THDMs/resultsS1.pdf}
+\caption{Expected and observed exclusion limits at $95\%$ C.L. obtained as a result of the recasting of the all-hadronic channel
+in the context of the $2HDM+S_1$ model.}
+  \label{fig:resultsS1}
+\end{figure}
+
 %\printbibliography
 
 
