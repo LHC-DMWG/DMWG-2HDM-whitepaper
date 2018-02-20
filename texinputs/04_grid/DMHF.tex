@@ -459,17 +459,42 @@ heavy flavour dark matter searches.
 %%%%-----------------------------------------------------------------------------------------
 
 %%%%-----------------------------------------------------------------------------------------
+\FloatBarrier
 \subsubsection{Top pair resonant searches}
-Heavy scalar and pseudoscalar bosons decaying dominantly into top-quark pairs can be
+Heavy (pseudo)scalar bosons with $M_{A/H}\ge2\mt$ and $\tanb \sim \mathcal{O}(1)$ decaying dominantly into top-quark pairs can be
 searched for by studying the resulting \ttbar\ invariant mass
 spectra. However, interference effects between the signal processes
 and the SM \ttbar\ production distort the signal shape from a single
-peak to a peak-dip structure [appropriate REFs?]. Interference between
-a loop-induced and a tree-level process cannot currently be simulated in MadGraph.
-To amend this problem, the "Higgs\_Effective\_Couplings\_FormFactor"
-approach \cite{ttinterfHFF} is implemented in the UFO, replacing the loop production by an
-effective vertex.
-\textbf{Are we interested to insert one of the validation plots from atlas?}
+peak to a peak-dip structure \cite{Carena:2016npr}. The first search in this challenging decay channel was conducted recently, probing scalar and pseudoscalar masses between 500 and 650\GeV\ in a minimal 2HDM \cite{Aaboud:2017hnm}. A similar kinematic range could be probed if the result were re-interpreted in the context of the \hdma. Interference between
+a loop-induced and a tree-level process cannot currently be simulated in \mg. To amend this problem, the same "Higgs\_Effective\_Couplings\_FormFactor"
+approach \cite{ttinterfHFF} as adopted in \cite{Aaboud:2017hnm} is implemented in the UFO, replacing the loop production by an 
+effective vertex. The predictions of the modified UFO for the case, in which the pseudoscalar mediator does not mix with the heavy pseudoscalar $A$ ($\sinp=0$), i.e. effectively decouples from the 2HDM Higgs sector, are compared to those for the minimal 2HDM. Excellent agreement is found in the invariant mass distributions of $A/H$ decaying into a top pair are shown in Fig.~\ref{fig:ttres_2HDMvs2HDMa}. As examples of how the sensitivity changes as a function of the parameters of the \hdma, the $M_{\ttbar}$ distributions of pseudoscalars decaying into \ttbar\ are presented in Fig~\ref{fig:ttres_2HDM_A}. Larger values of \tanb\ or \sinp\ are expected to yield lower sensitivities to $A\rightarrow\ttbar$ significantly while \ma\ almost only affects the contribution from $a\rightarrow\ttbar$, which becomes sizeable if \ma is close to $2\mt$.
+\begin{figure}
+\centering
+\includegraphics[width=.48\textwidth]{texinputs/04_grid/figures/ttres/ttres_2HDMvs2HDMa_A.pdf}
+\includegraphics[width=.48\textwidth]{texinputs/04_grid/figures/ttres/ttres_2HDMvs2HDMa_H.pdf}
+\caption{$M_{\ttbar}$ distribution of the heavy (pseudo)scalar boson decaying into \ttbar\ with $\mA=\mH=600\GeV, \tanb=0.4$, $\sinp=1/\sqrt{2}$ and $M_a=100\GeV$ in comparison with the one from the generic 2HDM.}
+\label{fig:ttres_2HDMvs2HDMa}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{subfigure}[b]{0.49\textwidth}
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/ttres/ttres_2HDMa_A_tanb.pdf}
+\caption{\tanb dependency with fixed $\sinp=1/\sqrt{2}$ and $\ma=100\GeV$}
+\end{subfigure}
+\begin{subfigure}[b]{0.49\textwidth}
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/ttres/ttres_2HDMa_A_sinp.pdf}
+\caption{\sinp dependency with fixed $\tanb=0.4$ and $\ma=100\GeV$}
+\end{subfigure}
+\begin{subfigure}[b]{0.49\textwidth}
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/ttres/ttres_2HDMa_A_ma.pdf}
+\caption{\ma dependency with fixed $\tanb=0.4$ and $\sinp=1/\sqrt{2}$}
+\end{subfigure}
+\caption{parameter dependency of signal $M_{\ttbar}$ distribution mediated by pseudosalars. The value of \mA is fixed at 600\GeV.}
+\label{fig:ttres_2HDM_A}
+\end{figure}
+\FloatBarrier
 %%%%-----------------------------------------------------------------------------------------
 
 %%%%-----------------------------------------------------------------------------------------
@@ -477,6 +502,64 @@ effective vertex.
 \subsubsection{Four tops final states}
 
 Work in progress
+
+\subsubsection{2HDM+scalar sensitivity studies}
+
+The sensitivity of the tt+\met all-hadronic signature~\ref{Aaboud:2018hf}
+to the Type-II model with two Higgs doublets plus a 
+scalar portal to dark matter $S_1$ described in~\ref{Bell:2016ekl} has been investigated.
+The signature has been chosen as is the one providing the best sensitivity across the majority of the 
+mass range for $S_1$ which is most difficult to address. 
+
+The choice of the parameters for this model largely reflects that of the $2HDM+p$ model.
+In particular, the masses of the heavier scalar $S_2$ and the masses of the charged Higgs and the CP-odd
+scalar have been set to 600 GeV. The value of the mixing angle has been set to $\cos{\theta}=0.35$. 
+The mass of the light scalar $S_1$ is scanned between $200$ and $340$ GeV, and $\tan\beta$ is scanned 
+between 0.2 and 1. Across the whole $\tan\beta$ and mass range considered the widths of both the light and the heavy 
+scalars do not exceed $15\%$ of the mass of the corresponding particle. 
+
+The procedure to extract the results follows closely the procedure described in Sec.~\ref{subsub:hfttrecast}, 
+but with the light and heavy pseudo-scalars a and A replaced by the light and heavy scalars
+ $S_1$ and $S_2$, respectively.
+The formula to rescale the results of the acceptance is therefore turned into:
+
+\begin{equation}
+Acc_{2HDM}(m(S_1),M(S_2))=\frac{\sigma_{S_1} \times Acc_{DMSIMP}(m(S_{1}))+
+\sigma_{S_2} \times Acc_{DMSIMP}(m(S_{2}))}{\sigma_{S_1}+\sigma_{S_2}}
+\label{rewS}
+\end{equation}
+
+
+The validity of this re-scaling has been validated by comparing the acceptance 
+to the simplified models to the acceptance to the $2HDM+S_1$ models, before and 
+after applying the rescaling of Eq.~\ref{rewS}. The results are shown if Fig.~\ref{fig:rescS1} across the whole
+mass range for the light scalar $S_1$ considered, for the minimum and maximum values of 
+$\tan\beta$ taken into account. 
+It has to be noted that the acceptance to simplified models and $2HDM+S_1$ is very similar even 
+before applying the rescaling of Eq.~\ref{rewS}.
+This is due to the fact that the ratio between the cross-section of $S_2$ and the cross-section of $S_1$
+becomes appreciable (i.e. above sub-percent level) only for models with $m(S_1)>300$ GeV
+ and $\tan\beta > 0.4$.\\
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/DMHF/THDMs/rescalingS1tgb02.pdf}
+   \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/DMHF/THDMs/rescalingS1tgb10.pdf}
+\caption{Validation of the re-scaling formula as a function of $m(S_1)$ for the minimum and maximum values of $\tan{\beta}$ considered.}
+ \label{fig:rescS1}
+\end{figure}
+
+Fig.~\ref{fig:resultsS1} shows the results of the recasting of the simplified model results in the context of the 
+$2HDM+S_1$ model. For the choice of parameters made, models with scalar mediator between 100 and 360 GeV 
+can be excluded for $\tan\beta = 0.2$, while for $\tan\beta = 1$ masses between 100 and 120 GeV are excluded.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/DMHF/THDMs/resultsS1.pdf}
+\caption{Expected and observed exclusion limits at $95\%$ C.L. obtained as a result of the recasting of the all-hadronic channel
+in the context of the $2HDM+S_1$ model.}
+  \label{fig:resultsS1}
+\end{figure}
 
 %\printbibliography
 
