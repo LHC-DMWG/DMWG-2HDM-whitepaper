@@ -1,8 +1,8 @@
 Mono-Z analyses use events with a Z boson recoiling symmetrically against \MET to detect the production of invisible particles.
-In previous LHC analyses~\cite{Aaboud:2017bja,Sirunyan:2017qfc}, the DM interpretations of the analysis results have focused on either invisible decays of the SM-like Higgs bosons or topologies where the Z boson is produced as initial-state radiation (ISR) off a quark. The ISR-based topologies generically favor radiation of a gluon or photon rather than a massive gauge boson, thus limiting the discovery sensitive of a Z-based approach compared to monojet and mono-photon searches. In contrast, the model studies in this document generates the mono-Z signature dominantly via the all-bosonic H-a-Z vertex, which can lead to enhancements of the mono-Z sensitivity compared to jet and photon signature. In this section, the behavior and experimental accessibility of the model in Z+\MET events is studied.
+In previous LHC analyses~\cite{Aaboud:2017bja,Sirunyan:2017qfc}, the DM interpretations of the analysis results have focused on either invisible decays of the SM-like Higgs bosons or topologies where the Z boson is produced as initial-state radiation (ISR) off a quark. The ISR-based topologies generically favor radiation of a gluon or photon rather than a massive gauge boson, thus limiting the discovery sensitivity of a Z-based approach compared to monojet and mono-photon searches. In contrast, the model studied in this document generates the mono-Z signature dominantly via the all-bosonic H-a-Z vertex, which can lead to enhancements in the mono-Z sensitivity compared to jet and photon signatures. In this section, the behavior and experimental accessibility of the model in Z+\MET events is studied.
 
 \paragraph{Technical setup}
-Simulated event samples for the leptonic mono-Z signature are produced with Madgraph5\_aMC@NLO version 2.4.3, interfaced with Pythia version 8.2.2.6 for parton showering. The NNPDF3.0 PDF set is used at LO precision with the value of the strong coupling constant set to $\alpha_{S}(M_{Z}) = 0.130$ (NNPDF30\_lo\_as\_0130). A five floavor scheme with a massless b-quark is used.  Only contributions from gluon-gluon initial states and \lp\lm$\chi\overline{\chi}$ final states are considered, where l = e or $\mu$.  For the range of \tanb values studied, the $bb$ initiated ME contribution is negligible.  To increase calculation efficiency diagrams with an intermediate s-channel SM Higgs boson are explicitly rejected (generate g g $>$ xd xd~ l+ l- / h1).
+Simulated event samples for the leptonic mono-Z signature are produced with Madgraph5\_aMC@NLO version 2.4.3, interfaced with Pythia version 8.2.2.6 for parton showering. The NNPDF3.0 PDF set is used at LO precision with the value of the strong coupling constant set to $\alpha_{S}(M_{Z}) = 0.130$ (NNPDF30\_lo\_as\_0130). A five flavor scheme with a massless b-quark is used.  Only contributions from gluon-gluon initial states and \lp\lm$\chi\overline{\chi}$ final states are considered, where l = e or $\mu$.  The $bb$ initiated ME contribution is negligible for the range of \tanb values studied.  To increase calculation efficiency diagrams with an intermediate s-channel SM Higgs boson are explicitly rejected (generate g g $>$ xd xd~ l+ l- / h1).
 
 
 \paragraph{Event selection}
@@ -52,22 +52,20 @@ For $\ma < 350$ GeV they are not accesible and cross section strictly increases 
 
 %For \ma <350 GeV they are not accesible,  and only the heavy scalar's branching fraction to $aZ$ is relevant.  This branching fraction stricly increases with \sinp.  For \ma > 350 \GeV, the branching fraction of $a \rightarrow \chi \chi$ also becomes important, and there is a turnover point were the cross section decreases.
 
-To assess the kinematic behavior of the signal, distributions of kinematic variables most relevant to the Mono-Z signature are studied as a function of the model parameters.
+To assess the kinematic behavior of the signal, distributions of kinematic variables most relevant to the Mono-Z signature are studied as a function of the model parameters.  Inclusive distributions of the invariant masses of the dilepton and $\chi\chi$ systems are shown in Fig.~\ref{fig:monoz_kin_inclusive}. Independent of the parameters, the dilepton mass spectrum is centered at the Z peak, without any nonresonant contribution. The $M_{\chi\chi}$ distribution illustrates the signal contributions from different diagrams. For $\mA>\ma$, DM is dominantly produced from on-shell $a$ boson production. In the inverted mass region $\mA<\ma$, the situation is reversed, and $H$ diagrams dominate.
 
-The distribution of the invariant masses of the dilepton and $\chi\chi$ systems are shown in Fig.~\ref{fig:monoz_kin_inclusive}. Independent of the parameters, the dilepton mass spectrum is centered at the Z peak, without any nonresonant contribution. The $M_{\chi\chi}$ distribution illustrates the signal contributions from different diagrams. For $\mA>\ma$, DM is dominantly produced from on-shell $a$ boson production. In the inverted mass region $\mA<\ma$, the situation is reversed, and $H$ diagrams dominate.
-
-After applying the preselection requirements, scans of the model parameters are performed.  For this paper a subset of models are studied where \mA is degenerate with \mH.  Similar to mono-h, for mono-Z in the region $\mA>\ma$a resonantly produced heavy scalar, $H$, decaying to $aZ$ produces a characteristic Jacobian peak in the \MET distribution.  The location of the peak depends on \mH and \ma as given by equation \ref{monoZ_jacobian_peak}, and its width generally increases with values of  $\ma$ and $\mA$.  
+After applying the preselection requirements, scans of the model parameters are performed.  For this paper a subset of models are studied where \mA is degenerate with \mH.  Similar to mono-h, for mono-Z in the region $\mA>\ma$ a resonantly produced heavy scalar, $H$, decaying to $aZ$ produces a characteristic Jacobian peak in the \MET distribution.  The location of the peak depends on \mH and \ma as given by equation \ref{eq:monoZ_jacobian_peak}, and the peak's width generally increases with values of  $\ma$ and $\mA$.  
 
 \begin{align}
 E^{\mathrm{miss},max}_T \approx \frac{\sqrt{\left(\mH^2 -\ma^2 -M_{Z}^2\right)^2 - 4 \ma^2 M_{Z}^2}}{2\mH}\,.
 \label{eq:monoZ_jacobian_peak}
 \end{align}
 
-Figure \ref{fig:monoz_ll_mA_scan} shows the Jacobian peaks for increasing values of \mH and fixed \ma.  Significant portions of the spectrum are situated at relatively high boosts ($\MET>\unit[200]{GeV}$), which is more easily accessible experimentally.  This behavior is contrasted by the distributions in the inverted mass regions, which have nearly no distinct features and are mainly located at low mediator \pt. For $\mA\approx\ma+m_{Z}$, both the a and Z bosons are produced approximately at rest, leading to an event population with overall low boost. These qualitative trends are consistent with the distributions of the other main selection variables shown in Fig.~\ref{fig:monoz_kin_presel}.
+Figure \ref{fig:monoz_ll_mA_scan} shows the Jacobian peaks for increasing values of \mH and fixed \ma.  Significant portions of the spectrum are situated at relatively high boosts ($\MET>\unit[200]{GeV}$), which is more easily accessible experimentally.  This behavior is contrasted by the distributions in the inverted mass regions, which have nearly no distinct features and are mainly located at low mediator \pt. For $\mA\approx\ma+m_{Z}$, both the a and Z bosons are produced approximately at rest, leading to an event population with overall low boost. These qualitative trends are consistent with the distributions of the other main selection variables as shown in Fig.~\ref{fig:monoz_kin_presel}.
 
-The \tanb and \sinp parameters have minimal effect on the kinematic distributions (Fig.~\ref{fig:monoz_kin_tanb_sintheta}).  For small values of $\tanb$ there is a slight softening and broadening of the \MET distribution due to the increased contribution from non-resonant $z+a$ production.
+Scans of the \tanb and \sinp parameters show they have minimal effect on the kinematic distributions (Fig.~\ref{fig:monoz_kin_tanb_sintheta}).  For small values of $\tanb$ there is a slight softening and broadening of the \MET distribution caused by the increased contribution from non-resonant $z+a$ production.
 
-For the DM mass, in the region where $\mDM < \frac{\ma}{2}$, \mDM has no effect on cross section or kinematic distributions.  In the off-shell region where  $\mDM > \frac{\ma}{2}$ cross section steeply drops and the \MET distribution becomes less structured.
+For \mDM (Fig.~\ref{fig:dm_scan_ll}, in the region where $\mDM < \frac{\ma}{2}$, DM mass has no effect on cross section or the kinematic distributions.  In the off-shell region where  $\mDM > \frac{\ma}{2}$ cross section steeply drops and the \MET distribution becomes less structured.
 
 
 %After applying the preselection requirements, the distributions of kinematic variables are shown in Fig.~\ref{fig:monoz_kin_presel}. 
@@ -87,7 +85,7 @@ $\ma < 350$ \GeV  there is slight drop in the acceptance caused by the softer \M
 
 \paragraph{Expected significance}
 
-The expected sensitivity of the Mono-Z(ll) channel to 2HDM+a models is approximated using generator level signal samples and background estimates from recent $Z(\ell \ell) + \MET$ searches of 36.1 \ifb of data \cite{Aaboud:2017bja}.  For signal events a reconstruction efficiency of 75\% is assumed, and to be consistent with the background estimates, the same selection cuts as \cite{Aaboud:2017bja} are used.  Signal and background are binned in \MET and a conservative 20\% background systematic on the background is assumed for $\MET < 120$ \GeV and 10\% above.
+The expected sensitivity of the Mono-Z(ll) channel to 2HDM+a models is approximated using generator level signal samples and background estimates from recent $Z(\ell \ell) + \MET$ searches using 36.1 \ifb of 13 TeV data \cite{Aaboud:2017bja}.  For signal events a reconstruction efficiency of 75\% is assumed, and to be consistent with the background estimates, the same selection cuts as \cite{Aaboud:2017bja} are used.  Signal and background are binned in \MET and a conservative background systematic of 20\% is assumed for $\MET < 120$ \GeV and 10\% above.
 
 Total significance is defined as the per bin significances summed in quadrature.
 
@@ -95,7 +93,7 @@ Total significance is defined as the per bin significances summed in quadrature.
 \mathcal{S} = \sqrt{\sum_{bin} (Z^\prime_{bin})^2}
 \end{equation}
 
-Following the Asimov approximation, expected significance for individual bins is calculated as the Poisson ratio of likelihoods modified to incorporate  systematic uncertainties on the background  \cite{Cowan:2012}:  
+Following the Asimov approximation, the significance for individual bins is calculated as a Poisson ratio of likelihoods modified to incorporate  systematic uncertainties on the background  \cite{Cowan:2012}:  
 %(\ref{eq:significance_wsyst})
 
 \begin{equation}
@@ -103,7 +101,7 @@ Following the Asimov approximation, expected significance for individual bins is
 Z^\prime_{bin} = \sqrt{ 2 \cdot \bigg( (s+b) \ln[\frac{ (s+b) (b+\sigma_b^2) } {b^2 + (s+b) \sigma_b^2} ]- \frac{b^2}{\sigma_b^2} \ln[1 + \frac{\sigma_b^2 s}{b(b+\sigma_b^2)} ] \bigg) }
 \end{equation}
 
-This metric has the advantage that it accounts for systematic uncertainties and is valid even for $s$ not $\ll b$.  Expected significances are shown in Figure \ref{fig:expected_significance_monozll}, with regions the ATLAS and CMS detectors should be sensitive to, greater than 2, highlighted.
+This metric has the advantage that it accounts for background systematics and is still valid for $s$ not $\ll b$.  Expected significances are shown in Figure \ref{fig:expected_significance_monozll}, with regions the ATLAS and CMS experiments should be sensitive to, greater than 2, highlighted.
 
 %\begin{equation}
 %\label{eq:significance}
@@ -111,7 +109,7 @@ This metric has the advantage that it accounts for systematic uncertainties and 
 %\end{equation}
 
 
-\paragraph{Conclusions} The Mono-Z(ll) provides experimental coverage of the pseudoscalar 2HDM model for a broad part of the parameter space. The light pseudoscalar \a can be probed up to mass values of $\approx\unit[350]{GeV}$, depending on the choice of other parameters. The Mono-Z is sensitive mostly in the region of low values of $\tanb<4$.
+\paragraph{Conclusions} The Mono-Z(ll) provides experimental coverage of the pseudoscalar 2HDM model for a broad part of the parameter space. The light pseudoscalar $a$ can be probed up to mass values of $\approx\unit[350]{GeV}$, depending on the choice of parameters. The Mono-Z channel is sensitive mostly in the region of $\tanb<4$.
 
 \begin{figure}
 \centering
@@ -143,22 +141,23 @@ of $a\rightarrow\chi\chi$.  For \ma above 350 GeV for large values of \sinp, the
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_ae_ll.pdf}
+\includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_ae_ll.pdf}
 \caption{Acceptances across the \ma-\tanb scan.  Acceptance is flat over \tanb for constant values of \ma.}
 \label{fig:monoz_ll_tanbma_acceptance}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_yield_ll.pdf}
+\includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_yield_ll.pdf}
 \caption{Event yield in the \ma-tanBeta grid, for an integrated luminosity of $40~\ifb$.  The number of expected events diminshes with increasing tanBeta and \ma.  \mA fixed to 600 GeV and sinTheta to 0.35}
 \end{figure}
 
 
 
 \begin{figure}
+\centering
 %\includegraphics[width=0.9\textwidth]{texinputs/04_grid/figures/monoz/leptonic/mA_Scan.pdf}
-\includegraphics[width=0.9\textwidth]{texinputs/04_grid/figures/monoz/leptonic/mAscan_for_ma200.pdf}
+\includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/leptonic/mAscan_for_ma200.pdf}
 \caption{The position of the Jacobian peak in the \MET distribution depends on the values of \mH, \ma, and $M_{Z}$.  This figure shows a scan of \mH values for fixed \ma and \mA = \mH.  Increasing the difference between \mH and \ma shifts the location of the peak towards high energies, whereas for small mass splittings the \MET distribution is soft and most events will fail to pass the \MET selection criteria.}   
 \label{fig:monoz_ll_mA_scan}
 \end{figure}
@@ -194,7 +193,7 @@ of $a\rightarrow\chi\chi$.  For \ma above 350 GeV for large values of \sinp, the
 \centering
 \includegraphics[width=0.48\textwidth]{texinputs/04_grid/figures/monoz/leptonic/mDMScan_mA600_ma250_MET.pdf}
 \includegraphics[width=0.47\textwidth]{texinputs/04_grid/figures/monoz/leptonic/mDMScan_ma250.pdf}
-\caption{\MET distributions following preselection are shown (left) scaled to 40 \ifb and (right) normalized to unity are shown for different values of \mDM with fixed \mA = 600 \GeV and \ma = 250 \GeV.  In the $\mDM < \frac{\ma}{2}$ region, \mDM has no effect on event yield or \MET distribution, at $\mDM = \frac{\ma}{2}$ a resonant enhancement to the cross section occurs, and in the off-shell region where  $\mDM > \frac{\ma}{2}$ cross section steeply drops.  The \MET shape remains the same up to, and even slightly above, $\mDM = \frac{\ma}{2}$, but further off shell the \MET distribution becomes increasingly disperse.  For \mDM = 200 \GeV, DM can still decay on-shell through the $A$.  For \mDM = 500 \GeV both pseudoscalaras are off-shell and the \MET distribution is without structure.}
+\caption{\MET distributions following preselection are shown (left) scaled to 40 \ifb and (right) normalized to unity are shown for different values of \mDM with fixed \mA = 600 \GeV and \ma = 250 \GeV.  In the $\mDM < \frac{\ma}{2}$ region, \mDM has no effect on event yield or \MET distribution, at $\mDM = \frac{\ma}{2}$ a resonant enhancement to the cross section occurs, and in the off-shell region where  $\mDM > \frac{\ma}{2}$ cross section steeply drops.  The \MET shape remains the same up to, and even slightly above, $\mDM = \frac{\ma}{2}$, but further off shell the \MET distribution becomes increasingly disperse.  For \mDM = 200 \GeV, DM can still decay on-shell through the $A$.  For \mDM = 500 \GeV both pseudoscalaras are off-shell leading to an event yield too low to fit on the figure on the left and a \MET distribution without structure.}
 \label{fig:dm_scan_ll}
 \end{figure}
 
@@ -210,8 +209,8 @@ of $a\rightarrow\chi\chi$.  For \ma above 350 GeV for large values of \sinp, the
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\textwidth]{texinputs/04_grid/figures/monoz/leptonic/mAma_Significance_ll.pdf}
-\includegraphics[width=0.9\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_Significance_ll.pdf}
+\includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/leptonic/mAma_Significance_ll.pdf}
+\includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_Significance_ll.pdf}
 \caption{Expected significances are calculated using published background estimates and assuming a reconstruction efficiency of 75\%.  The ATLAS and CMS experiments are expected to be sensitive to regions with significances greater than 2.}
 \label{fig:expected_significance_monozll}
 \end{figure}
