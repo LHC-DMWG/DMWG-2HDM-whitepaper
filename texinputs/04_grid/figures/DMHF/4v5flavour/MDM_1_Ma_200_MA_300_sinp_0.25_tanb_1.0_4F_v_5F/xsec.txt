@@ -1,0 +1,22 @@
+DM Mass Sample: 4-flavor PDF (263400)
+*
+* SUMMARY
+*------------------------------------------
+
+* *  Events total    :250000
+* *  Cross-section   :0.0310152
+* *  Acceptance 
+
+* * Dilepton   : 1
+*------------------------------------------
+DM Mass Sample: 5-flavor PDF (263000)
+*
+* SUMMARY
+*------------------------------------------
+
+* *  Events total    :250000
+* *  Cross-section   :0.0300196
+* *  Acceptance 
+
+* * Dilepton   : 1
+*------------------------------------------
