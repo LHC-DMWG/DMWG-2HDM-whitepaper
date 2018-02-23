@@ -1,0 +1,122 @@
+\subsection{Scalar Model Description}
+
+We shall consider a Dirac DM candidate, $\chi$, and expand the scalar
+sector of the SM to include two Higgs doublets, $\Phi_1$ and
+$\Phi_2$, in addition to a real singlet scalar field, $S$.  
+Following the discussion in \citep{Bell:2017rgi}, we outline the scalar potential which controls the mixing between the CP even scalars, and the Yukawa structure which dictates the coupling of those scalars to the DM and SM fermions. 
+
+It is convenient to rotate $\{\Phi_1,\Phi_2\}$ to the Higgs basis $\{
+\Phi_h,\Phi_H \}$, which is defined such that only one of the two
+doublets obtains a vev. Taking $\langle \Phi_H \rangle = 0$ and 
+$\langle \Phi_h \rangle = v \sim 246$ GeV, the two Higgs doublets 
+are then defined by
+\bea
+\Phi_h &=& \cos\beta \Phi_1 + \sin\beta \Phi_2 = \left(
+\begin{array}{cc}
+ G^+ \\
+\frac{v + h + i G^0}{\sqrt{2}} \\
+\end{array}
+\right),\label{eq:alignh}\\
+\Phi_H &=& -\sin\beta \Phi_1 + \cos\beta \Phi_2 = \left(
+\begin{array}{cc}
+ H^+ \\
+\frac{ H + i A}{\sqrt{2}} \\
+\end{array}
+\right).
+\eea
+
+
+The scalar potential consists of the usual 2HDM potential, augmented by terms involving the new singlet scalar $S$.
+We will assume that the scalar potential has a spontaneously broken $\mathbb{Z}_2$ symmetry for the particle $S$. This may arise naturally, for example, in the case where $S$ is part of a complex scalar charged under a dark $U(1)$ gauge group.  The scalar potential is thus given by
+\begin{equation}
+\hat{V}(\Phi_h,\Phi_H,S) = \hat{V}_{\mathsc{2hdm}}(\Phi_h,\Phi_H) + \hat{V}_S(S) + \hat{V}_{S\mathsc{2hdm}}(\Phi_h,\Phi_H,S), \label{eq:potential}
+\end{equation}
+where\nobreak
+\bea
+\hat{V}_{\mathsc{2hdm}}(\Phi_h,\Phi_H) &=& \hat{M}_{hh}^2 \Phi_h^\dagger \Phi_h + \hat{M}_{HH}^2 \Phi_H^\dagger \Phi_H +  (\hat{M}_{hH}^2 \Phi_H^\dagger \Phi_h + h.c.) + \frac{\hat{\lambda}_h}{2} (\Phi_h^\dagger \Phi_h)^2 + \frac{\hat{\lambda}_H}{2} (\Phi_H^\dagger \Phi_H)^2 \nonumber \\
+&+&\hat{\lambda}_3 (\Phi_h^\dagger \Phi_h)(\Phi_H^\dagger \Phi_H) + \hat{\lambda}_4 (\Phi_H^\dagger \Phi_h)(\Phi_h^\dagger \Phi_H)  
++ \frac{\hat{\lambda}_5}{2} \left( (\Phi_H^\dagger \Phi_h)^2 + h.c.\right),\\
+\hat{V}_S(S) &=& \frac{1}{2} \hat{M}_{SS}^2 S^2 + \frac{1}{4} \hat{\lambda}_S S^4,
+\\
+\hat{V}_{S\mathsc{2hdm}}(\Phi_h,\Phi_H,S) &=& 
+ \frac{\hat{\lambda}_{HHS}}{2}(\Phi_H^\dagger \Phi_H)S^2 +  \frac{\hat{\lambda}_{hhs}}{2} \Phi_h^\dagger \Phi_h S^2 + \frac{1}{2}(\hat{\lambda}_{hHS} \Phi_H^\dagger \Phi_h S^2 + h.c.).
+\eea
+
+In general, there would be mass mixing between all three neutral CP even scalars of the model, $h$, $H$, and $S$. We shall, however, impose a generalized Higgs ``alignment limit" which decouples the SM Higgs, $h$, from the other two states. This is desirable because it reduces the scalar mixing to a 2-state problem and guarantees that $h$ couples like the SM Higgs. We thus set
+\begin{align}
+  \label{eq:align}  \hat{\lambda}_h &= \hat{\lambda}_H = \hat{\lambda}_3 + \hat{\lambda}_4 + \hat{\lambda}_5, \\
+    \hat{\lambda}_{hhs} &= 0,
+\end{align}
+where the first of these conditions is sufficient to impose alignment in a standard 2HDM, and the second clearly prevents $h$-$S$ mixing (refer to \citep{Bell:2017rgi} for further discussion of the alignment limit).
+%
+The remaining $H$-$S$ mass matrix is then diagonalized to obtain two mass eigenstate scalars, $S_1$ and $S_2$, such that
+\begin{align}
+H &= \cos\theta S_1 - \sin\theta S_2,\\
+S &= v_S + \sin\theta S_1 + \cos\theta S_2,
+\end{align}
+where 
+\begin{equation}
+\sin2\theta = \frac{2 \hat{\lambda}_{hHs} v v_S }{M_{S_1}^2-M_{S_2}^2}.
+\end{equation}
+The scalar mass spectrum then simplifies to
+\begin{eqnarray}
+%\label{eq:mh} M_{h}^2 &=& \hat{\lambda}_h v^2, \\
+%M_{H^+}^2 &=&  M_{HH}^2+\frac{1}{2} \left(\hat{\lambda}_{HHs}+2\tan\beta \hat{\lambda}_{hHs}\right) v_S^2+\hat{\lambda}_{3}\frac{v^2}{2},\\
+M_A^2 &=& M_{H^+}^2 + \left(
+  \hat{\lambda}_4-\hat{\lambda}_5 \right)\frac{v^2}{2} ,\\
+\label{MS12} M_{S_{1,2}}^2 &=&
+\frac{1}{2}\left(M_A^2+\hat{\lambda}_5 v^2\right)\left(1\pm \frac{1}{\cos
+  2\theta}\right) + \hat{\lambda}_S v_S^2\left(1\mp \frac{1}{\cos
+  2\theta}\right). 
+  %\\
+%\tan2\theta &=& \frac{2 \hat{\lambda}_{hHs} v v_S }{M_A^2-2 \hat{\lambda}_S v_S^2+\hat{\lambda}_5 v^2} 
+% \rightarrow \sin2\theta = \frac{2 \hat{\lambda}_{hHs} v v_S }{M_{S_1}^2-M_{S_2}^2}.
+\end{eqnarray}
+Taking $h$ to be the observed SM Higgs boson then fixes $\hat{\lambda}_h$ and hence also fixes $\hat{\lambda}_H$ via the alignment condition \eqref{eq:align}. Using the previous equations, we can rewrite $M_A$ and $M_{H^+}$ as a function of $M_{S_{1,2}}$, $\theta$, and $\hat{\lambda}_{4,5}$:
+\begin{eqnarray}
+M_{H^+}^2 &=&  M_{S_1}^2\cos^2\theta + M_{S_2}^2\sin^2\theta - \left(
+  \hat{\lambda}_4+\hat{\lambda}_5 \right)\frac{v^2}{2},\\
+M_A^2 &=& M_{S_1}^2\cos^2\theta + M_{S_2}^2\sin^2\theta -\hat{\lambda}_5 v^2.
+\end{eqnarray}  
+
+The only portal between the DM and other fields is via its Yukawa
+coupling to the singlet scalar,
+\begin{align}
+\mathcal{L}_\mathsc{dm} &= -y_\chi S \bar{\chi} \chi.
+\end{align}
+We will assume that the DM particle has no bare mass term, and that its mass is instead generated by the vacuum expectation value of the singlet scalar, i.e. $m_\chi = y_\chi v_s$ with $\langle S \rangle = v_s$. Although this is not strictly necessary, such a scenario arises naturally if DM is a chiral fermion charged under some dark gauge group that is broken spontaneously by the vev of $S$. This assumption adds a constraint between the DM mass and the DM Yukawa coupling, removing the freedom to accommodate the relic density by varying these two parameters independently. 
+
+\begin{table}[tb]\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+Model & $\epsilon_d$ & $\epsilon_u$ & $\epsilon_l$
+\\ \hline
+Type I & $\cot\beta$ & $\cot\beta$ & $\cot\beta$
+\\
+Type II & $-\tan\beta$ & $\cot\beta$ & $-\tan\beta$
+\\
+Type X & $\cot\beta$ & $\cot\beta$ & $-\tan\beta$
+\\
+Type Y & $-\tan\beta$ & $\cot\beta$ & $\cot\beta$
+\\
+Inert & 0 & 0 & 0
+\\ \hline
+\end{tabular}
+\caption{Values of the Yukawa scaling factors, $\epsilon_{u,d,l}$ which
+  correspond to models with discrete ${\cal Z}_2$
+  symmetries.}\label{tab:coeffs}
+\end{table}
+
+We will express the Yukawa interactions of the SM fermions with the Higgs doublets as
+\begin{equation}
+L_{\text{Yukawa}} = - \sum_{n=h,H} \left(Y_{n,ij}^U \bar{Q}_L^i u_R^j \widetilde{\Phi}_n
++ Y_{n,ij}^D \bar{Q}_L^i d_R^j \Phi_n
++ Y_{n,ij}^L \bar{L}_L^i l_R^j \Phi_n + h.c. \right),
+\label{eq:yukawah1h2}
+\end{equation}
+and we will assume that the Yukawa matrices of the additional doublet are proportional to the SM ones: 
+\begin{align}
+Y_h^i & \equiv Y_{\mathsc{sm}}^i,\\
+Y_H^i & = \epsilon_i Y_{\mathsc{sm}}^i,
+\end{align}
+where the $\epsilon_i$ are Yukawa scaling factors, with $i=u,d,l$. This Yukawa structure is the so-called Aligned Yukawa model \citep{Pich:2009sp,Tuzon:2010vt,Pich:2010ic,Penuelas:2017ikk,Gori:2017qwg}, which satisfies Natural Flavour Conservation. In special cases where the $\epsilon_i$ satisfy certain relationships, the Aligned Yukawa structure can correspond to one of the $Z_2$ symmetric Yukawa structures (Type I, II, X or Y), as shown in Table \ref{tab:coeffs}. While we will determine constraints for both Type I and Type II Yukawa structures, we will also include results for more general choices of the scaling factors that satisfy the Aligned Yukawa criteria. See \citep{Bell:2016ekl} for a more detailed discussion of the Yukawa structure in these models.
