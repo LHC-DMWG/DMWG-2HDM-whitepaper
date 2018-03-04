@@ -1,0 +1,15 @@
+\paragraph{Mono-Higgs signature}
+
+The studies of the \monohbb channel presented here are based on MC simulations with version 2.4.3 of \mg~\cite{Alwall:2014hca} using a Universal FeynRules Output \cite{Degrande:2011ua} implementation of the 2HDM with a Yukawa sector of type II with DM mediator~(\hdma), as provided by the authors of \cite{Bauer:2017ota}. 
+The NNPDF30\_lo\_as\_0130 set of parton distribution functions (PDF) at leading order in the five-flavor scheme, which assumes a massless $b$-quark, with $\alpha_{S}(m_{Z}) = 0.130$ is used for these simulations~\cite{Ball:2014uwa}. For consistency, five-flavor scheme and $m_b=0~\GeV$ are chosen for the matrix element (ME) computation in \mg.
+
+The ME generated for the parton-level studies presented in the following is $ g g \to h  \chi \chi$ represented in  \autoref{fig:feyn_hdm}
+%ref to feynmangraph, else cite Bauer:2017ota
+The only exception is the $\ma-\tanb$ scan which will be discussed in the following and is summarised in \autoref{fig:monoHbb_sensi_full_ma_tanb}. In this scan also the ME $b b \to h  \chi \chi$ is generated because at high $\tanb$, the $b b$ initiated process can have an amplitude of a similar magnitude as the gluon fusion initiated process from~\autoref{fig:feyn_hdm}~\cite{Bauer:2017ota}. 
+The gluon fusion is dominant in all the remaining parameter space, therefore the $bb$ initiated process and other negligible contributions are not considered explicitly for all the scans.
+
+\paragraph{Mono-Z signature: leptonic channel}
+
+Simulated event samples for the leptonic mono-Z signature are produced with Madgraph5\_aMC@NLO version 2.4.3, interfaced with Pythia version 8.2.2.6 for parton showering. The NNPDF3.0 PDF set is used at LO precision with the value of the strong coupling constant set to $\alpha_{S}(M_{Z}) = 0.130$ (NNPDF30\_lo\_as\_0130). A five flavor scheme with a massless b-quark is used.  Only contributions from gluon-gluon initial states and \lp\lm$\chi\overline{\chi}$ final states are considered, where l = e or $\mu$.  The $bb$ initiated ME contribution is negligible for the range of \tanb values studied.  To increase calculation efficiency diagrams with an intermediate s-channel SM Higgs boson are explicitly rejected (generate g g $>$ xd xd~ l+ l- / h1).
+
+\paragraph{Mono-Z signature: hadronic channel}
