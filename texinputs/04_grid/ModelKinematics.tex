@@ -12,18 +12,19 @@ In this chapter, we will first outline the main experimental searches that can b
 
 \paragraph{Signatures including a Higgs boson }
 
-\subparagraph{\monohbb signature}
+\subparagraph{\monohbb signature}. The results in this and in the following section are at parton level. 
  
 \cite{Aaboud:2017yqz}
 
 \paragraph{Signatures including a Z boson}
 
 Events with a Z boson and \MET may signal the presence of invisible particles recoiling against the Z boson~\cite{Carpenter:2012rg,Bell:2012rg}. 
-LHC analyses (e.g.~\cite{Aaboud:2017bja,Sirunyan:2017qfc} for the most recent ones), the DM interpretations of the analysis results have focused on either invisible decays of the SM-like Higgs bosons or topologies where the Z boson is produced as initial-state radiation (ISR) from a quark. The ISR-based topologies generically favor radiation of a gluon or photon rather than a massive gauge boson, thus limiting the discovery sensitivity of a Z-based approach compared to monojet and mono-photon searches. In contrast, the model studied in this document generates the mono-Z signature dominantly via the all-bosonic H-a-Z vertex, which can lead to enhancements in the mono-Z sensitivity compared to jet and photon signatures. In this section, the behavior and experimental accessibility of the model in Z+\MET events is studied.
+LHC analyses (e.g.~\cite{Aaboud:2017bja,Sirunyan:2017qfc} for the most recent ones), the DM interpretations of the analysis results have focused on either invisible decays of the SM-like Higgs bosons or topologies where the Z boson is produced as initial-state radiation (ISR) from a quark. The ISR-based topologies generically favor radiation of a gluon or photon rather than a massive gauge boson, thus limiting the discovery sensitivity of a Z-based approach compared to monojet and mono-photon searches. In contrast, the model studied in this document generates the mono-Z signature dominantly via the all-bosonic H-a-Z vertex, which can lead to enhancements in the mono-Z sensitivity compared to jet and photon signatures. 
 
 \subparagraph{Mono-Z (leptonic) signature}
 
-Three consecutive stages of event selection are considered:
+%TODO: add a short paragraph on the relative importance of leptonic and hadronic channels
+Three consecutive stages of event selection are considered in the case the Z decays leptonically:
 
 \begin{itemize}
 \item Inclusive: Lepton \pt and $\eta$ requirements corresponding to the typical experimental trigger acceptance are applied.
@@ -31,9 +32,42 @@ Three consecutive stages of event selection are considered:
 \item Final selection: Requirements on the main discriminating variables used in the relevant analyses are added: The angular separation in the transverse plane between the $\chi\overline{\chi}$ and \lp\lm systems $\Delta\Phi(ll,\MET)$, the relative transverse momentum difference between them $|p_{T,ll} - \MET|/p_{T,ll}$ and the angular separation between the leptons $\Delta R(ll)$. Additionally, the \MET requirement is tightened.
 \end{itemize}
 
-The exact event selection criteria are listed in the appendix, in \autoref{tab:monozll_selection}.
+The exact event selection criteria are listed in the appendix, in \autoref{tab:monozll_selection}. The results in this and in the following section are at particle level. 
 
 \subparagraph{Mono-Z (hadronic) signature}
+
+The hadronic signature in $Z$+\MET events ($Z \to q\bar{q}$ decays in association with large missing transverse momentum) is complementary to the leptonic signature. 
+Hadronic decays are more frequent than leptonic decays, but suffer from larger backgrounds. For these reasons, the $Z$ (hadronic) + \MET search is favored if the model include higher mass scalar and pseudoscalar bosons. 
+%TODO: this is pretty sloppy...
+
+The event selection in this case changes depending on the production transverse momentum of the Z-boson, as in the case of the exchange of a high-mass CP-even $H$ boson. 
+If the Z-boson is boosted, then its hadronic decay products could be merged into a single jet, and the $Z$ to QCD background discrimination can be improved by exploiting the presence of substructure within a single, large-radius jet (denoted by $J$). 
+The \textit{boosted} search is performed in addition to the \textit{resolved} search, where the $Z$ decay products are reconstructed as two separate small-radius jets (denoted by $j$).
+
+ 
+\paragraph{Event selection :} 
+For mono-$Z (\to q\bar{q})$ events intermediated by the exchange of a high-mass CP-even $H$ boson, 
+the $Z$-boson will be produced with 
+a large transverse momentum and the hadronic decay products of such $Z$-boson could be merged into a single jet. 
+Such ``boosted'' event topology is investigated by exploiting the reconstruction technique with 
+a large-radius jet (denoted by $J$), 
+in addition to more conventional ``resolved'' event topology where the $Z$ decay products are reconstructed 
+as two separate
+small-radius jets (denoted by $j$). The jet reconstruction and the following analysis are all performed at particle level
+after showering and hadronization implemented in Pythia 8.212 described above.
+
+Two consecutive stages of event selection are considered for the boosted and resolved event topologies:
+\begin{itemize}
+\item Inclusive: minimal kinematic requirements are applied to a pair of small-radius jets (a single large-radius jet) 
+for the resolved (boosted) event topology. 
+These selection criteria are applied separately, i.e, not sequentially.
+\item Final selection: selection criteria are applied to the a number of variables. 
+The invariant mass of the pair of small-radius jets or the single large-radius jet is required to be within a window around the $Z$ mass. 
+In addition, selection is applied to the azimuthal angular difference between the $\chi\overline{\chi}$ and the hadronic $Z$-boson system, $\Delta\Phi(jj {\,\text{or}\,} J, \MET)$, and the magnitude of $\MET$.
+These final selection cuts are applied sequentially to mimic a realistic analysis; in this study the boosted selection cuts are applied first and then the resolved selection cuts are applied to those events that fail the boosted ones.
+\end{itemize}
+
+The exact event selection criteria are listed in the appendix, in \autoref{tab:monozqq_selection}. The results in this and in the following section are at particle level. 
 
 \subsection{Kinematic distributions}
 
@@ -54,10 +88,10 @@ E^{\mathrm{miss},max}_T \approx \frac{\sqrt{\left(\mA^2 -\ma^2 -M_{h/Z}^2\right)
 \label{eq:monoH_peak_met}
 \end{align}
 
-Thus, increasing $\mA$ results in  a Jacobian peak at higher $\MET$, as shown in \autoref{fig:monoHbb_mA_scan_met} and \autoref{fig:monoz_ll_mA_scan}.
-Conversely, models with higher $\ma$ have a Jacobian peak at lower $\MET$, as indicated in \autoref{fig:monoHbb_ma_scan_met}. 
+Thus, increasing $\mA$ results in  a Jacobian peak at higher $\MET$, as shown in \autoref{fig:monoHbb_mA_scan_met}, \autoref{fig:monoz_ll_mA_scan} and \autoref{fig:monozhad_kin_inc_fixed_ma}.
+Conversely, models with higher $\ma$ have a Jacobian peak at lower $\MET$, as indicated in \autoref{fig:monoHbb_ma_scan_met} and \autoref{fig:monozhad_kin_inc_fixed_mA}. 
 For $\mA\approx\ma+m_{Z/H}$, both the $a$ and Z/H bosons are produced approximately at rest, leading to an event population with overall low boost. 
-These qualitative trends are consistent with the distributions of the other main selection variables as shown in the appendix (\autoref{fig:monoz_kin_presel}).
+These qualitative trends are consistent with the distributions of the other main selection variables as shown in the appendix (\autoref{app:extraKinematics}).
 
 %Models with higher $\ma$ have softer \met (cf. \autoref{eq:monoH_peak_met})
 %Models with a larger $\mA-\ma$ splitting have harder \met (cf.\autoref{eq:monoH_peak_met}).
@@ -69,7 +103,6 @@ These qualitative trends are consistent with the distributions of the other main
 %Significant portions of the spectrum are situated at relatively high boosts ($\MET>\unit[200]{GeV}$), which is more easily accessible experimentally.  
 %This behavior is contrasted by the distributions in the inverted mass regions, which have nearly no distinct features and are mainly located at low mediator \pt. 
 %The position of the Jacobian peak in the \MET distribution depends on the values of \mH, \ma, and $M_{Z}$. Increasing the difference between \mH and \ma shifts the location of the peak towards high energies, whereas for small mass splittings the \MET distribution is soft and most events will fail to pass the \MET selection criteria. 
-
 
 \begin{align}
 E^{\mathrm{miss},max}_T \approx \frac{\sqrt{\left(\mH^2 -\ma^2 -M_{Z}^2\right)^2 - 4 \ma^2 M_{Z}^2}}{2\mH}\,.
@@ -105,6 +138,28 @@ E^{\mathrm{miss},max}_T \approx \frac{\sqrt{\left(\mH^2 -\ma^2 -M_{Z}^2\right)^2
 	\caption{The \MET distribution in signatures including a Z boson after preselection, with varying \mA values for fixed \ma = 200 GeV and \mA = \mH. \label{fig:monoz_ll_mA_scan}}
     \end{subfigure}
 
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/hadronic/ma250_incl_resl_MET_linear.pdf}
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/hadronic/ma250_incl_merged_MET_linear.pdf}
+\caption{Dijet mass (top), $\Delta\Phi(jj, \MET)$ (middle) and $\MET$ (bottom) distributions 
+after applying the inclusive selections in the resolved analysis are shown on the left side. Large-radius 
+jet mass (top), $\Delta\Phi(J, \MET)$ (middle) and $\MET$ (bottom) distributions 
+after applying the inclusive selections in the boosted analysis are shown on the right side. 
+The signal masses are chosen to be \mA = 300, 600, 900 and 1200~GeV with the fixed \ma = 250~GeV.}
+\label{fig:monozhad_kin_inc_fixed_ma}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/hadronic/mA600_incl_resl_MET_linear.pdf}
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/hadronic/mA600_incl_merged_MET_linear.pdf}
+\caption{Z (hadronic) + \MET search $\MET$ distributions 
+after applying the inclusive selections in the resolved analysis are shown on the left side, and on the right side
+for the boosted analysis. The signal masses are chosen to be \ma = 150, 250, 350 and 450~GeV with the fixed \mA = 600~GeV.}
+\label{fig:monozhad_kin_inc_fixed_mA}
 \end{figure}
 
 Some fraction of signal events is also produced in non-resonant $2 \to 3$ processes $gg \to h \chi \chi$, as in \autoref{fig:feyn_hdm_box}, leading to a broader distribution of the invariant mass of the decay products.  
@@ -184,19 +239,13 @@ In the \monohbb case, the shape of the $\MET$ distribution does not change much 
 When $\sinp=0.9$, the diagram $gg\rightarrow a\rightarrow A^*h \rightarrow \chi \bar{\chi} h$, producing a \MET peak at around 60~GeV, starts to dominate.
 In the Z case, this parameter has little impact on the kinematic distributions.
 
-
-
 \subsubsection{Mixing angle ($\tanb$)}
 
 %%% text related to tanbeta-ma scan
 The shape of \MET\ distribution also has a non-trivial dependence on \tanb, as can be seen in \autoref{fig:monoHbb_tanb_scan_met}.
-As discussed in the sensitivity study later, at small \tanb, the Yukawa coupling 
-to top quark is large and the signal production mode is dominated by the 
-non-resonant 3-body processes $gg\rightarrow h\chi\bar{\chi}$, which gives a broad 
-and soft \MET\ spectrum. As \tanb increases, the contribution of 
-resonant production increases as well and the Jacobian peak also appears.
-When the pseudoscalar $A$ is produced off-shell, i.e. when $\mA<\ma+\mh$, the shapes 
-of \MET\ distributions become similar and the dependence on \tanb disappears.
+As discussed in the sensitivity study later, at small \tanb, the Yukawa coupling to top quark is large and the signal production mode is dominated by the non-resonant 3-body processes $gg\rightarrow h\chi\bar{\chi}$, which gives a broad and soft \MET\ spectrum. 
+As \tanb increases, the contribution of resonant production increases as well and the Jacobian peak also appears.
+When the pseudoscalar $A$ is produced off-shell, i.e. when $\mA<\ma+\mh$, the shapes of \MET\ distributions become similar and the dependence on \tanb disappears.
 
 For small values of $\tanb$ there is a slight softening and broadening of the \MET distribution caused by the increased contribution from non-resonant $Z+a$ production in Z+\MET searches. 
 
@@ -241,20 +290,17 @@ according to their corresponding cross sections.
 \label{fig:monoz_kin_tanb}
 \end{figure}
 
-
 \subsubsection{Mass of DM fermion ($\mDM$)}
 
-The mass of the DM fermion $\mDM$ can change the total cross section and shape of the $\MET$ distribution,
-depending on the mass hierarchy of the $A,a,h,\chi$ particles. This is demonstrated in \autoref{fig:monoHbb_mDM_scan_met}. 
+The mass of the DM fermion $\mDM$ can change the total cross section and shape of the $\MET$ distribution, depending on the mass hierarchy of the $A,a,h,\chi$ particles. This is demonstrated in \autoref{fig:monoHbb_mDM_scan_met}. 
 Provided on-shell  decays $a\to\chi\chi$ are possible, i.e., $\mDM < \ma/2$, the exact value of \mDM has no effect on either kinematics or the total cross section. 
 The only exception is the case $\ma/2 > \mDM > \frac{1}{2}(\ma - M_h)$. In this  $\mDM$ range, the non-resonant process $a \to h A^*\left(\chi\chi\right) $ is kinematically inaccessible. 
 This reduces the overall cross section relative to the $\mDM \leq \frac{1}{2}(\ma - M_h)$ case, and slightly changes the soft part of the total $\MET$ spectrum. 
 However, since the contribution of the $a \to h A^*\left(\chi \chi\right)$ process is minor in any case, the differences are negligible.
 
 If the DM particle mass is exactly on threshold, i.e., $\mDM = \ma/2$, the total cross section is resonantly enhanced. 
-This resonant threshold enhancement drops rapidly towards both higher and lower $\mDM$. Furthermore, the shape of the $\MET$ distribution at threshold, 
-where amplitudes involving $a\to\chi\chi$ decays make up a larger fraction of the signal, differs significantly from the one below threshold. Below threshold ($\mDM > \ma/2$), the total cross section quickly drops by several orders of magnitude. In this regime, 
-the shape of the $\MET$ distribution changes with $\mDM$ continuously.
+This resonant threshold enhancement drops rapidly towards both higher and lower $\mDM$. Furthermore, the shape of the $\MET$ distribution at threshold, where amplitudes involving $a\to\chi\chi$ decays make up a larger fraction of the signal, differs significantly from the one below threshold. 
+Below threshold ($\mDM > \ma/2$), the total cross section quickly drops by several orders of magnitude. In this regime, the shape of the $\MET$ distribution changes with $\mDM$ continuously.
 
 \begin{figure}[tbp]
 \centering
@@ -269,16 +315,15 @@ The shape of the $\MET$ distribution does not change for $\mDM < \ma/2$, then ch
 \label{fig:monoHbb_mDM_scan_met}
 \end{figure}
 
-
-For \mDM (\autoref{fig:dm_scan_ll}, in the region where $\mDM < \frac{\ma}{2}$, DM mass has no effect on cross section or the kinematic distributions.  In the off-shell region where  $\mDM > \frac{\ma}{2}$ cross section steeply drops and the \MET distribution becomes less structured.
+Similar effects are seen in \autoref{fig:dm_scan_ll}. In the $\mDM < \frac{\ma}{2}$ region, \mDM has no effect on event yield or \MET distribution, at $\mDM = \frac{\ma}{2}$ a resonant enhancement to the cross section occurs, and in the off-shell region where  $\mDM > \frac{\ma}{2}$ cross section steeply drops.  The \MET shape remains the same up to, and even slightly above, $\mDM = \frac{\ma}{2}$, but further off shell the \MET distribution becomes increasingly disperse.  For \mDM = 200 \GeV, DM can still decay on-shell through the $A$.  For \mDM = 500 \GeV both pseudoscalars are off-shell leading to an event yield too low to fit on the figure on the left and a \MET distribution without structure.
 
 \begin{figure}
 \centering
 \includegraphics[width=0.48\textwidth]{texinputs/04_grid/figures/monoz/leptonic/mDMScan_mA600_ma250_MET.pdf}
 \includegraphics[width=0.47\textwidth]{texinputs/04_grid/figures/monoz/leptonic/mDMScan_ma250.pdf}
-\caption{\MET distributions following preselection are shown (left) scaled to 40 \ifb and (right) normalized to unity are shown for different values of \mDM with fixed \mA = 600 \GeV and \ma = 250 \GeV.  In the $\mDM < \frac{\ma}{2}$ region, \mDM has no effect on event yield or \MET distribution, at $\mDM = \frac{\ma}{2}$ a resonant enhancement to the cross section occurs, and in the off-shell region where  $\mDM > \frac{\ma}{2}$ cross section steeply drops.  The \MET shape remains the same up to, and even slightly above, $\mDM = \frac{\ma}{2}$, but further off shell the \MET distribution becomes increasingly disperse.  For \mDM = 200 \GeV, DM can still decay on-shell through the $A$.  For \mDM = 500 \GeV both pseudoscalars are off-shell leading to an event yield too low to fit on the figure on the left and a \MET distribution without structure.}
+\caption{\MET distributions following preselection in the Z(lep) +\MET search are shown (left) scaled to 40 \ifb and (right) normalized to unity for different values of \mDM with fixed \mA = 600 \GeV and \ma = 250 \GeV.}
 \label{fig:dm_scan_ll}
 \end{figure}
 
-Why we chose 10???
-
+A value of $\mDM$=10 is chosen for the following studies, as it produces a cross-section that is sufficiently large for this model to be detected with Run-2 LHC data and highlights the resonant features of the \MET spectrum.
+%TODO: mention instability

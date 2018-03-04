@@ -13,3 +13,12 @@ The gluon fusion is dominant in all the remaining parameter space, therefore the
 Simulated event samples for the leptonic mono-Z signature are produced with Madgraph5\_aMC@NLO version 2.4.3, interfaced with Pythia version 8.2.2.6 for parton showering. The NNPDF3.0 PDF set is used at LO precision with the value of the strong coupling constant set to $\alpha_{S}(M_{Z}) = 0.130$ (NNPDF30\_lo\_as\_0130). A five flavor scheme with a massless b-quark is used.  Only contributions from gluon-gluon initial states and \lp\lm$\chi\overline{\chi}$ final states are considered, where l = e or $\mu$.  The $bb$ initiated ME contribution is negligible for the range of \tanb values studied.  To increase calculation efficiency diagrams with an intermediate s-channel SM Higgs boson are explicitly rejected (generate g g $>$ xd xd~ l+ l- / h1).
 
 \paragraph{Mono-Z signature: hadronic channel}
+
+Simulation of mono-$Z$ hadronic events is performed using a setup similar to that used for the leptonic events. 
+The Madgraph5\_aMC@NLO version 2.4.3, interfaced with Pythia version 8.212 for parton showering 
+and the LO NNPDF3.0 with $\alpha_{S}(M_{Z}) = 0.130$ for PDF in the matrix element calculations, 
+is used for the event generation. 
+Only gluon-gluon initial states are considered for the production of mono-$Z$ events. 
+In contrast to the leptonic case, the $Z$-boson is explicitly required in the intermediate state ({\tt g g > xd xd$\sim$ z}) 
+to ensure that non-$Z$ hadronic events are suppressed in the produced sample. 
+The MadSpin is used for the $Z$ decay to maintain a proper spin correlation between the $Z$ decay quarks.

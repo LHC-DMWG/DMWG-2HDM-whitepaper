@@ -1,6 +1,6 @@
 \paragraph{Signatures including a Z boson}
 
-\subparagraph{Mono-Z (leptonic) signature}
+\subparagraph{Z+\MET signature, leptonic channel}
 
 The overall cross-sections in the \tanb and mass scans are shown in Fig.~\ref{fig:monoz_ll_xs_inclusive}.
 
@@ -30,5 +30,68 @@ For \ma above 350 \GeV, \ttbar~ decays become accesible, introducing additional 
 of $a\rightarrow\chi\chi$.  For \ma above 350 GeV for large values of \sinp, there is a turnover point where the reduced $a\rightarrow\chi\chi$ branching fraction outweights the increased $H \rightarrow aZ$ branching and the net cross section decreases.}
 \label{fig:monoz_ll_sinp_scan_xsec}
 \end{figure}
+
+\subparagraph{Z+\MET signature, hadronic channel}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/hadronic/grid_mA_ma_xsec.pdf}
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/hadronic/grid_tanb_ma_xsec.pdf}
+\caption{Inclusive cross-sections for the mono-$Z$ hadronic events 
+$pp \rightarrow Z(\to q\bar{q})\chi\overline{\chi}$ in the \ma vs \mA (left) and \ma vs $\tan\beta$ (right) grids.
+The $Z \to q\bar{q}$ branching fraction is not included in the cross-section.}
+\label{fig:monozhad_inc_xsec_grid}
+\end{figure}
+
+Figure~\ref{fig:monozhad_inc_xsec_grid} shows the production cross-section for mono-$Z$ events 
+in the $M_a$ ($M_A$) range between 100 and 500~GeV (200 and 1200~GeV). Shown on the left (right) is 
+the cross-section in the \ma vs \mA (\ma vs $\tan\beta$) grid. Note that the $Z \to q\bar{q}$ branching fraction 
+is not included in the cross-section. The production cross-section 
+tends to vanish in the region where the $M_a$ gets close to $M_A$, as shown by the empty points in the grid.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/hadronic/grid_mA_ma_incl_resl_acc.pdf}
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/hadronic/grid_mA_ma_incl_merged_acc.pdf}
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/hadronic/grid_mA_ma_resl_acc.pdf}
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/hadronic/grid_mA_ma_merged_acc.pdf}
+\caption{Acceptance for the inclusive (top) and final (bottom) selections for the mono-$Z$ hadronic events 
+$pp \rightarrow Z(\to q\bar{q})\chi\overline{\chi}$ in the \ma vs \mA grid. Shown on the left (right) is the acceptance for
+the resolved (boosted) analysis selections.}
+\label{fig:monozhad_acc_ma-mA_grid}
+\end{figure}
+
+The signal acceptance for the four sets of event selections given in Table~\ref{tab:monozqq_selection} is 
+summarized in Fig.~\ref{fig:monozhad_acc_ma-mA_grid} in the \ma vs \mA grid. Note again that the resolved and boosted 
+selection criteria are applied separately for the inclusive case, while for the final selections the boosted criteria are 
+applied first and then the resolved ones to those failing the boosted criteria. 
+For the inclusive case, the mass dependence on the acceptance is weak for the resolved criteria 
+while it is rather significant for the boosted criteria 
+as the $Z$-boson is less boosted with decreasing \mA and hence less likely that the $Z$-decay products are merged 
+into a single jet. The final boosted selections have acceptance larger than $\sim20$\% (40\%) at 
+$\mA>800$ (1000)~GeV and $\ma<400$~GeV. The final resolved selections can recover 10-20\% of signal 
+events which fail the boosted criteria in the same mass regions. At $\mA<600$~GeV the signal acceptance 
+is dominated by the resolved selection criteria.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/hadronic/grid_tanb_ma_incl_resl_acc.pdf}
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/hadronic/grid_tanb_ma_incl_merged_acc.pdf}
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/hadronic/grid_tanb_ma_resl_acc.pdf}
+\includegraphics[width=0.45\textwidth]{texinputs/04_grid/figures/monoz/hadronic/grid_tanb_ma_merged_acc.pdf}
+\caption{Acceptance for the inclusive (top) and final (bottom) selections for the mono-$Z$ hadronic events 
+$pp \rightarrow Z(\to q\bar{q})\chi\overline{\chi}$ in the \ma vs $\tan\beta$ grid. 
+Shown on the left (right) is the acceptance for the resolved (boosted) analysis selections. 
+The \mA is fixed to 600~GeV.}
+\label{fig:monozhad_acc_ma-tanb_grid}
+\end{figure}
+
+The signal acceptance in the \ma vs $\tan\beta$ space is shown in Fig.~\ref{fig:monozhad_acc_ma-tanb_grid}. 
+The conventions used in Fig.~\ref{fig:monozhad_acc_ma-tanb_grid} are the same as those in 
+Fig.~\ref{fig:monozhad_acc_ma-mA_grid}.
+The signal acceptance is rather independent of $\tan\beta$ except at low $\tan\beta$ region; the acceptance 
+tends to be slightly lower at $\tan\beta<1$ than at $>1$ for $\ma<\sim250$~GeV while it's opposite for 
+$\ma>\sim250$~GeV. The acceptance decreases with increasing \ma because the \MET spectrum becomes 
+softer with \ma, as shown in Fig.~\ref{fig:monozhad_kin_inc_fixed_mA}.
 
 
