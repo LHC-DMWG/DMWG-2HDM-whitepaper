@@ -75,22 +75,23 @@ The exact event selection criteria are listed in the appendix, in \autoref{tab:m
 %Martin: ($m_\chi\,,\,\,M_a\,,\,\, t_\beta\,, \,\, M_H\,\,\text{or}\,\,M_A\,\,, \,\, y_\chi\$).
 %Linda: We will count the low energy model parameters as consistent with  reference \cite{Bauer:2017ota}. The model parameters will consist of six particle masses $m_{H^{\pm}}$, $m_{H^{0}}$, $m_{A}$, $m_{a}$, $m_{h}$; three mixing angles $\alpha$, $\beta$, $\theta$; and three quartic couplings $\lambda_3$, $\lambda_{H1S}$,$\lambda_{H2S}$.
 
-\subsubsection{Masses of the pseudoscalars $A$ and $a$ ($\mA$ and $\ma$)}
+\subsubsection{Masses of the $H$, $A$ and $a$  bosons ($\mH$, $\mA$ and $\ma$)}
 
 The masses $\mA$ and $\ma$ of the pseudoscalars $A$ and $a$, which represent the two mediators in \autoref{fig:feyn_hdm}, affect the shape of the $\MET$ distribution.  
 
-The pseudoscalar $A$ can be produced resonantly and decay in the $2\to1\to2$ process $gg\to A\to a h$ or $gg\to A\to a Z$, with the light pseudoscalar decaying invisibly as $a\to \chi\chi$. In this case, the $A \to a h $ process produces a resonance in the invariant mass distribution of the final state system with a  width determined by the widths of $a$, $A$, and of the SM bosons. This results in a peak in the transverse momentum distribution of the DM system, reconstructed as $\MET$ in the detector.
+In the mono-Z and mono-H channels, the main production contribution is from the $2\to1\to2$ processes $gg\to A\to a h$, and $gg\to H\to a Z$, respectively, with the light pseudoscalar decaying invisibly as $a\to \chi\chi$. In this case, the $A/H \to a h $ process produces a resonance in the invariant mass distribution of the final state system with a width determined by the widths of $a$, $A/H$, and of the SM bosons. This results in a peak in the transverse momentum distribution of the DM system, reconstructed as $\MET$ in the detector.
 
 The location of this Jacobian peak can be calculated analytically starting from the masses of the particles involved in the decay~\cite{Bauer:2017ota}:
 
+\newcommand{\mAH}{\ensuremath{M_{A/H}}\xspace}
 \begin{align}
-E^{\mathrm{miss},max}_T \approx \frac{\sqrt{\left(\mA^2 -\ma^2 -M_{h/Z}^2\right)^2 - 4 \ma^2 M_{h/Z}^2}}{2\mA}\,.
+E^{\mathrm{miss},max}_T \approx \frac{\sqrt{\left(\mAH^2 -\ma^2 -M_{h/Z}^2\right)^2 - 4 \ma^2 M_{h/Z}^2}}{2\mAH}\,.
 \label{eq:monoH_peak_met}
 \end{align}
 
-Thus, increasing $\mA$ results in  a Jacobian peak at higher $\MET$, as shown in \autoref{fig:monoHbb_mA_scan_met}, \autoref{fig:monoz_ll_mA_scan} and \autoref{fig:monozhad_kin_inc_fixed_ma}.
+Thus, increasing $\mAH$ results in  a Jacobian peak at higher $\MET$, as shown in \autoref{fig:monoHbb_mA_scan_met}, \autoref{fig:monoz_ll_mA_scan} and \autoref{fig:monozhad_kin_inc_fixed_ma}.
 Conversely, models with higher $\ma$ have a Jacobian peak at lower $\MET$, as indicated in \autoref{fig:monoHbb_ma_scan_met} and \autoref{fig:monozhad_kin_inc_fixed_mA}. 
-For $\mA\approx\ma+m_{Z/H}$, both the $a$ and Z/H bosons are produced approximately at rest, leading to an event population with overall low boost. 
+For $\mAH\approx\ma+m_{Z/h}$, both the $a$ and Z/h bosons are produced approximately at rest, leading to an event population with overall low boost. 
 These qualitative trends are consistent with the distributions of the other main selection variables as shown in the appendix (\autoref{app:extraKinematics}).
 
 %Models with higher $\ma$ have softer \met (cf. \autoref{eq:monoH_peak_met})
@@ -104,10 +105,6 @@ These qualitative trends are consistent with the distributions of the other main
 %This behavior is contrasted by the distributions in the inverted mass regions, which have nearly no distinct features and are mainly located at low mediator \pt. 
 %The position of the Jacobian peak in the \MET distribution depends on the values of \mH, \ma, and $M_{Z}$. Increasing the difference between \mH and \ma shifts the location of the peak towards high energies, whereas for small mass splittings the \MET distribution is soft and most events will fail to pass the \MET selection criteria. 
 
-\begin{align}
-E^{\mathrm{miss},max}_T \approx \frac{\sqrt{\left(\mH^2 -\ma^2 -M_{Z}^2\right)^2 - 4 \ma^2 M_{Z}^2}}{2\mH}\,.
-\label{eq:monoZ_jacobian_peak}
-\end{align}
 
 \begin{figure}%[!htbp]
 	\centering
