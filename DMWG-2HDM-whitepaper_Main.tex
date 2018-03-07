@@ -19,62 +19,82 @@
 \SetWatermarkText{LHC DM WG DRAFT}
 \SetWatermarkLightness{0.9}
 \SetWatermarkScale{3.0}
-\newcommand{\bra}[1]{\langle #1|}
-\newcommand{\ket}[1]{|#1\rangle}
+
+% Variables
 \newcommand{\sigv}{\ensuremath{\langle \sigma v_{\rm{rel}} \rangle}\xspace}
 \newcommand{\MET}{\ensuremath{E_T^\mathrm{miss}}\xspace}
 \newcommand{\met}{\MET}
 \newcommand{\MT}{\ensuremath{M_{T}}\xspace}
-%\newcommand{\MET}{\ensuremath{\slashed{E}_T}\xspace}
-%\newcommand{\met}{\ensuremath{\slashed{E}_T}\xspace}
+\newcommand{\pt}{\ensuremath{p_{T}}\xspace}
+
+% Units
+\newcommand{\GeV}{\textrm{GeV}\xspace}
+\newcommand{\gev}{\GeV\xspace}
+\newcommand{\TeV}{\textrm{TeV}\xspace}
+\newcommand{\tev}{\TeV\xspace}
+
+% Particle names
+\newcommand{\lp}{\ensuremath{l^{+}}\xspace}
+\newcommand{\lm}{\ensuremath{l^{-}}\xspace}
+\newcommand{\ttbar}{\ensuremath{\bar{t}t}}
+\newcommand{\bbbar}{\ensuremath{\bar{b}b}}
+\newcommand{\A}{A}
+\newcommand{\Hc}{\ensuremath{H^{\pm}}\xspace}
+
+% Particle masses
 \newcommand{\mDM}{\ensuremath{M_{\chi}}\xspace}
 \newcommand{\mmed}{\ensuremath{M_{\rm{med}}}\xspace}
 \newcommand{\mMed}{\ensuremath{M_{\rm{med}}}\xspace}
 \newcommand{\mZ}{\ensuremath{M_{\rm{Z}}}\xspace}
+\newcommand{\mA}{\ensuremath{M_{A}}\xspace}
+\newcommand{\ma}{\ensuremath{M_{a}}\xspace}
+\newcommand{\mH}{\ensuremath{M_{H}}\xspace}
+\newcommand{\mHc}{\ensuremath{M_{H^{\pm}}}\xspace}
+\newcommand{\mh}{\ensuremath{M_{h}}\xspace}
+\newcommand{\mt}{\ensuremath{M_{t}}\xspace}
+
+% Couplings
 \newcommand{\gDM}{\ensuremath{g_{\rm{DM}}}\xspace}
 \newcommand{\gq}{\ensuremath{g_q}\xspace}
 \newcommand{\gSM}{\gq}
 \newcommand{\gdm}{\gDM}
 \newcommand{\ifb}{\ensuremath{\rm{fb}^{-1}}\xspace}
-\newcommand{\mA}{\ensuremath{M_{A}}\xspace}
-\newcommand{\ma}{\ensuremath{M_{a}}\xspace}
-\newcommand{\mH}{\ensuremath{M_{H}}\xspace}
-\newcommand{\mHc}{\ensuremath{M_{H^{\pm}}}\xspace}
+
+% Other parameters
 \newcommand{\sinp}{\ensuremath{\sin\theta}\xspace}
 \newcommand{\cosp}{\ensuremath{\cos\theta}\xspace}
 \newcommand{\sinbma}{\ensuremath{\sin(\beta - \alpha)}\xspace}
 \newcommand{\tanb}{\ensuremath{\tan\beta}\xspace}
 \newcommand{\lap}[1]{\lambda_{P#1}} % can use like \lap1 , \lap2
 \newcommand{\lam}[1]{\lambda_{#1}} % can use like \lam3
-\newcommand{\mh}{\ensuremath{M_{h}}\xspace}
-\newcommand{\mt}{\ensuremath{M_{t}}\xspace}
-\newcommand{\GamA}{\ensuremath{\Gamma_{A}}\xspace}
-\newcommand{\Uli}{\color{red}}
-\definecolor{cerulean}{RGB}{44,150,207}
-\newcommand{\ATLASComments}{\color{cerulean}}
-\newcommand{\dmsimp}{\textsc{DMsimp}\xspace}
-\newcommand{\maddm}{\textsc{MadDM}\xspace}
+
+% Search channels
 \newcommand{\hdm}{\ensuremath{h+\textrm{DM}}\xspace}
 \newcommand{\monoh}{\ensuremath{h+\MET}\xspace}
 \newcommand{\monohbb}{\ensuremath{h(bb)+\MET}\xspace}
 \newcommand{\monoz}{\ensuremath{Z+\MET}\xspace}
 \newcommand{\monozll}{\ensuremath{Z(\ell\ell)+\MET}\xspace}
 \newcommand{\monozhad}{\ensuremath{Z(\textrm{had})+\MET}\xspace}
+
+% Software/Program/Model names
 \newcommand{\mg}{\textsc{MadGraph~5}\xspace}
-\newcommand{\sens}{\mathcal{S}\xspace}
-\newcommand{\senstot}{\mathcal{S}_\textrm{tot}\xspace}
-\newcommand{\GeV}{\textrm{GeV}\xspace}
-\newcommand{\gev}{\GeV\xspace}
-\newcommand{\TeV}{\textrm{TeV}\xspace}
-\newcommand{\tev}{\TeV\xspace}
+\newcommand{\mgamcnlo}{MG5\_aMC@NLO\xspace}
+\newcommand{\dmsimp}{\textsc{DMsimp}\xspace}
+\newcommand{\maddm}{\textsc{MadDM}\xspace}
 \newcommand{\hdma}{\ensuremath{\textrm{2HDM+a}}\xspace}
 
-\newcommand{\lp}{\ensuremath{l^{+}}\xspace}
-\newcommand{\lm}{\ensuremath{l^{-}}\xspace}
-\newcommand{\pt}{\ensuremath{p_{T}}\xspace}
+% Misc
+\newcommand{\GamA}{\ensuremath{\Gamma_{A}}\xspace}
+\newcommand{\Uli}{\color{red}}
+\definecolor{cerulean}{RGB}{44,150,207}
+\newcommand{\ATLASComments}{\color{cerulean}}
+\newcommand{\bra}[1]{\langle #1|}
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\sens}{\mathcal{S}\xspace}
+\newcommand{\senstot}{\mathcal{S}_\textrm{tot}\xspace}
+\newcommand{\mathsc}[1]{\text{\textsc{#1}}}
+\newcommand{\vev}[1]{\langle {#1} \rangle}
 
-\newcommand{\ttbar}{\ensuremath{\bar{t}t}}
-\newcommand{\bbbar}{\ensuremath{\bar{b}b}}
 %\newcommand*{\TeV}{\ensuremath{\text{Te\kern -0.1em V}}}
 %\newcommand*{\GeV}{\ensuremath{\text{Ge\kern -0.1em V}}}
 %\newcommand{\pt}{\ensuremath{p_{\mathrm T}}}
@@ -86,7 +106,7 @@
 %\newcommand{\eV}{{\rm \,eV}}
 %\newcommand{\cm}{{\rm \,cm}}
 
-\newcommand{\mathsc}[1]{\text{\textsc{#1}}}
+
 
 \DeclareMathOperator{\arccot}{arccot}
 
@@ -98,10 +118,6 @@
  %\def\bea  {\begin{align*}}   \def\eea  {\end{align*}}
 \def\nn{\nonumber}
 
-\newcommand{\vev}[1]{\langle {#1} \rangle}
-
-\newcommand{\mgamcnlo}{MG5\_aMC@NLO\xspace}
-\newcommand{\A}{A}
 
 
 \allowdisplaybreaks
