@@ -44,7 +44,6 @@ The event selection in this case changes depending on the production transverse 
 If the Z-boson is boosted, then its hadronic decay products could be merged into a single jet, and the $Z$ to QCD background discrimination can be improved by exploiting the presence of substructure within a single, large-radius jet (denoted by $J$). 
 The \textit{boosted} search is performed in addition to the \textit{resolved} search, where the $Z$ decay products are reconstructed as two separate small-radius jets (denoted by $j$).
 
- 
 \paragraph{Event selection :} 
 For mono-$Z (\to q\bar{q})$ events intermediated by the exchange of a high-mass CP-even $H$ boson, 
 the $Z$-boson will be produced with 
@@ -68,6 +67,12 @@ These final selection cuts are applied sequentially to mimic a realistic analysi
 \end{itemize}
 
 The exact event selection criteria are listed in the appendix, in \autoref{tab:monozqq_selection}. The results in this and in the following section are at particle level. 
+
+\paragraph{Signatures including heavy flavor quarks}
+
+Heavy flavor final state can have sizable contributions to the production of the CP-even and CP-odd scalar mass eigenstates, due to the Yukawa structure of the couplings in the SM sector. 
+
+%Add example cuts of the analysis
 
 \subsection{Kinematic distributions}
 
@@ -163,7 +168,45 @@ Some fraction of signal events is also produced in non-resonant $2 \to 3$ proces
 %link into thereory section graph or cite paper
 Consequently, this results in a broader and softer \met distribution that is distinct from the Jacobian peak discussed above, and contributes to the off-peak features of \autoref{fig:monoHbb_ma_scan_met} and \autoref{fig:monoHbb_mA_scan_met}. 
 
-Since the shape of the $\MET$ distribution affects the design of experimental searches, and to a large extent their sensitivity, it is recommended to scan the $\mA$ and $\ma$ parameter space. 
+The masses \ma and \mA influence the kinematics in the $t\bar{t}$ + \MET signature as well. As shown in \autoref{fig:kin_Ma}, the $E_{T}^{miss}$, and leading and trailing top quark $p_{T}$ distributions broaden with increasing $\mathrm{M_{a}}$. Similarly, for values of $\mathrm{M_{A}} < \mathrm{M_{a}}$, as $\mathrm{M_{A}}$ increases, the kinematic distributions mentioned above also broaden, as shown in \autoref{fig:kin_MA}.
+
+\begin{figure}
+  \centering
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_MA_750_sinp_0.7071_tanb_1.0_SCAN_Ma/metlog.pdf}
+    \caption{$E_{T}^{miss}$}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_MA_750_sinp_0.7071_tanb_1.0_SCAN_Ma/top1ptlog.pdf}
+    \caption{Leading top $p_{T}$}
+  \end{subfigure} \\
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_MA_750_sinp_0.7071_tanb_1.0_SCAN_Ma/top2ptlog.pdf}
+    \caption{Trailing top $p_{T}$}
+  \end{subfigure}
+  \caption{The $E_{T}^{miss}$, leading and trailing top $p_{T}$ distributions for inclusive $t\bar{t}+\chi\bar{\chi}$ production for various values of $\mathrm{M_a}$, with $\mathrm{M_A}=750$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=750$ GeV, $\tan\beta=1$, and $\sin\theta=0.7071$.}
+  \label{fig:kin_Ma}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_700_sinp_0.7071_tanb_1.0_SCAN_MA/metlog.pdf}
+    \caption{$E_{T}^{miss}$}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_700_sinp_0.7071_tanb_1.0_SCAN_MA/top1ptlog.pdf}
+    \caption{Leading top $p_{T}$}
+  \end{subfigure} \\
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_700_sinp_0.7071_tanb_1.0_SCAN_MA/top2ptlog.pdf}
+    \caption{Trailing top $p_{T}$}
+  \end{subfigure}
+  \caption{The $E_{T}^{miss}$, leading and trailing top $p_{T}$ distributions for inclusive $t\bar{t}+\chi\bar{\chi}$ production for various values of $\mathrm{M_A}$, with $\mathrm{M_a}=700$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=750$ GeV, $\tan\beta=1$, and $\sin\theta=0.7071$.}
+  \label{fig:kin_MA}
+\end{figure}
+
+Since the shape of the $\MET$ distribution affects the design of experimental searches, and to a large extent their sensitivity, it is desirable to scan the $\mA$ and $\ma$ parameter space. 
 
 %In conclusion, the $\mA$ and $\ma$ parameters strongly affect the sensitivity of a search for the \hdma model using the \monohbb signature because they determine the location of the Jacobian peak in the \met distribution. Therefore, one of the proposed parameter scans for the \hdma model is in the ($\ma$,$\mA$) plane.
 
@@ -212,6 +255,27 @@ For the resonant diagram $gg\rightarrow A \rightarrow ah \rightarrow \chi\bar{\c
 Therefore, at small \sinp, the resonant diagram $A\rightarrow ah$ is the dominant production mode and the \MET\ distribution has a Jacobian peak following \autoref{eq:monoH_peak_met}; while at large \sinp, the $a\rightarrow A^*h$ diagram starts to dominate and produces a second peak at a lower \MET\ value.
 Scans of the \sinp parameter show they have minimal effect on the kinematic distributions for searches with a Z boson (\autoref{fig:monoz_kin_sintheta}).  
 
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_300_MA_750_tanb_1.0_SCAN_sinp_v2/mchichi.pdf}
+  \caption{The mass distribution of the $\chi \bar{\chi}$ system for various values of $\sin\theta$, with $\mathrm{M_a}=300$ GeV, $\mathrm{M_A}=750$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=750$ GeV, and $\tan\beta=1$.}
+  \label{fig:mchichi_sinp}
+\end{figure} 
+
+\begin{figure}
+  \centering
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_300_MA_750_tanb_1.0_SCAN_sinp_v2/metlog.pdf}
+    \caption{$E_{T}^{miss}$}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_300_MA_750_tanb_1.0_SCAN_sinp_v2/topptlog.pdf}
+    \caption{top $p_{T}$}
+  \end{subfigure}
+  \caption{The $E_{T}^{miss}$ and top $p_{T}$ distribution for inclusive $t\bar{t}+\chi\bar{\chi}$ production for various values of $\sin\theta$, with $\mathrm{M_a}=300$ GeV, $\mathrm{M_A}=750$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=750$ GeV, and $\tan\beta=1$.}
+  \label{fig:kin_sinp}
+\end{figure}
+
 \begin{figure}%[!htbp]
 	\centering
 
@@ -235,6 +299,31 @@ Scans of the \sinp parameter show they have minimal effect on the kinematic dist
 In the \monohbb case, the shape of the $\MET$ distribution does not change much  for $\sinp < 0.7$, then changes significantly for $\sinp\geq 0.7$. 
 When $\sinp=0.9$, the diagram $gg\rightarrow a\rightarrow A^*h \rightarrow \chi \bar{\chi} h$, producing a \MET peak at around 60~GeV, starts to dominate.
 In the Z case, this parameter has little impact on the kinematic distributions.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_SCAN_tanb_decayed/mchichi.pdf}
+  \caption{The mass distribution of the $\chi \bar{\chi}$ system for various values of $\tan\beta$, with $\mathrm{M_a}=100$ GeV, $\mathrm{M_A}=600$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=600$ GeV, and $\sin\theta=0.7071$.}
+  \label{fig:mchichi_tanB}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_SCAN_tanb_decayed/metlog.pdf}
+    \caption{$E_{T}^{miss}$}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_SCAN_tanb_decayed/topptlog.pdf}
+    \caption{top $p_{T}$}
+  \end{subfigure}
+  \caption{The $E_{T}^{miss}$ and top $p_{T}$ distribution for inclusive $t\bar{t}+\chi\bar{\chi}$ production for various values of $\tan\beta$, with $\mathrm{M_a}=100$ GeV, $\mathrm{M_A}=600$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=6
+00$ GeV, and $\sin\theta=0.7071$.}
+  \label{fig:kin_tanB}
+\end{figure}
+
+%Mixing of the CP-odd weak eigenstates is achieved through the mixing angle, $\theta$. 
+The $A$  ($h_{3}$ in the figure) and $a$  ($h_{4}$ in the figure) mass peaks are quite narrow in the $t\bar{t}$ + \MET signature for values where $\sin\theta$ approaches 1, and $a\rightarrow\chi\bar{\chi}$ is the dominant $\chi\bar{\chi}$ production mode, as shown in \autoref{fig:mchichi_sinp}. However, no kinematic dependence on $\sin\theta$ is observed in the $E_{T}^{miss}$ and top quark $p_{T}$ as shown in \autoref{fig:kin_sinp}.
 
 \subsubsection{Ratio of the doublet vacuum expectation values ($\tanb$)}
 
@@ -286,6 +375,10 @@ according to their corresponding cross sections.
 \caption{\MET distribution after preselection for scans of $\tan{\beta}$ for fixed \mA =600 \GeV and \ma = 150 \GeV. This parameter has little impact on the kinematic distributions, except for small values of \tanb where there is a slight softening and broadening of the \MET distribution caused by the increased contribution from the top box feynman diagram.}
 \label{fig:monoz_kin_tanb}
 \end{figure}
+
+
+In the $t\bar{t}$ + \MET signature, and in the limit of small $\tan\beta$ values, the couplings of $A$ ($h_{3}$ in the figure) and $a$ ($h_{4}$ in the figure) to down-type quarks are heavily suppressed regardless of the Yukawa assignment. At LO, $t\bar{t}+\chi\bar{\chi}$ associated production is mediated through either CP-odd weak eigenstate, $A$ or $a$, though it is shown in Fig.~\ref{fig:mchichi_tanB} that $a\rightarrow\chi\bar{\chi}$ is the dominant production mode. Although the relative mediator contribution is dependent on $\tan\beta$, observables such as $E_{T}^{miss}$ and top quark $p_{T}$ do not have a kinematic dependence on $\tan\beta$ as demonstrated in Fig.~\ref{fig:kin_tanB}. This is because [reasons]. 
+
 
 \subsubsection{Mass of DM fermion ($\mDM$)}
 

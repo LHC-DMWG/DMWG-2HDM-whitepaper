@@ -1,268 +1,220 @@
-%% \documentclass[11pt]{article}
-%% \usepackage{graphicx,epsfig}
-
-%% % Shorthand for \phantom to use in tables
-%% \newcommand{\pho}{\phantom{0}}
-%% \newcommand{\BibTeX}{\textsc{Bib\TeX}}
-%% \newcommand{\File}[1]{\texttt{#1}\xspace}
-%% \newcommand{\Macro}[1]{\texttt{\textbackslash #1}\xspace}
-%% \newcommand{\Option}[1]{\textsf{#1}\xspace}
-%% \newcommand{\Package}[1]{\texttt{#1}\xspace}
-%% \newcommand{\MADGRAPH}{\textsc{MadGraph}}
-%% \newcommand{\PYTHIA}{\textsc{Pythia}}
-
-%% \usepackage{subcaption}
-%% \usepackage{siunitx}
-%% \newcommand{\ttbar}{\ensuremath{\bar{t}t}}
-%% \newcommand{\bbbar}{\ensuremath{\bar{b}b}}
-%% \newcommand*{\TeV}{\ensuremath{\text{Te\kern -0.1em V}}}
-%% \newcommand*{\GeV}{\ensuremath{\text{Ge\kern -0.1em V}}}
-%% \newcommand{\pt}{\ensuremath{p_{\mathrm T}}}
-%% \newcommand{\met}{\ensuremath{E_{\mathrm T}^{\mathrm miss}}}
-%% \usepackage{biblatex}
-%% \bibliography{draft}
-
-%% \usepackage{lineno}
-%% \linenumbers
-
-
-
-%% \begin{document}
-
-
-Heavy flavour final state have sizeable contributions to the production of the CP-even and CP-odd scalar mass eigenstates, due to the Yukawa structure 
-of the couplings in the matter sector. 
-In the following sections,  the most important signatures involving either visible or invisible decays of the heavy Higgses are reviewed. 
-
-
-%%%%-----------------------------------------------------------------------------------------
-%%%%-----------------------------------------------------------------------------------------
-\subsubsection{Scanning the parameter space}
-
-\paragraph{Scan of $\tan\beta$ and $\sin\theta$:}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_SCAN_tanb_decayed/mchichi.pdf}
-  \caption{The mass distribution of the $\chi \bar{\chi}$ system for various values of $\tan\beta$, with $\mathrm{M_a}=100$ GeV, $\mathrm{M_A}=600$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=600$ GeV, and $\sin\theta=0.7071$.}
-  \label{fig:mchichi_tanB}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_SCAN_tanb_decayed/metlog.pdf}
-    \caption{$E_{T}^{miss}$}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_SCAN_tanb_decayed/topptlog.pdf}
-    \caption{top $p_{T}$}
-  \end{subfigure}
-  \caption{The $E_{T}^{miss}$ and top $p_{T}$ distribution for inclusive $t\bar{t}+\chi\bar{\chi}$ production for various values of $\tan\beta$, with $\mathrm{M_a}=100$ GeV, $\mathrm{M_A}=600$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=6
-00$ GeV, and $\sin\theta=0.7071$.}
-  \label{fig:kin_tanB}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_300_MA_750_tanb_1.0_SCAN_sinp_v2/mchichi.pdf}
-  \caption{The mass distribution of the $\chi \bar{\chi}$ system for various values of $\sin\theta$, with $\mathrm{M_a}=300$ GeV, $\mathrm{M_A}=750$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=750$ GeV, and $\tan\beta=1$.}
-  \label{fig:mchichi_sinp}
-\end{figure} 
-
-\begin{figure}
-  \centering
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_300_MA_750_tanb_1.0_SCAN_sinp_v2/metlog.pdf}
-    \caption{$E_{T}^{miss}$}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_300_MA_750_tanb_1.0_SCAN_sinp_v2/topptlog.pdf}
-    \caption{top $p_{T}$}
-  \end{subfigure}
-  \caption{The $E_{T}^{miss}$ and top $p_{T}$ distribution for inclusive $t\bar{t}+\chi\bar{\chi}$ production for various values of $\sin\theta$, with $\mathrm{M_a}=300$ GeV, $\mathrm{M_A}=750$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=750$ GeV, and $\tan\beta=1$.}
-  \label{fig:kin_sinp}
-\end{figure}
-
-In the limit of small $\tan\beta$ values, the couplings of $h_{3}$ (A) and $h_{4}$ (a) to down-type quarks are heavily suppressed irrespectively of the Yukawa assignment. At LO, $t\bar{t}+\chi\bar{\chi}$ associated production is mediated through either CP-odd weak eigenstate, A or a, though it is shown in Fig.~\ref{fig:mchichi_tanB} that $a\rightarrow\chi\bar{\chi}$ is the dominant production mode. Although the relative medatior contribution is dependent on $\tan\beta$, observables such as $E_{T}^{miss}$ and top quark $p_{T}$ do not have a kinematic dependence on $\tan\beta$ as demonstrated in Fig.~\ref{fig:kin_tanB}.
-
-Mixing of the CP-odd weak eigenstates is achieved through the mixing angle, $\theta$. As shown in Fig.~\ref{fig:mchichi_sinp}, the A and a mass peaks are quite narrow for values where $\sin\theta$ approaches 1, and $a\rightarrow\chi\bar{\chi}$ is the dominant $\chi\bar{\chi}$ production mode. However, no kinematic dependence on $\sin\theta$ is observed in the $E_{T}^{miss}$ and top quark $p_{T}$ as shown in Fig.~\ref{fig:kin_sinp}.
-
-\paragraph{Scan of $\mathrm{M_{a}}$ and $\mathrm{M_{A}}$:}
-
-While the relevant kinematic distributions display no dependence on the aforementioned mixing angles, the same does not hold true for the masses, $\mathrm{M_{a}}$ and $\mathrm{M_{A}}$. As shown in Fig.~\ref{fig:kin_Ma}, the $E_{T}^{miss}$, and leading and trailing top quark $p_{T}$ distributions broaden with increasing $\mathrm{M_{a}}$. Similarly, for values of $\mathrm{M_{A}} < \mathrm{M_{a}}$, as $\mathrm{M_{A}}$ increases, the kinematic distributions mentioned above also broaden, as shown in Fig.~\ref{fig:kin_MA}.
-
-\begin{figure}
-  \centering
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_MA_750_sinp_0.7071_tanb_1.0_SCAN_Ma/metlog.pdf}
-    \caption{$E_{T}^{miss}$}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_MA_750_sinp_0.7071_tanb_1.0_SCAN_Ma/top1ptlog.pdf}
-    \caption{Leading top $p_{T}$}
-  \end{subfigure} \\
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_MA_750_sinp_0.7071_tanb_1.0_SCAN_Ma/top2ptlog.pdf}
-    \caption{Trailing top $p_{T}$}
-  \end{subfigure}
-  \caption{The $E_{T}^{miss}$, leading and trailing top $p_{T}$ distributions for inclusive $t\bar{t}+\chi\bar{\chi}$ production for various values of $\mathrm{M_a}$, with $\mathrm{M_A}=750$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=750$ GeV, $\tan\beta=1$, and $\sin\theta=0.7071$.}
-  \label{fig:kin_Ma}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_700_sinp_0.7071_tanb_1.0_SCAN_MA/metlog.pdf}
-    \caption{$E_{T}^{miss}$}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_700_sinp_0.7071_tanb_1.0_SCAN_MA/top1ptlog.pdf}
-    \caption{Leading top $p_{T}$}
-  \end{subfigure} \\
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_700_sinp_0.7071_tanb_1.0_SCAN_MA/top2ptlog.pdf}
-    \caption{Trailing top $p_{T}$}
-  \end{subfigure}
-  \caption{The $E_{T}^{miss}$, leading and trailing top $p_{T}$ distributions for inclusive $t\bar{t}+\chi\bar{\chi}$ production for various values of $\mathrm{M_A}$, with $\mathrm{M_a}=700$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=750$ GeV, $\tan\beta=1$, and $\sin\theta=0.7071$.}
-  \label{fig:kin_MA}
-\end{figure}
-%%%%-----------------------------------------------------------------------------------------
-\subsubsection{Comparison with DMsimp Pseudoscalar Model}
-
-To date, simplified models of DM (\texttt{DMsimp}) are used to interpret Run II CMS and ATLAS HF+DM searches. A comparison of the pertinent kinematic distributions between the pseudoscalar simplified model and the 2HDM+a model for the same value of $\mathrm{M_{a}}$ are shown in Fig.~\ref{kin_DMSimpV2HDMa}. The kinematics of the pseudoscalar \texttt{DMsimp} model with $\mathrm{M_{a}}=100$ GeV map directly onto those of the 2HDM+a model with $\mathrm{M_{a}}=100$ GeV, $\mathrm{M_{A}}=600$ GeV, $\mathrm{M_{H}}=\mathrm{M_{H^{\pm}}}=600$ GeV, $\sin\theta=0.7071$, and $\tan\beta=1$. From the mass distribution of the $\chi\bar{\chi}$ shown in Fig.~\ref{fig:mchichi_DMsimpV2HDMa}, it is evident that the 2HDM+a model contains contributions from both the light and heavy pseudoscalar mediator as in the \texttt{DMsimp} model.
-
-\begin{figure}
-  \centering
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_tanb_1.0_VS_DMSimp_100_600_Decayed/metlog.pdf}
-    \caption{$E_{T}^{miss}$}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_tanb_1.0_VS_DMSimp_100_600_Decayed/top1ptlog.pdf}
-    \caption{Leading top $p_{T}$}
-  \end{subfigure} \\
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_tanb_1.0_VS_DMSimp_100_600_Decayed/top2ptlog.pdf}
-    \caption{Trailing top $p_{T}$}
-  \end{subfigure}
-  \caption{The $E_{T}^{miss}$, leading and trailing top $p_{T}$ distributions for inclusive $t\bar{t}+\chi\bar{\chi}$ production for various values of $\mathrm{M_A}$, with $\mathrm{M_a}=700$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=750$ GeV, $\tan\beta=1$, and $\sin\theta=0.7071$.}
-  \label{fig:kin_DMSimpV2HDMa}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_tanb_1.0_VS_DMSimp_100_600_Decayed/mchichi.pdf}
-  \caption{The mass distribution of the $\chi\bar{\chi}$ system for \texttt{DMsimp} pseudoscalar models with $\mathrm{M_a}=100$ GeV and $\mathrm{M_a}=600$ GeV, compared with 2HDM+a with $\mathrm{M_a}=100$ GeV, $\mathrm{M_A}=600$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=600$ GeV, $\sin\theta=0.7071$ and $\tan\beta=1$.}
-  \label{fig:mchichi_DMsimpV2HDMa}
-\end{figure}
-
-In Fig.~\ref{fig:DMSimpV2HDMa}, relevant kinematic distributions, commonly employed in HF+DM searches, are mapped from the \texttt{DMsimp} pseudoscalar models to the 2HDM+a model, with the mediator masses corresponding to the additional light pseudoscalar in the latter model. The dashed distributions represent the \texttt{DMsimp} model, while the solid are the 2HDM+a model distributions. The $t\bar{t}+\chi\bar{\chi}$ process was generated at LO precision using both models. As can be seen, the kinematics do not change appreciably between the models generated at the same value of $\mathrm{M_{a}}$. A discussion on cross-section rescaling procedures can be found in the following section.
-
-\begin{figure}
-  \centering    
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_MA_600_sinp_0.7071_tanb_1.0_DMsimpV2HDMa/metlog.pdf}
-    \caption{$E_{T}^{miss}$}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_MA_600_sinp_0.7071_tanb_1.0_DMsimpV2HDMa/top1ptlog.pdf}
-    \caption{Leading top $p_{T}$}
-  \end{subfigure} \\
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_MA_600_sinp_0.7071_tanb_1.0_DMsimpV2HDMa/top2ptlog.pdf}
-    \caption{Trailing top $p_{T}$}
-  \end{subfigure}
-  \caption{The $E_{T}^{miss}$, leading and trailing top $p_{T}$ distributions for inclusive $t\bar{t}+\chi\bar{\chi}$ production generated from the \texttt{DMsimp} (solid) and the 2HDM+a (dashed) models with various values of $\mathrm{M_a}$. The 2HDM+a models are generated with the following model parameters:$\mathrm{M_A}=600$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=600$ GeV, $\tan\beta=1$, and $\sin\theta=0.7071$.}
-\label{fig:DMSimpV2HDMa}
-\end{figure}
-%%%%-----------------------------------------------------------------------------------------
-\subsubsection{Recasting existing tt+\met and bb+\met signatures}
-\label{subsub:hfttrecast}
-These two signatures are dominantly produced in diagrams involving the invisible decays of the two CP-odd scalars. 
-Their relevance is therefore determined by the two pseudoscalar masses, $m(A)$ and $m(a)$ and it is a function of 
-$sin\theta$ and $tan\beta$. 
-For both $bb$ and $tt$ associated productions, we find that the
-highest sensitivity of this signatures is obtained for high values of $sin\theta$.
-
-The 2HDM+a model is equivalent to a single pseudoscalar simplified
-model (DMF) when $A$ is much heavier than $a$, and therefore the
-former does not contribute to the considered final state. However,
-when the two mediators are closer in mass, the $pp\rightarrow ttA$
-contribution becomes more relevant  as it is possible to observe in 
-Figure~\ref{fig:mdd}, where the two models are compared
-assuming $m(A) = 750$ GeV and two different values
-for $m(a)$. An excellent agreement was observed between
-$DMSIMP$ and $2HDMp$ on parton-level variables sensitive 
-to the helicity structure of the interaction between top and the
-mediator\cite{Haisch:2016gry}, if the invariant mass of the two DM
-particles in the 2HDM is required to be smalle than 200(300)~GeV for
-$m(a)=150(300)$~GeV respectively, giving confidence that,
-once the contribution from $A$ production is separated, it is possible
-to fully map the $2HDM+a$ kinematics into the DMF simplified model. 
-
-
-\begin{figure}[htb]
-\begin{center}
-\includegraphics[width=0.48\textwidth]{texinputs/04_grid/figures/DMHF/mdd150.pdf}
-\includegraphics[width=0.48\textwidth]{texinputs/04_grid/figures/DMHF/mdd300.pdf}
-\caption{Comparison of $m(\chi\chi)$, the invariant mass of 
-the two DM particles for the $DMSIMP$ (blue) and the $2HDMp$ model (magenta). The plot on the left (right) shows the comparison for $m(a)=150(300)$~GeV
-respectively.}
-\label{fig:mdd}
-\end{center}
-\end{figure}
-
-This remapping is achieved by
-taking for each set of the parameters the 
-average of the selection acceptances for $m(A)$ and $M(A)$ as 
-calculated with $DMSIMP$ weighted by the respective 
-cross-section for $A$ ($\sigma_A$) and $a$ 
-($\sigma_a$) production, in formulas
-\begin{equation}
-Acc_{2HDM}(m(A),M(a))=\frac{\sigma_a \times Acc_{DMSIMP}(m(a))+
-\sigma_A \times Acc_{DMSIMP}(m(A))}{\sigma_a+\sigma_A}
-\label{rew}
-\end{equation}
-The acceptance in this case is a parton level implementation of the
-two-lepton analysis described in [arXiv:1710.11412].
-The acceptance estimated in this way is shown as red triangles 
-in Figure~\ref{fig:tbfin}, and an excellent agreement 
-can be seen with the acceptances evaluated directly on the 2HDM 
-samples. 
-\begin{figure}[htb]
-\begin{center}
-\includegraphics[width=0.7\textwidth]{texinputs/04_grid/figures/DMHF/plotacc_tb.pdf}
-\caption{Acceptance of the two-lepton analysis as a function of $\tan\beta$ 
-for the $2HDMp$ model (round markers), for the $2HDMp$ model 
-considering only events with $m(\chi\chi)<200$~GeV (square markers),
-and for the $DMSIMP$ model (full line) for a mediator
-mass of 150~GeV. The two dashed lines indicate
-the statistical error of the $DMSIMP$. The value of $m(A)$ is fixed at 
-600~GeV, and $\sin\theta=0.35$. 
-The acceptance 
-calculated from the $DMSIMP$ acceptance rescaled following the 
-prescription \ref{rew} (red triangles) is also shown.}
-\label{fig:tbfin}
-\end{center}
-\end{figure}
-The acceptance estimated in this way is shown as red triangles 
-in Figure~\ref{fig:tbfin}, and an excellent agreement 
-can be seen with the acceptances evaluated directly on the 2HDM 
-samples. Further validation were performed also on the acceptances calculated for zero and one lepton final states [1710.11412,1711.11520], 
-both as a function of $sin\theta$ and $tan\beta$ and can be observed in Fig~\ref{DMHF:pof}.
-Finally, the formula was succesfully tested also the situation in
-which $|m(A)-m(a)| \sim 50$ GeV, 
-implying the possibility of a large interference
-between the production of the two bosons.
-
-\begin{figure}
-\includegraphics[width=.5\textwidth]{texinputs/04_grid/figures/DMHF/SRt2_600_150_sin}
-\includegraphics[width=.5\textwidth]{texinputs/04_grid/figures/DMHF/DM_high_600_150_tan}
-\caption{Validation of the re-scaling formula on zero and one lepton final states as a function of $tan\beta$ and $sin\theta$ parameters}
-\label{DMHF:pof}
-\end{figure}
-
+%%% \documentclass[11pt]{article}
+%%% \usepackage{graphicx,epsfig}
+%
+%%% % Shorthand for \phantom to use in tables
+%%% \newcommand{\pho}{\phantom{0}}
+%%% \newcommand{\BibTeX}{\textsc{Bib\TeX}}
+%%% \newcommand{\File}[1]{\texttt{#1}\xspace}
+%%% \newcommand{\Macro}[1]{\texttt{\textbackslash #1}\xspace}
+%%% \newcommand{\Option}[1]{\textsf{#1}\xspace}
+%%% \newcommand{\Package}[1]{\texttt{#1}\xspace}
+%%% \newcommand{\MADGRAPH}{\textsc{MadGraph}}
+%%% \newcommand{\PYTHIA}{\textsc{Pythia}}
+%
+%%% \usepackage{subcaption}
+%%% \usepackage{siunitx}
+%%% \newcommand{\ttbar}{\ensuremath{\bar{t}t}}
+%%% \newcommand{\bbbar}{\ensuremath{\bar{b}b}}
+%%% \newcommand*{\TeV}{\ensuremath{\text{Te\kern -0.1em V}}}
+%%% \newcommand*{\GeV}{\ensuremath{\text{Ge\kern -0.1em V}}}
+%%% \newcommand{\pt}{\ensuremath{p_{\mathrm T}}}
+%%% \newcommand{\met}{\ensuremath{E_{\mathrm T}^{\mathrm miss}}}
+%%% \usepackage{biblatex}
+%%% \bibliography{draft}
+%
+%%% \usepackage{lineno}
+%%% \linenumbers
+%
+%
+%
+%%% \begin{document}
+%
+%
+%In the following sections, the most important signatures involving either visible or invisible decays of the heavy Higgs bosons are reviewed. 
+%
+%
+%%%%%-----------------------------------------------------------------------------------------
+%%%%%-----------------------------------------------------------------------------------------
+%\subsubsection{Scanning the parameter space}
+%
+%
+%\paragraph{Scan of $\mathrm{M_{a}}$ and $\mathrm{M_{A}}$:}
+%
+%While the relevant kinematic distributions display no dependence on the aforementioned mixing angles, the same does not hold true for the masses, 
+%
+%The masses \ma and \mA influence the kinematics in the $t\bar{t}$ + \MET signature as well. As shown in \autoref{fig:kin_Ma}, the $E_{T}^{miss}$, and leading and trailing top quark $p_{T}$ distributions broaden with increasing $\mathrm{M_{a}}$. Similarly, for values of $\mathrm{M_{A}} < \mathrm{M_{a}}$, as $\mathrm{M_{A}}$ increases, the kinematic distributions mentioned above also broaden, as shown in \autoref{fig:kin_MA}.
+%
+%\begin{figure}
+%  \centering
+%  \begin{subfigure}[b]{0.49\textwidth}
+%    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_MA_750_sinp_0.7071_tanb_1.0_SCAN_Ma/metlog.pdf}
+%    \caption{$E_{T}^{miss}$}
+%  \end{subfigure}
+%  \begin{subfigure}[b]{0.49\textwidth}
+%    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_MA_750_sinp_0.7071_tanb_1.0_SCAN_Ma/top1ptlog.pdf}
+%    \caption{Leading top $p_{T}$}
+%  \end{subfigure} \\
+%  \begin{subfigure}[b]{0.49\textwidth}
+%    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_MA_750_sinp_0.7071_tanb_1.0_SCAN_Ma/top2ptlog.pdf}
+%    \caption{Trailing top $p_{T}$}
+%  \end{subfigure}
+%  \caption{The $E_{T}^{miss}$, leading and trailing top $p_{T}$ distributions for inclusive $t\bar{t}+\chi\bar{\chi}$ production for various values of $\mathrm{M_a}$, with $\mathrm{M_A}=750$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=750$ GeV, $\tan\beta=1$, and $\sin\theta=0.7071$.}
+%  \label{fig:kin_Ma}
+%\end{figure}
+%
+%\begin{figure}
+%  \centering
+%  \begin{subfigure}[b]{0.49\textwidth}
+%    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_700_sinp_0.7071_tanb_1.0_SCAN_MA/metlog.pdf}
+%    \caption{$E_{T}^{miss}$}
+%  \end{subfigure}
+%  \begin{subfigure}[b]{0.49\textwidth}
+%    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_700_sinp_0.7071_tanb_1.0_SCAN_MA/top1ptlog.pdf}
+%    \caption{Leading top $p_{T}$}
+%  \end{subfigure} \\
+%  \begin{subfigure}[b]{0.49\textwidth}
+%    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_700_sinp_0.7071_tanb_1.0_SCAN_MA/top2ptlog.pdf}
+%    \caption{Trailing top $p_{T}$}
+%  \end{subfigure}
+%  \caption{The $E_{T}^{miss}$, leading and trailing top $p_{T}$ distributions for inclusive $t\bar{t}+\chi\bar{\chi}$ production for various values of $\mathrm{M_A}$, with $\mathrm{M_a}=700$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=750$ GeV, $\tan\beta=1$, and $\sin\theta=0.7071$.}
+%  \label{fig:kin_MA}
+%\end{figure}
+%%%%%-----------------------------------------------------------------------------------------
+%\subsubsection{Comparison with DMsimp Pseudoscalar Model}
+%
+%To date, simplified models of DM (\texttt{DMsimp}) are used to interpret Run II CMS and ATLAS HF+DM searches. A comparison of the pertinent kinematic distributions between the pseudoscalar simplified model and the 2HDM+a model for the same value of $\mathrm{M_{a}}$ are shown in Fig.~\ref{kin_DMSimpV2HDMa}. The kinematics of the pseudoscalar \texttt{DMsimp} model with $\mathrm{M_{a}}=100$ GeV map directly onto those of the 2HDM+a model with $\mathrm{M_{a}}=100$ GeV, $\mathrm{M_{A}}=600$ GeV, $\mathrm{M_{H}}=\mathrm{M_{H^{\pm}}}=600$ GeV, $\sin\theta=0.7071$, and $\tan\beta=1$. From the mass distribution of the $\chi\bar{\chi}$ shown in Fig.~\ref{fig:mchichi_DMsimpV2HDMa}, it is evident that the 2HDM+a model contains contributions from both the light and heavy pseudoscalar mediator as in the \texttt{DMsimp} model.
+%
+%\begin{figure}
+%  \centering
+%  \begin{subfigure}[b]{0.49\textwidth}
+%    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_tanb_1.0_VS_DMSimp_100_600_Decayed/metlog.pdf}
+%    \caption{$E_{T}^{miss}$}
+%  \end{subfigure}
+%  \begin{subfigure}[b]{0.49\textwidth}
+%    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_tanb_1.0_VS_DMSimp_100_600_Decayed/top1ptlog.pdf}
+%    \caption{Leading top $p_{T}$}
+%  \end{subfigure} \\
+%  \begin{subfigure}[b]{0.49\textwidth}
+%    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_tanb_1.0_VS_DMSimp_100_600_Decayed/top2ptlog.pdf}
+%    \caption{Trailing top $p_{T}$}
+%  \end{subfigure}
+%  \caption{The $E_{T}^{miss}$, leading and trailing top $p_{T}$ distributions for inclusive $t\bar{t}+\chi\bar{\chi}$ production for various values of $\mathrm{M_A}$, with $\mathrm{M_a}=700$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=750$ GeV, $\tan\beta=1$, and $\sin\theta=0.7071$.}
+%  \label{fig:kin_DMSimpV2HDMa}
+%\end{figure}
+%
+%\begin{figure}
+%  \centering
+%  \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_tanb_1.0_VS_DMSimp_100_600_Decayed/mchichi.pdf}
+%  \caption{The mass distribution of the $\chi\bar{\chi}$ system for \texttt{DMsimp} pseudoscalar models with $\mathrm{M_a}=100$ GeV and $\mathrm{M_a}=600$ GeV, compared with 2HDM+a with $\mathrm{M_a}=100$ GeV, $\mathrm{M_A}=600$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=600$ GeV, $\sin\theta=0.7071$ and $\tan\beta=1$.}
+%  \label{fig:mchichi_DMsimpV2HDMa}
+%\end{figure}
+%
+%In Fig.~\ref{fig:DMSimpV2HDMa}, relevant kinematic distributions, commonly employed in HF+DM searches, are mapped from the \texttt{DMsimp} pseudoscalar models to the 2HDM+a model, with the mediator masses corresponding to the additional light pseudoscalar in the latter model. The dashed distributions represent the \texttt{DMsimp} model, while the solid are the 2HDM+a model distributions. The $t\bar{t}+\chi\bar{\chi}$ process was generated at LO precision using both models. As can be seen, the kinematics do not change appreciably between the models generated at the same value of $\mathrm{M_{a}}$. A discussion on cross-section rescaling procedures can be found in the following section.
+%
+%\begin{figure}
+%  \centering    
+%  \begin{subfigure}[b]{0.49\textwidth}
+%    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_MA_600_sinp_0.7071_tanb_1.0_DMsimpV2HDMa/metlog.pdf}
+%    \caption{$E_{T}^{miss}$}
+%  \end{subfigure}
+%  \begin{subfigure}[b]{0.49\textwidth}
+%    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_MA_600_sinp_0.7071_tanb_1.0_DMsimpV2HDMa/top1ptlog.pdf}
+%    \caption{Leading top $p_{T}$}
+%  \end{subfigure} \\
+%  \begin{subfigure}[b]{0.49\textwidth}
+%    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_MA_600_sinp_0.7071_tanb_1.0_DMsimpV2HDMa/top2ptlog.pdf}
+%    \caption{Trailing top $p_{T}$}
+%  \end{subfigure}
+%  \caption{The $E_{T}^{miss}$, leading and trailing top $p_{T}$ distributions for inclusive $t\bar{t}+\chi\bar{\chi}$ production generated from the \texttt{DMsimp} (solid) and the 2HDM+a (dashed) models with various values of $\mathrm{M_a}$. The 2HDM+a models are generated with the following model parameters:$\mathrm{M_A}=600$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=600$ GeV, $\tan\beta=1$, and $\sin\theta=0.7071$.}
+%\label{fig:DMSimpV2HDMa}
+%\end{figure}
+%%%%%-----------------------------------------------------------------------------------------
+%\subsubsection{Recasting existing tt+\met and bb+\met signatures}
+%\label{subsub:hfttrecast}
+%These two signatures are dominantly produced in diagrams involving the invisible decays of the two CP-odd scalars. 
+%Their relevance is therefore determined by the two pseudoscalar masses, $m(A)$ and $m(a)$ and it is a function of 
+%$sin\theta$ and $tan\beta$. 
+%For both $bb$ and $tt$ associated productions, we find that the
+%highest sensitivity of this signatures is obtained for high values of $sin\theta$.
+%
+%The 2HDM+a model is equivalent to a single pseudoscalar simplified
+%model (DMF) when $A$ is much heavier than $a$, and therefore the
+%former does not contribute to the considered final state. However,
+%when the two mediators are closer in mass, the $pp\rightarrow ttA$
+%contribution becomes more relevant  as it is possible to observe in 
+%Figure~\ref{fig:mdd}, where the two models are compared
+%assuming $m(A) = 750$ GeV and two different values
+%for $m(a)$. An excellent agreement was observed between
+%$DMSIMP$ and $2HDMp$ on parton-level variables sensitive 
+%to the helicity structure of the interaction between top and the
+%mediator\cite{Haisch:2016gry}, if the invariant mass of the two DM
+%particles in the 2HDM is required to be smalle than 200(300)~GeV for
+%$m(a)=150(300)$~GeV respectively, giving confidence that,
+%once the contribution from $A$ production is separated, it is possible
+%to fully map the $2HDM+a$ kinematics into the DMF simplified model. 
+%
+%
+%\begin{figure}[htb]
+%\begin{center}
+%\includegraphics[width=0.48\textwidth]{texinputs/04_grid/figures/DMHF/mdd150.pdf}
+%\includegraphics[width=0.48\textwidth]{texinputs/04_grid/figures/DMHF/mdd300.pdf}
+%\caption{Comparison of $m(\chi\chi)$, the invariant mass of 
+%the two DM particles for the $DMSIMP$ (blue) and the $2HDMp$ model (magenta). The plot on the left (right) shows the comparison for $m(a)=150(300)$~GeV
+%respectively.}
+%\label{fig:mdd}
+%\end{center}
+%\end{figure}
+%
+%This remapping is achieved by
+%taking for each set of the parameters the 
+%average of the selection acceptances for $m(A)$ and $M(A)$ as 
+%calculated with $DMSIMP$ weighted by the respective 
+%cross-section for $A$ ($\sigma_A$) and $a$ 
+%($\sigma_a$) production, in formulas
+%\begin{equation}
+%Acc_{2HDM}(m(A),M(a))=\frac{\sigma_a \times Acc_{DMSIMP}(m(a))+
+%\sigma_A \times Acc_{DMSIMP}(m(A))}{\sigma_a+\sigma_A}
+%\label{rew}
+%\end{equation}
+%The acceptance in this case is a parton level implementation of the
+%two-lepton analysis described in [arXiv:1710.11412].
+%The acceptance estimated in this way is shown as red triangles 
+%in Figure~\ref{fig:tbfin}, and an excellent agreement 
+%can be seen with the acceptances evaluated directly on the 2HDM 
+%samples. 
+%\begin{figure}[htb]
+%\begin{center}
+%\includegraphics[width=0.7\textwidth]{texinputs/04_grid/figures/DMHF/plotacc_tb.pdf}
+%\caption{Acceptance of the two-lepton analysis as a function of $\tan\beta$ 
+%for the $2HDMp$ model (round markers), for the $2HDMp$ model 
+%considering only events with $m(\chi\chi)<200$~GeV (square markers),
+%and for the $DMSIMP$ model (full line) for a mediator
+%mass of 150~GeV. The two dashed lines indicate
+%the statistical error of the $DMSIMP$. The value of $m(A)$ is fixed at 
+%600~GeV, and $\sin\theta=0.35$. 
+%The acceptance 
+%calculated from the $DMSIMP$ acceptance rescaled following the 
+%prescription \ref{rew} (red triangles) is also shown.}
+%\label{fig:tbfin}
+%\end{center}
+%\end{figure}
+%The acceptance estimated in this way is shown as red triangles 
+%in Figure~\ref{fig:tbfin}, and an excellent agreement 
+%can be seen with the acceptances evaluated directly on the 2HDM 
+%samples. Further validation were performed also on the acceptances calculated for zero and one lepton final states [1710.11412,1711.11520], 
+%both as a function of $sin\theta$ and $tan\beta$ and can be observed in Fig~\ref{DMHF:pof}.
+%Finally, the formula was succesfully tested also the situation in
+%which $|m(A)-m(a)| \sim 50$ GeV, 
+%implying the possibility of a large interference
+%between the production of the two bosons.
+%
+%\begin{figure}
+%\includegraphics[width=.5\textwidth]{texinputs/04_grid/figures/DMHF/SRt2_600_150_sin}
+%\includegraphics[width=.5\textwidth]{texinputs/04_grid/figures/DMHF/DM_high_600_150_tan}
+%\caption{Validation of the re-scaling formula on zero and one lepton final states as a function of $tan\beta$ and $sin\theta$ parameters}
+%\label{DMHF:pof}
+%\end{figure}
+%
 %%%%-----------------------------------------------------------------------------------------
 \subsubsection{Flavour scheme recommendations and studies}
 \begin{figure} \centering
