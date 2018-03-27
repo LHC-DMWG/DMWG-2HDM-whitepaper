@@ -300,40 +300,12 @@ In the \monohbb case, the shape of the $\MET$ distribution does not change much 
 When $\sinp=0.9$, the diagram $gg\rightarrow a\rightarrow A^*h \rightarrow \chi \bar{\chi} h$, producing a \MET peak at around 60~GeV, starts to dominate.
 In the Z case, this parameter has little impact on the kinematic distributions.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_SCAN_tanb_decayed/mchichi.pdf}
-  \caption{The mass distribution of the $\chi \bar{\chi}$ system for various values of $\tan\beta$, with $\mathrm{M_a}=100$ GeV, $\mathrm{M_A}=600$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=600$ GeV, and $\sin\theta=0.7071$.}
-  \label{fig:mchichi_tanB}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_SCAN_tanb_decayed/metlog.pdf}
-    \caption{$E_{T}^{miss}$}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_SCAN_tanb_decayed/topptlog.pdf}
-    \caption{top $p_{T}$}
-  \end{subfigure}
-  \caption{The $E_{T}^{miss}$ and top $p_{T}$ distribution for inclusive $t\bar{t}+\chi\bar{\chi}$ production for various values of $\tan\beta$, with $\mathrm{M_a}=100$ GeV, $\mathrm{M_A}=600$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=6
-00$ GeV, and $\sin\theta=0.7071$.}
-  \label{fig:kin_tanB}
-\end{figure}
-
 %Mixing of the CP-odd weak eigenstates is achieved through the mixing angle, $\theta$. 
-The $A$  ($h_{3}$ in the figure) and $a$  ($h_{4}$ in the figure) mass peaks are quite narrow in the $t\bar{t}$ + \MET signature for values where $\sin\theta$ approaches 1, and $a\rightarrow\chi\bar{\chi}$ is the dominant $\chi\bar{\chi}$ production mode, as shown in \autoref{fig:mchichi_sinp}. However, no kinematic dependence on $\sin\theta$ is observed in the $E_{T}^{miss}$ and top quark $p_{T}$ as shown in \autoref{fig:kin_sinp}.
+In the $t\bar{t}$ + \MET signature, the $A$ ($h_{3}$ in the figure) and $a$  ($h_{4}$ in the figure) mass peaks are quite narrow for values where $\sin\theta$ approaches 1, and $a\rightarrow\chi\bar{\chi}$ is the dominant $\chi\bar{\chi}$ production mode, as shown in \autoref{fig:mchichi_sinp}. However, no significant kinematic dependence on $\sin\theta$ is observed in the $E_{T}^{miss}$ and top quark $p_{T}$ as shown in \autoref{fig:kin_sinp} before any analysis cuts are applied.
 
 \subsubsection{Ratio of the doublet vacuum expectation values ($\tanb$)}
 
-%%% text related to tanbeta-ma scan
-The shape of \MET\ distribution also has a non-trivial dependence on \tanb, as can be seen in \autoref{fig:monoHbb_tanb_scan_met}.
-As discussed in the sensitivity study later, at small \tanb, the Yukawa coupling to top quark is large and the signal production mode is dominated by the non-resonant 3-body processes $gg\rightarrow h\chi\bar{\chi}$, which gives a broad and soft \MET\ spectrum. 
-As \tanb increases, the contribution of resonant production increases as well and the Jacobian peak also appears.
-When the pseudoscalar $A$ is produced off-shell, i.e. when $\mA<\ma+\mh$, the shapes of \MET\ distributions become similar and the dependence on \tanb disappears.
 
-For small values of $\tanb$ there is a slight softening and broadening of the \MET distribution caused by the increased contribution from non-resonant $Z+a$ production in Z+\MET searches. 
 
 \begin{figure}[tbp]
 \centering
@@ -376,8 +348,37 @@ according to their corresponding cross sections.
 \label{fig:monoz_kin_tanb}
 \end{figure}
 
+%%% text related to tanbeta-ma scan
+The shape of \MET\ distribution also has a non-trivial dependence on \tanb, as can be seen in \autoref{fig:monoHbb_tanb_scan_met}.
+As discussed in the sensitivity study later, at small \tanb, the Yukawa coupling to top quark is large and the signal production mode is dominated by the non-resonant 3-body processes $gg\rightarrow h\chi\bar{\chi}$, which gives a broad and soft \MET\ spectrum. 
+As \tanb increases, the contribution of resonant production increases as well and the Jacobian peak also appears.
+When the pseudoscalar $A$ is produced off-shell, i.e. when $\mA<\ma+\mh$, the shapes of \MET\ distributions become similar and the dependence on \tanb disappears.
+For small values of $\tanb$ there is a slight softening and broadening of the \MET distribution caused by the increased contribution from non-resonant $Z+a$ production in Z+\MET searches. 
 
-In the $t\bar{t}$ + \MET signature, and in the limit of small $\tan\beta$ values, the couplings of $A$ ($h_{3}$ in the figure) and $a$ ($h_{4}$ in the figure) to down-type quarks are heavily suppressed regardless of the Yukawa assignment. At LO, $t\bar{t}+\chi\bar{\chi}$ associated production is mediated through either CP-odd weak eigenstate, $A$ or $a$, though it is shown in Fig.~\ref{fig:mchichi_tanB} that $a\rightarrow\chi\bar{\chi}$ is the dominant production mode. Although the relative mediator contribution is dependent on $\tan\beta$, observables such as $E_{T}^{miss}$ and top quark $p_{T}$ do not have a kinematic dependence on $\tan\beta$ as demonstrated in Fig.~\ref{fig:kin_tanB}. This is because [reasons]. 
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_SCAN_tanb_decayed/mchichi.pdf}
+  \caption{The mass distribution of the $\chi \bar{\chi}$ system for various values of $\tan\beta$, with $\mathrm{M_a}=100$ GeV, $\mathrm{M_A}=600$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=600$ GeV, and $\sin\theta=0.7071$.}
+  \label{fig:mchichi_tanB}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_SCAN_tanb_decayed/metlog.pdf}
+    \caption{$E_{T}^{miss}$}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_SCAN_tanb_decayed/topptlog.pdf}
+    \caption{top $p_{T}$}
+  \end{subfigure}
+  \caption{The $E_{T}^{miss}$ and top $p_{T}$ distribution for inclusive $t\bar{t}+\chi\bar{\chi}$ production for various values of $\tan\beta$, with $\mathrm{M_a}=100$ GeV, $\mathrm{M_A}=600$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=6
+00$ GeV, and $\sin\theta=0.7071$.}
+  \label{fig:kin_tanB}
+\end{figure}
+
+
+In the $t\bar{t}$ + \MET signature, and in the limit of small $\tan\beta$ values, the couplings of $A$ ($h_{3}$ in the figure) and $a$ ($h_{4}$ in the figure) to down-type quarks are heavily suppressed regardless of the Yukawa assignment. At LO, $t\bar{t}+\chi\bar{\chi}$ associated production is mediated through either CP-odd weak eigenstate, $A$ or $a$, though it is shown in Fig.~\ref{fig:mchichi_tanB} that $a\rightarrow\chi\bar{\chi}$ is the dominant production mode. Although the relative mediator contribution is dependent on $\tan\beta$, observables such as $E_{T}^{miss}$ and top quark $p_{T}$ only have a moderate kinematic dependence on $\tan\beta$ as demonstrated in Fig.~\ref{fig:kin_tanB} before any analysis cuts. Other variables, such as the transverse mass $\MT$, are more affected by the contribution of the high mass mediator. 
 
 
 \subsubsection{Mass of DM fermion ($\mDM$)}
