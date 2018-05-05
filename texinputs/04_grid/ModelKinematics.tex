@@ -12,15 +12,17 @@ We note that in the following we have chosen to fix the DM coupling  $y_\chi$ to
 \subsection{Description of experimental searches}
 
 \subsubsection{Signatures including a Higgs boson}
+
 Events with a  $125$~GeV Higgs boson, recently discovered with ATLAS and CMS \cite{Aad:2012tfa,Chatrchyan:2012xdj}, and \MET can indicate 
 the production of Dark Matter candidates that recoil against the Higgs boson \cite{Carpenter:2013xra,Petrov:2013nia}. 
-The initial-state radiation (ISR) production of a Higgs boson is supressed by the small Yukawa couplings of the Higgs bosonto light quarks. Thus $h+\MET$ searches such as \cite{Aaboud:2017yqz,Aaboud:2017uak} 
+The initial-state radiation (ISR) production of a Higgs boson is supressed by the small Yukawa couplings of the Higgs boson to light quarks. Thus $h+\MET$ searches such as \cite{Aaboud:2017yqz,Aaboud:2017uak} 
 directly probe potential new interactions of the Higgs and Dark Matter, as predicted by the \hdma model \cite{Bauer:2017ota,No:2015xqa} due to the $a-A-h$ vertex. 
 
 %Lars: may want to drop the monoH  substructure here, if no monohyy input forthcoming...
  
 \paragraph{$\boldsymbol{\monohbb}$ signature} For the case where the Higgs bososn decays into two $b$-quarks, such as studied in \cite{Aaboud:2017yqz}, the signal kinematics are studied at parton level. 
 This allows a straightforward comparison to the model-independent results in~\cite{Aaboud:2017yqz}, as described in \autoref{sec:sensi_monohbb}, and fast iteration over different model scenarios. 
+%%Describe cuts here briefly
 
 \subsubsection{Signatures including a Z boson}
 
@@ -397,15 +399,72 @@ For small values of $\tanb$ there is a slight softening and broadening of the \M
     \includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/MDM_1_Ma_100_MA_600_sinp_0.7071_SCAN_tanb_decayed/topptlog.pdf}
     \caption{top $p_{T}$}
   \end{subfigure}
-  \caption{The $E_{T}^{miss}$ and top $p_{T}$ distribution for inclusive $t\bar{t}+\chi\bar{\chi}$ production for various values of $\tan\beta$, with $\mathrm{M_a}=100$ GeV, $\mathrm{M_A}=600$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=6
-00$ GeV, and $\sin\theta=0.7071$.}
+  \caption{The $E_{T}^{miss}$ and top $p_{T}$ distribution for inclusive $t\bar{t}+\chi\bar{\chi}$ production for various values of $\tan\beta$, with $\mathrm{M_a}=100$ GeV, $\mathrm{M_A}=600$ GeV, $\mathrm{M_H}=\mathrm{M_{H^{\pm}}}=600$ GeV, and $\sin\theta=0.7071$.}
   \label{fig:kin_tanB}
 \end{figure}
 
 In the $t\bar{t}$ + \MET signature, and in the limit of small $\tan\beta$ values, the couplings of $A$ ($h_{3}$ in the figure) and $a$ ($h_{4}$ in the figure) to down-type quarks are heavily suppressed regardless of the Yukawa assignment. At LO, $t\bar{t}+\chi\bar{\chi}$ associated production is mediated through either CP-odd weak eigenstate, $A$ or $a$, though it is shown in \autoref{fig:mchichi_tanB} that $a\rightarrow\chi\bar{\chi}$ is the dominant production mode. 
 Although the relative mediator contribution is dependent on $\tan\beta$, observables such as $E_{T}^{miss}$ and top quark $p_{T}$ only have a moderate kinematic dependence on $\tan\beta$ as demonstrated in \autoref{fig:kin_tanB} before any analysis cuts. 
 Other variables, such as the transverse mass $\MT$, are more affected by the contribution of the high mass mediator, as shown in \autoref{fig:kin_tanB} after kinematic cuts. 
-For this reason, and since the production cross section times branching ratio for the $b\bar{b}$ + \MET signature is enhanced at high values of $\tan\beta$ (\textbf{Show cross-section plot when available}) \emph{it is desirable to perform a coarse scan in $\tan\beta$ as well}.  
+For this reason, and since the production cross section times branching ratio for the $b\bar{b}$ + \MET signature is enhanced at high values of $\tan\beta$ (\textbf{Show cross-section plot when available}) \emph{it is desirable to perform a coarse scan in $\tan\beta$ as well}. 
+
+It is interesting to note however that the relative total width for the heavy scalar $H$ becomes unphysically large at high $\tan\beta$ when all scalars have the same mass, due to the very large $H\rightarrow aa$ rate. 
+%CD this is not clear for me what is the choice of a in this? 
+This can be cured by tuning the mass of the heavy scalar so that the coupling between the heavy scalar and the light pseudoscalar $g_{Haa}$ becomes small for this scan only, therefore suppressing the $H\rightarrow aa$ rate that drives the width. An example of the heavy scalar width as a function of $\tan\beta$, with $\mathrm{M_H}=\mathrm{M_A}=600$ GeV, $\mathrm{M_{H^{\pm}}}=664$ GeV, $\sin\theta=0.35$, \mdm=10 GeV and \gdm=1 is shown in Fig.~\ref{fig:higgsWidth}. 
+
+Even though this choice of parameters for this scan introduces a specific tuning and therefore model-dependence, it can be justified by noting that the trilinear scalar couplings are very sensitive to changes in the model's masses and couplings, and this in turn changes the decay partner of the heavy scalar and of the Higgs partners. Furthermore, the Higgs width does not influence the $b\bar{b}$ + \MET signal directly. Nevertheless, if this is tuning is not performed, particular care has to be taken at high $\tan\beta$ values to obtain reasonable results outside the narrow-width approximation, both for the generation of the signal and for the interpretation of the results.  
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{texinputs/04_grid/figures/DMHF/benchmarking/Gamma5.pdf}
+  \caption{The width of the heavy scalar as a function of $\tan\beta$, with $\mathrm{M_H}=\mathrm{M_A}=600$ GeV, $\mathrm{M_{H^{\pm}}}=664$ GeV, $\sin\theta=0.35$, \mdm=10 GeV and \gdm=1.}
+  \label{fig:higgsWidth}
+\end{figure}
+
+%Dear all.
+%
+%I attach some plots that show the relative total widths for all scalars. 
+%
+%For Gamma1.pdf to Gamma4.pdf I used the parameters 
+%
+%M_H = M_A = M_H^+ = 600 GeV, 
+%lambda_i = 3, i = 3, P1, P2
+%g_DM = 1
+%sin(theta) = 0.35
+%m_DM = 10 GeV
+%
+%As you can see the widths of a, A  and H^+ are fine, but the one of H is not for 
+%this choice of parameters. 
+%
+%The problem with the huge width of H can be "cured" by tuning M_H^+ so that 
+%the coupling g_Haa as given in (4.9) of https://arxiv.org/pdf/1701.07427.pdf 
+%becomes small thereby suppressing the H -> aa rate that drives Gamma(H) 
+%large. 
+%
+%For instance for the above parameters taking 
+%
+%M_H = M_A  = 600 GeV
+%
+%but 
+%
+%M_H^+ = 664 GeV
+%
+%leads to the plot Gamma5.pdf. In this case tan(beta) can be taken to be 50 
+%without running into trouble with the narrow-width approximation. 
+%
+%I am not sure if everybody is happy with this fix. I think it is fair to say that 
+%the trilinear scalar couplings are rather model dependent, meaning that by 
+%changing the masses M_j and couplings lambda_i one can change them 
+%a lot which in turn will change the decay pattern of the Higgses. 
+%
+%Another point of view could be that one ignores that H has a huge width
+%because it does not contribute to the bbbar + MET signal. 
+%
+%Best.
+%
+%Uli 
+%
+
 
 \begin{figure}[tbp]
 \centering
