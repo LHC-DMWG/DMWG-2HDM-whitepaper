@@ -1,9 +1,129 @@
+In the first part of this section we present the sensitivity estimates for the main signatures that are sensitive to the model, in the parameter scans chosen for comparison. These estimates are based on the reinterpretation of existing results that contain different amounts of public information, using generator-level simulation of the chosen grid points. In the case of the mono-Higgs results from~\cite{Aaboud:2017yqz}, model-independent limits are available. 
 
-\subsection{Sensitivity studies}
+The second part of this section briefly outlines additional signatures that are also sensitive to this model. [to be completed]
+
+Lastly, we show the projections for the sensitivity of searches of choice for the luminosity at the end of Run-2. [to be completed]
 
 \subsubsection{Studies of the $\monohbb$ signature}
 \label{sec:sensi_monohbb}
-\input{texinputs/04_grid/MonoHbb}
+%\input{texinputs/04_grid/MonoHbb}
+
+The sensitivity estimates of the ATLAS and CMS \monohbb searches to the \hdma scenarios are based on limits on the minimally model-dependent anomalous production of 125 GeV Higgs bosons in association with \met in~\cite{Aaboud:2017yqz}. 
+As these limits are set in terms of the observed production cross-section of non-SM events with large $\MET$ and a Higgs boson, they can be compared directly to the cross-sections obtained from the \hdma model after folding the detection efficiency $\varepsilon$ times the kinematic acceptance $\mathcal{A}$ of the event selection. This approach reduces the need for computing resources to simulate further event generation steps and detector response. 
+The variable of interest for the sensitivity study of the \monohbb searches is the ratio between the parton-level cross-section $\sigma_{i}^{\mathrm{parton},\,\hdm}$ times the $H\rightarrow b\bar{b}$ branching ratio $\mathcal{B}^{\mathrm{SM},\,h\to bb}$ predicted by the SM for the 125~GeV Higgs boson, multiplied by the acceptance $\mathcal{A}$ and detector efficiency $\varepsilon$, and the upper observed cross-section of the anomalous production of Higgs bosons in association with \met ($\sigma_{i}^{\mathrm{obs},\,\monohbb}$):
+
+\begin{equation}
+\label{eq:monoHbb_sensi}
+\sens_i \equiv \frac{\sigma_{i}^{\mathrm{parton},\,\hdm} \times \mathcal{B}^{\mathrm{SM},\,h\to bb} \times (\mathcal{A\times\varepsilon})_{i} }
+{\sigma_{i}^{\mathrm{obs},\,\monohbb}}\,,
+\end{equation}
+
+where  is the $h\to bb$ branching ratio predicted by the SM for the 125~GeV Higgs boson. This quantity is summed over the $i$ \met bins of the search, since the model will populate more than one \met bin at a time. A particular point in the space is excluded by the current search if $\sens_i \geq 1$. 
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.7\textwidth]{texinputs/04_grid/figures/monoHbb_sensi_sum_bins_1_2_3_4_ma_vs_mA_lin.pdf}
+\caption[Sensitivity to $h\to bb + \MET$ signals in $\mA$ - $\ma$ plane, summed across $\MET$ bins]
+{
+Sum over all $\MET$-bins of the estimated sensitivity to $h\to bb + \MET$ events as a function of $(\mA,\ma)$. 
+The sensitivity, defined as the sum of \autoref{eq:monoHbb_sensi} over the \met bins, is based on the limits with reduced model dependence from Ref.~\cite{Aaboud:2017yqz}. 
+The remaining parameters take the values $ \mH=\mHc= \mA, \sinp = 0.35, \tanb = 1, \mDM = 10$ GeV and $ \lap1 = \lap2 = \lam3 = 3 $.}
+\label{fig:monoHbb_sensi_full_mA_ma}
+\end{figure}
+
+The expected sensitivity of \monohbb searches to the \hdma model in the $(\ma,\mA)$ plane is shown in \autoref{fig:monoHbb_sensi_full_mA_ma}.
+The sensitivity decreases with increasing $\mA = \mH = \mHc$ for $\mA \geq 1$~TeV because the fraction of resonant signal events drops. 
+This drop is caused by increasingly large $\Gamma_A$, which allows for an increasing fraction of non-resonant signal events, driven by events with very off-shell $A$. 
+%TODO: ref ggF-> A -> ah feynman graph
+%Non-resonant signal events have soft $\MET$ and thus the search is less sensitive to them, since the minimum accepted $\MET$ is $\MET \geq 150$ GeV.
+Near the mass diagonal $\ma = \mA$, there is little to no sensitivity. 
+This is because the Jacobian peak moves to low $\MET$ for a small mass splitting $|\mA - \ma|$  (as shown in \autoref{eq:monoH_peak_met}, \autoref{fig:monoHbb_mA_scan_met}, and \autoref{fig:monoHbb_ma_scan_met}). 
+Moreover, the coupling $g_{Aah}$ is small when all Higgs bosons are nearly degenerate in mass, cf.~Equation~4.12 in Ref.~\cite{Bauer:2017ota}, %ref to eq.in theory part(?)
+resulting in a small total cross section and therefore a further decrease in sensitivity.
+The sensitivity above the mass diagonal, $\mA > \ma$, is larger than below the mass diagonal.
+Two parameter choices cause this asymmetry:
+\begin{enumerate}
+%CD: this said \mA = \mH = \mHc but the plot shows that we vary mH and fix mA
+%CD I am not sure I understand this sentence? 
+\item 
+The choice of $\mA = \mH = \mHc$ forces the neutral and charged $CP$-even scalars to have lower masses below the diagonal and higher masses above the diagonal. 
+As it can be seen in \autoref{fig:monoHbb_mH_scan_met}, when $\mH = \mHc$ are below the mass of the higher-mass pseudoscalar $A$, there is a lower fraction of resonant signal events, and a reduced total cross-section. 
+\item 
+The choice of $\sinp = 0.35 \neq 1/\sqrt{2}$ means that the mixing between the pseudoscalars $A$ and $a$ is asymmetric. 
+$A$ couples more strongly to SM particles than $a$, while the opposite happens to the DM fermion $\chi$.
+The situation below the diagonal corresponds to the case of $\sinp = \sqrt{1-0.35^2} \approx 0.938$ and $\mA > \ma$. 
+As it can be seen in \autoref{fig:monoHbb_sinp_scan_mA600_ma200_met}, this \sinp configuration yields a higher fraction of non-resonant signal events with low \met, and correspondingly a lower sensitivity is found, as also seen in \autoref{fig:monoHbb_sensi_full_sinp}.
+\end{enumerate}
+
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.7\textwidth]{texinputs/04_grid/figures/monoHbb_sensi_sum_bins_1_2_3_4_ma_vs_tanb_lin.pdf}
+\caption[Sensitivity to $h\to bb + \MET$ signals in $\mA$ - $\tanb$ plane, summed across $\MET$ bins]
+{
+Sum over all $\MET$-bins of the estimated signal sensitivity to $h\to bb + \MET$ events as a function of $(\ma,\tanb)$. 
+The sensitivity, defined as the sum of \autoref{eq:monoHbb_sensi} over the \met bins, is based on the limits with reduced model dependence from Ref.~\cite{Aaboud:2017yqz}. 
+The remaining parameters take the values $ \mH=\mHc=\mA = 600$ GeV, $ \sinp = 0.35, \mDM = 10$ GeV and $ \lap1 = \lap2 = \lam3 = 3 $.}
+\label{fig:monoHbb_sensi_full_ma_tanb}
+\end{figure}
+
+The scan of the sensitivity in the  $(\ma,\tanb)$ plane is shown in  \autoref{fig:monoHbb_sensi_full_ma_tanb}. 
+At very low $\tanb$, the Yukawa coupling to top quarks is large, and most of the signal events come from non-resonant processes, as can be seen from \autoref{fig:monoHbb_tanb_scan_met}. % ref to tanb met scan
+The non-resonant processes are characterised by soft $\MET$, which lowers the kinematic acceptance and reduces the sensitivity of the search.
+For higher $\tanb$, the fraction of resonant events increases due to the reduced top Yukawa coupling, resulting in an increase of sensitivity.
+However, reducing the top Yukawa coupling also reduces the total production cross section. 
+%This effect is sub-dominant below $\tanb \approx 1.2$, and the sensitivity increases with $\tanb$. 
+Above $\tanb \approx 1.2$, the sensitivity loss due to reduced cross section outpaces the sensitivity gain due the resonant signal.
+%Overall, the search gets less sensitive with increasing $\tanb$ above $\tanb \approx 1.2$.
+At very high $\tanb$ ($\geq 10$), this trend is reversed again because the $\tanb$ enhancement\footnote{The \hdma scenario assumes a Yukawa sector of type II.} of the coupling to $b$-quarks compensates for the small $b$-quark mass.
+At this point $bb$ initiated processes start to dominate the production cross section and drive the increase in sensitivity.
+
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.49\textwidth]{texinputs/04_grid/figures/monoHbb_sinp_scan_1_sensi_1D.pdf}
+\includegraphics[width=0.49\textwidth]{texinputs/04_grid/figures/monoHbb_sinp_scan_2_sensi_1D.pdf}
+\caption[Sensitivity to $h\to bb + \MET$ signals with different $\sinp$, summed across $\MET$ bins]
+{
+Sum over all $\MET$-bins of the estimated signal sensitivity to $h\to bb + \MET$ events as a function of the pseudoscalar mixing parameter $\sinp$, for $\ma = 200~\GeV$ and $\mH=\mHc=\mA = 600$~GeV~(left) as well as $\ma = 350~\GeV$ and $\mH=\mHc=\mA = 1000$~GeV~(right). The remaining parameters take the values
+$\mDM = 10 $ GeV$, \tanb = 1,$ and $ \lap1 = \lap2 = \lam3 = 3 $.
+The sensitivity, defined as the sum of \autoref{eq:monoHbb_sensi} over the \met bins, as well as the uncertainty on the sensitivity (shaded blue) 
+ are based on the limits with reduced model dependence from Ref.~\cite{Aaboud:2017yqz} and the uncertainties described therein. 
+}
+\label{fig:monoHbb_sensi_full_sinp}
+\end{figure}
+
+The sensitivity as a function of $\sinp$ is shown in \autoref{fig:monoHbb_sensi_full_sinp}.
+The sensitivity vanishes at $\sinp=0$ and $\sinp=1$, since those values correspond to no mixing between $A$ and $a$, and thus no connection between the SM and the dark sector. 
+For its intermediate values, the $\sinp$ parameter influences the couplings of the pseudoscalars to DM as well as to SM fermions, as well as the coupling strength of the trilinear scalar vertices such as $g_{Aah}$~\cite{Bauer:2017ota}. 
+Increasing these couplings increases the total cross section, but it can also increase $\Gamma_A$ and thereby decrease the resonant fraction of signal events and the overall search sensitivity.
+For this reason, the dependence of the sensitivity on \sinp depends on the interplay of the couplings.
+As a consequence, the sensitivity curve as a function of \sinp has more than one local maximum, as shown the right panel of~\autoref{fig:monoHbb_sensi_full_sinp}. 
+%Because the couplings depend on all other model parameters including all the Higgs masses, tuning the $\sinp$ of a parameter scan to the sensitivity in a single point can lead to sub-optimal sensitivity in other points.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.7\textwidth]{texinputs/04_grid/figures/monoHbb_sensi_mDM_scan_red.pdf}
+\caption[Sensitivity to $h\to bb + \MET$ signals with different $\mDM$, summed across $\MET$ bins]
+{
+Sum over all $\MET$-bins of the estimated signal sensitivity to $h\to bb + \MET$ events as a function of the DM mass $\mDM$. 
+The sensitivity, defined as the sum of \autoref{eq:monoHbb_sensi} over the \met bins, as well as the uncertainty on the sensitivity (shaded blue) are based on the limits with reduced model dependence from Ref.~\cite{Aaboud:2017yqz} and the uncertainties described therein. 
+The remaining parameters take the values $ \ma = 250 $ GeV$, \mH=\mHc=\mA = 600$ GeV, $ \sinp = 0.35, \tanb = 1,$ and $ \lap1 = \lap2 = \lam3 = 3 $. 
+The sensitivity is constant below $\mDM < \ma/2$, and rapidly drops for $\mDM > \ma/2$. The sensitivity is resonantly enhanced for $\mDM = \ma/2$.}
+\label{fig:monoHbb_sensi_full_mDM}
+\end{figure}
+
+The sensitivity to models with varying $\mDM$ is shown in  \autoref{fig:monoHbb_sensi_full_mDM}.
+Below the threshold of $\mDM < \ma/2$, the sensitivity is constant since the $\MET$ distribution and the total signal cross section remain unchanged.%, as demonstrated in \autoref{fig:monoHbb_mDM_scan_met}.
+The region at threshold $\mDM = \ma/2 \pm 5 GeV$ (shaded in red in \autoref{fig:monoHbb_sensi_full_mDM}) is numerically unstable and should be avoided. 
+%At threshold, the sensitivity is enhanced because the partial width for $ a \to \chi \chi $ is enhanced, increasing the signal cross section. However, this region is numerically unstable, 
+%in the case i studied, staying only 1 GeV away from m_a = 2 * m_dm produced already results that looked perfectly fine
+%in practice i think it is easy to spot when things go wrong. one just has to look at the sensitivity as a function of m_DM. for instance, this plot is a good example
+%https://github.com/LHC-DMWG/DMWG-2HDM-whitepaper/blob/master/texinputs/04_grid/figures/monoHbb_sensi_mDM_scan.pdf
+%the sensitivity should decrease with increasing m_DM. if the sensitivity is enhanced like it is the case at hand for m_DM values around 125 GeV then one should disregard the corresponding points because the enhancement of the sensitivity is due to a numerical artefact  
+Above threshold, the sensitivity drops rapidly because $\mDM > \ma/2$ requires an off-shell $a^{\star} \to \chi\chi$ decay, which is strongly suppressed by the typically narrow width of $a$. 
+The width of $a$ is substantially reduced once $a\to \chi \chi$ is kinematically inaccessible, as $\Gamma_{a\to \chi \chi}$ is a large contribution to the total width of $a$ for $\mDM \leq \ma/2$ \cite{Bauer:2017ota}.
+There is a slight increase in sensitivity for $\mDM \approx \mA/2$ when the $A\to \chi\chi$ decay hits its kinematic threshold, yet the absolute sensitivity remains negligible.
 
 \FloatBarrier
 \subsubsection{Studies of the mono-Z (leptonic) signature}

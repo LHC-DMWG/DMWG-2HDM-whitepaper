@@ -1,0 +1,27 @@
+\subsubsection{Details on sensitivity studies for the $\monohbb$ signature}
+\label{sec:sensi_monohbb_app}
+
+The limits with minimal model dependence are provided in terms of the detector-level cross section of $\monohbb$ events $\sigma_{i}^{\mathrm{obs},\,\monohbb}$ as a function of \met in four bins $i=1,...4$~\cite{Aaboud:2017yqz}. 
+To compare these values to the simulation results at parton level, 
+an estimate of the detection efficiency $\varepsilon$ times the kinematic acceptance $\mathcal{A}$ of the event selections of the analysis is used for each of the four $\MET$ bins.
+%This estimate is provided as one $(\mathcal{A\times\varepsilon})$ value for each of the four $\MET$ bins. 
+Thus, the $(\mathcal{A}\times\varepsilon)_i$ figure represents the minimum probability
+that an event generated at parton level in a given $\MET$ bin $i$ is reconstructed in that same $\MET$ bin and passes all analysis selections.
+%The limits with minimal model dependence are provided separately for each of the four $\MET$ bins used in \cite{Aaboud:2017yqz}.
+%Thus, the simulated evebts are binned into those bins (\autoref{fig:monoHbb_xsec_bins_mA_ma}).
+Consequently, the cross section for \hdm production in the \hdma scenario at parton level $\sigma_{i}^{\mathrm{parton},\,\hdm}$ is calculated in the same $\MET$ bins as used in the \monohbb search. This starting point is shown in \autoref{fig:monoHbb_xsec_bins_mA_ma} using the scan in $(\mA,\ma)$ as a representative example. 
+In the next step, the sensitivity $\sens_i$ for each of the \met bins $i=1,...4$ is calculated as
+\begin{equation}
+\label{eq:monoHbb_sensi_i}
+\sens_i \equiv \frac{\sigma_{i}^{\mathrm{parton},\,\hdm} \times \mathcal{B}^{\mathrm{SM},\,h\to bb} \times (\mathcal{A\times\varepsilon})_{i} }
+{\sigma_{i}^{\mathrm{obs},\,\monohbb}}\,,
+\end{equation}
+where $\mathcal{B}^{\mathrm{SM},\,h\to bb}$ is the $h\to bb$ branching ratio predicted by the SM for the 125~GeV Higgs boson. A representative example for this step is given in \autoref{fig:monoHbb_sensi_bins_mA_ma} for the scan in $(\mA,\ma)$.  A particular point in the $(\mA,\ma)$ parameter parameter space is excluded if $\sens_i \geq 1$. Finally, to obtain a single estimate for the total sensitivity $\senstot$ using all four $\MET$ bins, their individual contributions from \autoref{eq:monoHbb_sensi_i} are summed over\footnote{
+This choice is made because the individual per-bin sensitivities follow a logarithmic metric, and because a model will typically populate several \met bins at a time. This implies that there could be models where $\sens_i<1$ in every bin, yet the sum from \autoref{eq:monoHbb_sensi} is $>1$.
+Therefore, for a rigorous exclusion of a model based on the limits with minimal model dependence, the preferred approach would be to consider only the most sensitive bin for the exclusion.
+}:
+\begin{equation}
+\label{eq:monoHbb_sensi}
+\senstot \equiv \sum_{i\in\met~\mathrm{bins}} \sens_i\,.
+\end{equation}
+The resulting $\senstot$ is shown in \autoref{fig:monoHbb_sensi_full_mA_ma} for the example of the $(\mA,\ma)$ scan.
