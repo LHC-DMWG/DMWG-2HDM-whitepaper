@@ -1,8 +1,8 @@
-In the first part of this section we present the sensitivity estimates for two of the main signatures that are sensitive to the model, the Higgs+\MET and the $Z$+\MET signatures, in the parameter scans chosen for comparison. These estimates are based on the reinterpretation of existing results that contain different amounts of public information, using generator-level simulation of the chosen grid points. In the case of the Higgs+\MET from~\cite{Aaboud:2017yqz}, model-independent limits are used for the reinterpretation, while for the Z+\MET signature an estimate of the sensitivity is obtained using generator-level information from signal and background simulations. 
+In the first part of this section we present the sensitivity estimates for two of the main signatures that are sensitive to the model, the Higgs+\MET and the $Z$+\MET signatures, in the parameter scans chosen for comparison. These estimates are based on generator-level reinterpretation of existing results with  36 fb$^{-1}$ of LHC data at a center-of-mass energy of 13 TeV. These results contain different amounts of public information. In the case of the Higgs+\MET from~\cite{Aaboud:2017yqz}, model-independent limits are used for the reinterpretation, while for the Z+\MET signature an estimate of the sensitivity is obtained using generator-level information from signal and background simulations. 
 
-The second part of this section briefly outlines additional signatures that are also sensitive to this model. [to be completed]
+The second part of this section briefly outlines additional signatures that are also sensitive to this model. Firstly we briefly discuss the jet + \MET signatures and the heavy flavor + \MET signatures, which do not yet have sensitivity with the 36 fb$^{-1}$ dataset for most of the scans. Then we enumerate other signatures that can be sensitive to this model, emphasizing those that are not yet fully covered by experimental searches. 
 
-Lastly, we show the projections for the sensitivity of searches of choice for the luminosity at the end of Run-2. [to be completed]
+%Lastly, we show the projections for the sensitivity of searches of choice for the luminosity at the end of Run-2. [to be completed]
 
 \subsection{Studies of the $\monohbb$ signature}
 \label{sec:sensi_monohbb}
@@ -19,16 +19,16 @@ The variable of interest for the sensitivity study of the \monohbb searches is t
 {\sigma_{i}^{\mathrm{obs},\,\monohbb}}\,,
 \end{equation}
 
-where  is the $h\to bb$ branching ratio predicted by the SM for the 125~GeV Higgs boson. This quantity is summed over the $i$ \met bins of the search, since the model will populate more than one \met bin at a time. A particular point in the space is excluded by the current search if $\sens_i \geq 1$. 
+where  is the $H\rightarrow b\bar{b}$ branching ratio predicted by the SM for the 125~GeV Higgs boson. This quantity is summed over the $i$ \met bins of the search, since the model will populate more than one \met bin at a time. A particular point in the space is excluded by the current search if $\sens_i \geq 1$. 
 
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=0.7\textwidth]{texinputs/04_grid/figures/monoHbb_sensi_sum_bins_1_2_3_4_ma_vs_mA_lin.pdf}
 \caption[Sensitivity to $h\to bb + \MET$ signals in $\mA$ - $\ma$ plane, summed across $\MET$ bins]
 {
-Sum over all $\MET$-bins of the estimated sensitivity to $h\to bb + \MET$ events as a function of $(\mA,\ma)$. 
+Sum over all $\MET$-bins of the estimated sensitivity to $H\rightarrow b\bar{b} + \MET$ events as a function of $(\mA,\ma)$. 
 The sensitivity, defined as the sum of \autoref{eq:monoHbb_sensi} over the \met bins, is based on the limits with reduced model dependence from Ref.~\cite{Aaboud:2017yqz}. 
-The remaining parameters take the values $ \mH=\mHc= \mA, \sinp = 0.35, \tanb = 1, \mDM = 10$ GeV and $ \lap1 = \lap2 = \lam3 = 3 $.}
+The remaining parameters take the values $ \mH=\mHc= \mA, \sinp = 0.35, \tanb = 1, \mDM = 10$ GeV and $ \lap1 = \lap2 = \lam3 = 3 $. Bins with no content have a negligible sensitivity.}
 \label{fig:monoHbb_sensi_full_mA_ma}
 \end{figure}
 
@@ -55,7 +55,6 @@ The situation below the diagonal corresponds to the case of $\sinp = \sqrt{1-0.3
 As it can be seen in \autoref{fig:monoHbb_sinp_scan_mA600_ma200_met}, this \sinp configuration yields a higher fraction of non-resonant signal events with low \met, and correspondingly a lower sensitivity is found, as also seen in \autoref{fig:monoHbb_sensi_full_sinp}.
 \end{enumerate}
 
-
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=0.7\textwidth]{texinputs/04_grid/figures/monoHbb_sensi_sum_bins_1_2_3_4_ma_vs_tanb_lin.pdf}
@@ -63,7 +62,7 @@ As it can be seen in \autoref{fig:monoHbb_sinp_scan_mA600_ma200_met}, this \sinp
 {
 Sum over all $\MET$-bins of the estimated signal sensitivity to $h\to bb + \MET$ events as a function of $(\ma,\tanb)$. 
 The sensitivity, defined as the sum of \autoref{eq:monoHbb_sensi} over the \met bins, is based on the limits with reduced model dependence from Ref.~\cite{Aaboud:2017yqz}. 
-The remaining parameters take the values $ \mH=\mHc=\mA = 600$ GeV, $ \sinp = 0.35, \mDM = 10$ GeV and $ \lap1 = \lap2 = \lam3 = 3 $.}
+The remaining parameters take the values $ \mH=\mHc=\mA = 600$ GeV, $ \sinp = 0.35, \mDM = 10$ GeV and $ \lap1 = \lap2 = \lam3 = 3 $. Bins with no content have a negligible sensitivity.}
 \label{fig:monoHbb_sensi_full_ma_tanb}
 \end{figure}
 
@@ -78,7 +77,6 @@ Above $\tanb \approx 1.2$, the sensitivity loss due to reduced cross section out
 At very high $\tanb$ ($\geq 10$), this trend is reversed again because the $\tanb$ enhancement\footnote{The \hdma scenario assumes a Yukawa sector of type II.} of the coupling to $b$-quarks compensates for the small $b$-quark mass.
 At this point $bb$ initiated processes start to dominate the production cross section and drive the increase in sensitivity.
 
-
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=0.49\textwidth]{texinputs/04_grid/figures/monoHbb_sinp_scan_1_sensi_1D.pdf}
@@ -88,7 +86,7 @@ At this point $bb$ initiated processes start to dominate the production cross se
 Sum over all $\MET$-bins of the estimated signal sensitivity to $h\to bb + \MET$ events as a function of the pseudoscalar mixing parameter $\sinp$, for $\ma = 200~\GeV$ and $\mH=\mHc=\mA = 600$~GeV~(left) as well as $\ma = 350~\GeV$ and $\mH=\mHc=\mA = 1000$~GeV~(right). The remaining parameters take the values
 $\mDM = 10 $ GeV$, \tanb = 1,$ and $ \lap1 = \lap2 = \lam3 = 3 $.
 The sensitivity, defined as the sum of \autoref{eq:monoHbb_sensi} over the \met bins, as well as the uncertainty on the sensitivity (shaded blue) 
- are based on the limits with reduced model dependence from Ref.~\cite{Aaboud:2017yqz} and the uncertainties described therein. 
+are based on the limits with reduced model dependence from Ref.~\cite{Aaboud:2017yqz} and the uncertainties described therein. Bins with no content have a negligible sensitivity.
 }
 \label{fig:monoHbb_sensi_full_sinp}
 \end{figure}
@@ -157,14 +155,14 @@ The expected sensitivity of Z+\MET searches to the \hdma model in the $(\ma,\mA)
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/leptonic/mAma_Significance_ll.pdf}
-\caption{Expected significances for the Z+\MET leptonic signature in the $(\ma,\mA)$ plane.} 
+\caption{Expected significances for the Z+\MET leptonic signature in the $(\ma,\mA)$ plane. Bins with no content have a negligible sensitivity.} 
 \label{fig:expected_significance_monozll_mamA}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/hadronic/grid_mA_ma_sum_bin100_sign_type3_bkg_uncert_0p10.pdf}
-\caption{Expected significances for the Z+\MET hadronic signature in the $(\ma,\mA)$ plane, combining both boosted and resolved analyses.} 
+\caption{Expected significances for the Z+\MET hadronic signature in the $(\ma,\mA)$ plane, combining both boosted and resolved analyses. Bins with no content have a negligible sensitivity.} 
 \label{fig:expected_significance_monozhad_mamA}
 \end{figure}
 
@@ -173,35 +171,139 @@ The sensitivity for the Z+\MET signatures in the $(\ma,\tanb)$ plane is shown in
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/leptonic/tanbma_Significance_ll.pdf}
-\caption{Expected significances for the Z+\MET leptonic signature in the $(\ma,\tanb)$ plane.} 
+\caption{Expected significances for the Z+\MET leptonic signature in the $(\ma,\tanb)$ plane. Bins with no content have a negligible sensitivity.} 
 \label{fig:expected_significance_monozll_mamA}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/hadronic/grid_tanb_ma_sum_bin100_sign_type3_bkg_uncert_0p10.pdf}
-\caption{Expected significances for the Z+\MET hadronic signature in the $(\ma,\tanb)$ plane, combining both boosted and resolved analyses.} 
+\caption{Expected significances for the Z+\MET hadronic signature in the $(\ma,\tanb)$ plane, combining both boosted and resolved analyses. Bins with no content have a negligible sensitivity.} 
 \label{fig:expected_significance_monozhad_mamA}
 \end{figure}
 
-The leptonic Z+\MET search provides experimental coverage of this model for a broad part of the parameter space. The light pseudoscalar $a$ can be probed up to mass values of $\approx\unit[350]{GeV}$, depending on the choice of parameters. Leptonic Z+\MET searches are mostly sensitive in the region of $\tanb<4$. The hadronic Z+\MET search covers a smaller parameter space with respect to the leptonic search, but it is nevertheless complementary.
+The leptonic Z+\MET search provides experimental coverage of this model for a broad part of the parameter space. The pseudoscalar mediator $a$ can be probed up to mass values of $\approx\unit[350]{GeV}$, depending on the choice of parameters. Leptonic Z+\MET searches are mostly sensitive in the region of $\tanb<4$. The hadronic Z+\MET search covers a smaller parameter space with respect to the leptonic search, but it is nevertheless complementary.
 %%TBC: why so bad?  
 
 \FloatBarrier
 
-\section{Sensitivity of the jet+\MET signature}
+\subsection{Other signatures}
 
-The search for events with at least one jet and large missing transverse momentum in the final states can be also interpreted in the context of the 2HDM+a model. In this scenario the light pseudo-scalar mediator which decays in DM particles can be radiated from heavy quark loops providing such a signature. This channel is able to probe a phase space with low $\tan(\beta)$ and high $\sin\theta$ in which the cross-sections of this kind of processes are enhanced, as shown in Fig. 13 of ~\cite{Bauer:2017ota}. Choosing $\tan(\beta)$ = 1 for the studies in this whitepaper enhances signatures with heavy flavor quarks with respect to, as shown in the \textbf{Cross section plot to be included}, $Z$ and $H$ bosons
+\subsubsection{Heavy flavor + \MET signatures}
 
-is larger than the value of the  
+The choice of $\sin\theta$=0.35 and $\tan\beta$=1 means that the searches with heavy flavors are not sensitive to parameter scans other than the $\tan\beta$ and $\sin\theta$ scans. As discussed in~\autoref{sub:DMHF_rescaling}, it is possible to recast the results of searches reinterpreted with the pseudoscalar model from~\cite{Abercrombie:2015wmb}, but this has not been done for this whitepaper. 
 
-benchmark selected in this whitepaper has a $\tan(\beta)$ that is larger than the value of approximately 0.5 that jet+\MET searches are currently sensitive to.
+\subsubsection{Jet+\MET signature}
 
-Since the models used for the interpretation of the jet+\MET search in terms of scalar DM mediators are the same used for the HF+\MET searches, it is possible to reinterpret the results of the search in terms of this model using the same rescaling strategy discussed in ~\autoref{sub:DMHF_rescaling}. 
+The search for events with at least one jet and large missing transverse momentum in the final states can be also interpreted in the context of the 2HDM+a model. In this scenario the pseudoscalar mediator can be radiated from heavy quark loops providing such a signature. This channel is able to probe a phase space with low $\tan\beta$ and high $\sin\theta$ in which the cross-sections of this kind of processes are enhanced, as shown in Fig. 13 of ~\cite{Bauer:2017ota}. The choice of $\tan\beta$ = 1 for the studies in this whitepaper highlights the complementarity between $H$ + \MET and $Z$ + \MET signatures; however the jet + \MET signature is only sensitive to values of $\tan(\beta)$ up to 0.5 and is not studied in detail in this whitepaper. 
+
+Since the models used for the interpretation of the jet+\MET search in terms of scalar DM mediators are the same used for the HF+\MET searches, it is possible to reinterpret the results of the search in terms of this model using the same rescaling strategy discussed in \autoref{sub:DMHF_rescaling}. 
 
 %\subsection{Studies of DM+heavy flavor signature}
 %\input{texinputs/04_grid/DMHF}
 
-\subsection{Other signatures}
-\input{texinputs/04_grid/Monojet}
+\subsubsection{$tW$+\met signature}
+
+The sensitivity of the LHC experiments to the associated production of dark matter with a single top has been recently studied \cite{Pani:2017qyd} in the framework of an extension of the standard model featuring two Higgs doublets and an additional pseudoscalar mediator. 
+This study extends the work of previous literature \cite{Pinna:2017tay}, which demostrated using a simplified model that the consideration of final states involving a single top quark and DM (DM$t$) increases the coverage of existing analyses targeting the DM$t\bar t$ process.  
+
+\begin{figure}
+\begin{center}
+\begin{subfigure}{.23\textwidth}\centering
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/Pfeyn_tw2}
+\caption{}
+\end{subfigure}
+\begin{subfigure}{.23\textwidth}\centering
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/Pfeyn_tw1}
+\caption{}
+\end{subfigure}
+\begin{subfigure}{.23\textwidth}\centering
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/Pfeyn_tchan_1}
+\caption{}
+\end{subfigure}
+\begin{subfigure}{.23\textwidth}\centering
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/DMHF/Pfeyn_tchan_2}
+\caption{}
+\end{subfigure}
+\caption{Representative diagrams for $tW$ and $t$-channel production of DM in association with a single top quark.}
+%($pp \rightarrow tj\chi\chi$)}
+\label{fig:feyn1}
+\end{center}
+\end{figure}
+
+Like single top production within the SM, the DM$t$ signature in the model includes three different types of contributions at leading order (LO) in QCD: $t$-channel production, $s$-channel production and associated production together with a $W$ boson ($tW$) (Fig.~\ref{fig:feyn1}).
+When the decay $H^{\pm}\rightarrow W^{\pm} a$ is possible, the $H^{\pm}$ is produced on-shell, and the cross-section of $pp \rightarrow tW\chi\chi$, 
+assuming $H^{\pm}$ masses of a few hundred \GeV, is around one order of magnitude larger than the one for the same process in the simplified model. Moreover the production and cascade decay of a resonance yields kinematic signatures which can be exploited to separate the signal from the SM background. 
+
+Ref.~\cite{Pani:2017qyd} analyzes detector-smeared generator-level signal and background samples using dedicated selections considering one and two lepton final states, in order to assess the coverage in parameter space for this signature at a centre-of-mass energy of 14 TeV assuming an integrated luminosity of 300~fb$^{-1}$. 
+%Background and signal Monte Carlo simulated samples are employed for the estimate of the results. The effect of the detector on the kinematic quantities utilised in the analysis is simulated by applying a Gaussian smearing to the momenta of the different reconstructed objects and reconstruction and tagging efficiency factors.
+\autoref{DMHF:monotopres} shows the reach of this signature for two of the parameter scans proposed in this whitepaper, in the ($\ma,\tan\beta$) plane assuming $\sin\theta$ = 0.35 and $m(A) = m(H^\pm) = m(H) = 500$ GeV, and as a function of $\tan\beta$ assuming $sin\theta = 0.35$, $m(a)$ = 150 GeV and $m(A) = m(H^\pm) = m(H) = 500$ GeV. 
+The sensitivity of this signature is comparable to the one of the Higgs + \MET signature~\cite{Bauer:2017ota}. 
+%The results are derived from the simulated samples using a
+%re-scaling  procedure described in Ref.[IN PREPARATION]
+%In this signature, the sensitivity reach is comparable to the one from the mono-h signature as presented in Ref.~\cite{Bauer:2017ota}. 
+
+\begin{figure}
+\centering
+\includegraphics[width=.48\textwidth]{texinputs/04_grid/figures/DMHF/SRrec2l_2DSCAN_a}
+\includegraphics[width=.47\textwidth]{texinputs/04_grid/figures/DMHF/SR2la_ULscan4}
+\caption{Sensitivity in terms of excluded/theoretical cross-section for the tW+\met signature in the ($m(a)$,$\tan\beta$) plane, fixing $m(a)$ to 150 GeV, $sin\theta = 0.35$ and $m(A) = m(H^\pm) = m(H)$ (left). Sensitivity as a function of $\tan\beta$, assuming $sin\theta = 0.35$, $m(a)$ = 150 GeV and $m(A) = m(H^\pm) = m(H) = 500$ GeV (right).}
+\label{DMHF:monotopres}
+\end{figure}
+
+\subsubsection{Signatures with $tt h+\met$}
+
+As discussed in \autoref{sub:DMHF_rescaling}, the production of the heavy mediator $A$ contributes sizably to the $tt+\met$  
+production cross section in the $2HDM+a$ model. 
+This is also true for the heavy $H$. 
+When the decay of these mediators into the lightest pseudoscalar $a$ is allowed, this decay process dominates over the direct decay into $\chi\chi$. In analogy with what happens for the mono-h signature discussed in \cite{Bauer:2017ota}, for certain region of parameter space the contribution of the processes $pp \rightarrow t\bar t A \rightarrow t \bar t a h$ and $pp \rightarrow t\bar t H \rightarrow t \bar t a Z$ become sizable. 
+In the case of $pp \rightarrow t\bar t A \rightarrow t \bar t a h$, it can be inferred from Fig. 12(b) of Ref.~\cite{Bauer:2017ota} that for relatively small $m(A)$ the $pp \rightarrow t\bar t ah$ cross section can be up to 30\% that of the $pp\rightarrow t \bar t \chi\chi$ process. 
+This encourages the study of the interplay of $tth+\met$ searches with the traditional heavy flavor + \MET searches. 
+%The following needs Priscilla's interpretationl, asked
+%The interplay between the parameters of the model, and especially between the heavy Higgs masses for these types of final state render the phenomenology interesting and variegated, as can be seen for example in \autoref{fig:brAHah}, although further studies are needed to fully understand the interplay and the complementarity between these $tth+\met$ channels and the traditional heavy flavour dark matter searches. 
+
+%\begin{figure}
+%\centering
+%\includegraphics[width=.48\textwidth]{texinputs/04_grid/figures/DMHF/brA}
+%\includegraphics[width=.48\textwidth]{texinputs/04_grid/figures/DMHF/brH}
+%\caption{Example of the dependence of the $A$ and $H$ branching ratio into $ah$ as a function of some parameters of the 2HDM model.}
+%\label{fig:brAHah}
+%\end{figure}
+
+\subsubsection{\ttbar\ resonances}
+
+Heavy (pseudo)scalar bosons with $M_{A/H}\ge2\mt$ and $\tanb \sim \mathcal{O}(1)$ will decay dominantly into top-quark pairs. Searches for features in the \ttbar\ invariant mass spectra are sensitive to this process. 
+In this case, interference effects between the signal processes and the SM \ttbar\ production distort the signal shape from a single peak to a peak-dip structure \cite{Carena:2016npr}. 
+
+The results of the first LHC search accounting for this feature in Ref.~\cite{Aaboud:2017hnm} can be reinterpreted in the context of the \hdma, after modifying the \mg model to feature this effect. Since interference between loop-induced and tree-level processes cannot currently be simulated, "Higgs\_Effective\_Couplings\_FormFactor" approach from Ref.~\cite{Aaboud:2017hnm} is adopted, replacing the loop production by an effective vertex. 
+Using this approach, it can be verified that the \hdma reduces to a minimal 2HDM when the pseudoscalar mediator $a$ does not mix with the heavy pseudoscalar $A$ ($\sinp=0$): \autoref{fig:ttres_2HDMvs2HDMa} shows the \ttbar\ invariant mass distribution in both cases, showing the peak-dip structure. 
+
+While a full study of the sensitivity of this search is not shown in this whitepaper, examples of how its reach changes as a function of the parameters of the \hdma, the $M_{\ttbar}$ signal distribution are presented in Fig~\ref{fig:ttres_2HDM_A}. Larger values of \tanb\ or \sinp\ are expected to yield lower sensitivities to $A\rightarrow\ttbar$ significantly while \ma\ almost only affects the contribution from $a\rightarrow\ttbar$, which becomes sizeable if \ma is close to $2\mt$.
+
+\begin{figure}
+\centering
+\includegraphics[width=.48\textwidth]{texinputs/04_grid/figures/ttres/ttres_2HDMvs2HDMa_A.pdf}
+\includegraphics[width=.48\textwidth]{texinputs/04_grid/figures/ttres/ttres_2HDMvs2HDMa_H.pdf}
+\caption{$M_{\ttbar}$ distribution of the heavy (pseudo)scalar boson decaying into \ttbar\ with $\mA=\mH=600\GeV, \tanb=0.4$, $\sinp=1/\sqrt{2}$ and $M_a=100\GeV$ in comparison with the one from the generic 2HDM.}
+\label{fig:ttres_2HDMvs2HDMa}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{subfigure}[b]{0.49\textwidth}
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/ttres/ttres_2HDMa_A_tanb.pdf}
+\caption{\tanb dependency with fixed $\sinp=1/\sqrt{2}$ and $\ma=100\GeV$}
+\end{subfigure}
+\begin{subfigure}[b]{0.49\textwidth}
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/ttres/ttres_2HDMa_A_sinp.pdf}
+\caption{\sinp dependency with fixed $\tanb=0.4$ and $\ma=100\GeV$}
+\end{subfigure}
+\begin{subfigure}[b]{0.49\textwidth}
+\includegraphics[width=\textwidth]{texinputs/04_grid/figures/ttres/ttres_2HDMa_A_ma.pdf}
+\caption{\ma dependency with fixed $\tanb=0.4$ and $\sinp=1/\sqrt{2}$}
+\end{subfigure}
+\caption{Signal $M_{\ttbar}$ distribution as a function of various model parameters. The value of \mA is fixed at 600\GeV.}
+\label{fig:ttres_2HDM_A}
+\end{figure}
+\FloatBarrier
 
