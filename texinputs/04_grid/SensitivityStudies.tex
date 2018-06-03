@@ -1,6 +1,6 @@
-In the first part of this section we present the sensitivity estimates for two of the main signatures that are sensitive to the model, the Higgs+\MET and the $Z$+\MET signatures, in the parameter scans chosen for comparison. These estimates are based on generator-level reinterpretation of existing results with  36 fb$^{-1}$ of LHC data at a center-of-mass energy of 13 TeV. These results contain different amounts of public information. In the case of the Higgs+\MET from~\cite{Aaboud:2017yqz}, model-independent limits are used for the reinterpretation, while for the Z+\MET signature an estimate of the sensitivity is obtained using generator-level information from signal and background simulations. 
+In the first part of this section we present the sensitivity estimates for two of the main signatures that are sensitive to the model, the Higgs+\MET and the $Z$+\MET signature where the $Z$ boson decays leptonically, in the parameter scans chosen for comparison. These estimates are based on generator-level reinterpretation of existing results with  36 fb$^{-1}$ of LHC data at a center-of-mass energy of 13 TeV. These results contain different amounts of public information. In the case of the Higgs+\MET from~\cite{Aaboud:2017yqz}, model-independent limits are used for the reinterpretation, while for the Z+\MET signature an estimate of the sensitivity is obtained using generator-level information from signal and published background estimates. Finally, we conclude this section with a brief outline additional signatures that are also sensitive to this model. 
 
-The second part of this section briefly outlines additional signatures that are also sensitive to this model. Firstly we briefly discuss the jet + \MET signatures and the heavy flavor + \MET signatures, which do not yet have sensitivity with the 36 fb$^{-1}$ dataset for most of the scans. Then we enumerate other signatures that can be sensitive to this model, emphasizing those that are not yet fully covered by experimental searches. 
+%Firstly we briefly discuss the jet + \MET signatures and the heavy flavor + \MET signatures, which do not yet have sensitivity with the 36 fb$^{-1}$ dataset for most of the scans. Then we enumerate other signatures that can be sensitive to this model, emphasizing those that are not yet fully covered by experimental searches. 
 
 %Lastly, we show the projections for the sensitivity of searches of choice for the luminosity at the end of Run-2. [to be completed]
 
@@ -127,16 +127,17 @@ There is a slight increase in sensitivity for $\mDM \approx \mA/2$ when the $A\t
 
 \subsection{Studies of the Z+\MET signature}
 
-In the absence of generic limits on anomalous production of Z+\MET events, the expected sensitivity of the Z+\MET  searches to this model is approximated comparing the number of generator-level signal events to the respective background estimates. 
+In the absence of generic limits on anomalous production of Z+\MET events, the expected sensitivity of the Z+\MET search to this model is approximated comparing the number of generator-level signal events to the background estimate. 
 
-For the leptonic channel, the published background estimates corresponding to 36~fb$^{-1}$ of 13~TeV data~\cite{Aaboud:2017bja} are used, and a reconstruction efficiency of 75\% is assumed for signal events. 
+The published background estimates for the leptonic channel of the Z+\MET search, corresponding to 36~fb$^{-1}$ of 13~TeV data~\cite{Aaboud:2017bja}, are used. 
+A reconstruction efficiency of 75\% is assumed for signal events. 
 The same selection cuts applied to data in ~\cite{Aaboud:2017bja} are applied to signal. 
 Signal and background are binned in the same published \MET bins, and a conservative background systematic uncertainty of 20\% is assumed for $\MET < 120$ \GeV and 10\% for $\MET > 120$ \GeV. 
 
-For the hadronic channel, $Z \to \nu\nu$ events in association with jets are simulated using Sherpa~2.2.1~\cite{Gleisberg:2008ta} and the matrix elements are calculated up to 2 partons at next-to-leading order and up to 4 partons at leading order. Signal and background are scaled to 40~fb$^{-1}$ of 13~TeV data.
-The $Z (\to \nu\nu)$+jets events are analyzed at particle level with the same criteria used for the signal. 
-The number of $Z \to \nu\nu$ events after applying the cuts is increased by a factor 2 to conservatively account for the contribution from other backgrounds. 
-This factor is based on the ATLAS dark matter search in the mono-$Z$ hadronic signature using 3.2~fb$^{-1}$ of 13~TeV data~\ref{Aaboud:2016qgg}. 
+%For the hadronic channel, $Z \to \nu\nu$ events in association with jets are simulated using Sherpa~2.2.1~\cite{Gleisberg:2008ta} and the matrix elements are calculated up to 2 partons at next-to-leading order and up to 4 partons at leading order. Signal and background are scaled to 40~fb$^{-1}$ of 13~TeV data.
+%The $Z (\to \nu\nu)$+jets events are analyzed at particle level with the same criteria used for the signal. 
+%The number of $Z \to \nu\nu$ events after applying the cuts is increased by a factor 2 to conservatively account for the contribution from other backgrounds. 
+%This factor is based on the ATLAS dark matter search in the mono-$Z$ hadronic signature using 3.2~fb$^{-1}$ of 13~TeV data~\ref{Aaboud:2016qgg}. 
 
 Following the Asimov approximation, the significance for individual bins is calculated as a Poisson ratio of likelihoods modified to incorporate systematic uncertainties on the background \cite{Cowan:2012}:  
 %(\autoref{eq:significance_wsyst})
@@ -150,7 +151,8 @@ This metric has the advantage that it accounts for background systematics and is
 Similarly to the \monohbb, case, the total significance is defined as the per bin significances summed in quadrature.
  he ATLAS and CMS experiments are expected to be sensitive to regions with significances greater than 2.
  
-The expected sensitivity of Z+\MET searches to the \hdma model in the $(\ma,\mA)$ plane is shown in \autoref{fig:expected_significance_monozll_mamA} for the leptonic case, and \autoref{fig:expected_significance_monozhad_mamA} for the hadronic case.
+The expected sensitivity of Z+\MET searches to the \hdma model in the $(\ma,\mA)$ plane is shown in \autoref{fig:expected_significance_monozll_mamA} for the leptonic case.
+%, and \autoref{fig:expected_significance_monozhad_mamA} for the hadronic case.
 
 \begin{figure}
 \centering
@@ -159,14 +161,14 @@ The expected sensitivity of Z+\MET searches to the \hdma model in the $(\ma,\mA)
 \label{fig:expected_significance_monozll_mamA}
 \end{figure}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/hadronic/grid_mA_ma_sum_bin100_sign_type3_bkg_uncert_0p10.pdf}
-\caption{Expected significances for the Z+\MET hadronic signature in the $(\ma,\mA)$ plane, combining both boosted and resolved analyses. Bins with no content have a negligible sensitivity.} 
-\label{fig:expected_significance_monozhad_mamA}
-\end{figure}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/hadronic/grid_mA_ma_sum_bin100_sign_type3_bkg_uncert_0p10.pdf}
+%\caption{Expected significances for the Z+\MET hadronic signature in the $(\ma,\mA)$ plane, combining both boosted and resolved analyses. Bins with no content have a negligible sensitivity.} 
+%\label{fig:expected_significance_monozhad_mamA}
+%\end{figure}
 
-The sensitivity for the Z+\MET signatures in the $(\ma,\tanb)$ plane is shown in \autoref{fig:expected_significance_monozll_mamA} 
+The sensitivity for the Z+\MET signature in the $(\ma,\tanb)$ plane is shown in \autoref{fig:expected_significance_monozll_mamA} 
 
 \begin{figure}
 \centering
@@ -175,17 +177,16 @@ The sensitivity for the Z+\MET signatures in the $(\ma,\tanb)$ plane is shown in
 \label{fig:expected_significance_monozll_mamA}
 \end{figure}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/hadronic/grid_tanb_ma_sum_bin100_sign_type3_bkg_uncert_0p10.pdf}
-\caption{Expected significances for the Z+\MET hadronic signature in the $(\ma,\tanb)$ plane, combining both boosted and resolved analyses. Bins with no content have a negligible sensitivity.} 
-\label{fig:expected_significance_monozhad_mamA}
-\end{figure}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.6\textwidth]{texinputs/04_grid/figures/monoz/hadronic/grid_tanb_ma_sum_bin100_sign_type3_bkg_uncert_0p10.pdf}
+%\caption{Expected significances for the Z+\MET hadronic signature in the $(\ma,\tanb)$ plane, combining both boosted and resolved analyses. Bins with no content have a negligible sensitivity.} 
+%\label{fig:expected_significance_monozhad_mamA}
+%\end{figure}
 
-The leptonic Z+\MET search provides experimental coverage of this model for a broad part of the parameter space. The pseudoscalar mediator $a$ can be probed up to mass values of $\approx\unit[350]{GeV}$, depending on the choice of parameters. Leptonic Z+\MET searches are mostly sensitive in the region of $\tanb<4$. The hadronic Z+\MET search covers a smaller parameter space with respect to the leptonic search, but it is nevertheless complementary.
+The leptonic Z+\MET search provides experimental coverage of this model for a broad part of the parameter space. The pseudoscalar mediator $a$ can be probed up to mass values of $\approx\unit[350]{GeV}$, depending on the choice of parameters. Leptonic Z+\MET searches are mostly sensitive in the region of $\tanb<4$. 
+%The hadronic Z+\MET search covers a smaller parameter space with respect to the leptonic search, but it is nevertheless complementary.
 %%TBC: why so bad?  
-
-\FloatBarrier
 
 \subsection{Sensitivity of other signatures}
 
@@ -201,7 +202,5 @@ Since the models used for the interpretation of the jet+\MET search in terms of 
 
 %\subsection{Studies of DM+heavy flavor signature}
 %\input{texinputs/04_grid/DMHF}
-
-
 
 \FloatBarrier
