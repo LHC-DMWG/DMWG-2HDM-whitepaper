@@ -210,9 +210,8 @@ In all 2HDM models, the spin-0 bosons $H,A$  decay dominantly to top-quark pairs
 \label{fig:ttres_2HDMvs2HDMa}
 \end{figure}
 
-The first LHC analysis that takes into account interference effects between the signal process $gg \to H/A \to t \bar t$ and the SM background $gg \to t \bar t$ is the ATLAS search~\cite{Aaboud:2017hnm}. This search  is based on an integrated luminosity of $20.3 \, {\rm fb}^{-1}$ collected at $8 \, {\rm TeV}$. The results are interpreted in alignment limit of the usual type-II 2HDM. The obtained  exclusion limits in the $M_{H,A}\hspace{0.5mm}$--$\hspace{0.5mm} \tan \beta$ plane turn out to be significantly stronger than previously published LHC constraints on the 2HDM parameter space with low $\tan \beta$ and $M_{H,A} \in [500, 650] \, {\rm GeV}$. For instance,  for $M_{H,A} = 500 \, {\rm GeV}$ values of $\tan \beta < 1$ are disfavoured at 95\%~CL. A~similar parameter space  can be probed if the results~\cite{Aaboud:2017hnm} are reinterpreted in the context of the \hdma model~\cite{Bauer:2017ota}. 
+The ATLAS search in Ref.~\cite{Aaboud:2017hnm} takes into account interference effects between the signal process $gg \to H/A \to t \bar t$ and the SM background $gg \to t \bar t$ is the . This search is based on an integrated luminosity of $20.3 \, {\rm fb}^{-1}$ collected at $8 \, {\rm TeV}$ and interprets results in the alignment limit of a type-II 2HDM without a pseudoscalar decaying to DM. The obtained  exclusion limits in the $M_{H,A}\hspace{0.5mm}$--$\hspace{0.5mm} \tan \beta$ plane are stronger than previously published LHC constraints on the 2HDM parameter space with low $\tan \beta$ and $M_{H,A} \in [500, 650] \, {\rm GeV}$. For instance,  for $M_{H,A} = 500 \, {\rm GeV}$ values of $\tan \beta < 1$ are disfavoured at 95\%~CL. A~similar parameter space  can be probed if the results~\cite{Aaboud:2017hnm} are reinterpreted in the context of the \hdma model~\cite{Bauer:2017ota}. The di-top invariant mass spectra obtained in the \hdma model as a function of different model parameters is shown in Figures~\ref{fig:ttres_2HDMvs2HDMa} and \ref{fig:ttres_2HDM_A}. 
 
-An assortment of di-top invariant mass spectra obtained in the \hdma model are shown in Figures~\ref{fig:ttres_2HDMvs2HDMa} and \ref{fig:ttres_2HDM_A}. 
 
 {\color{red} [Uli: Work in progress!]}
 
@@ -220,7 +219,6 @@ An assortment of di-top invariant mass spectra obtained in the \hdma model are s
 a loop-induced and a tree-level process cannot currently be simulated in \mg. To amend this problem, the same "Higgs\_Effective\_Couplings\_FormFactor"
 approach \cite{ttinterfHFF} as adopted in \cite{Aaboud:2017hnm} is implemented in the UFO, replacing the loop production by an 
 effective vertex. The predictions of the modified UFO for the case, in which the pseudoscalar mediator does not mix with the heavy pseudoscalar $A$ ($\sinp=0$), i.e. effectively decouples from the 2HDM Higgs sector, are compared to those for the minimal 2HDM. Excellent agreement is found in the invariant mass distributions of $A/H$ decaying into a top pair are shown in Fig.~\ref{fig:ttres_2HDMvs2HDMa}. As examples of how the sensitivity changes as a function of the parameters of the \hdma, the $M_{\ttbar}$ distributions of pseudoscalars decaying into \ttbar\ are presented in Fig~\ref{fig:ttres_2HDM_A}. Larger values of \tanb\ or \sinp\ are expected to yield lower sensitivities to $A\rightarrow\ttbar$ significantly while \ma\ almost only affects the contribution from $a\rightarrow\ttbar$, which becomes sizeable if \ma is close to $2\mt$.
-
 
 
 \begin{figure}
@@ -252,49 +250,54 @@ we have studied the predicted cross-section for the four top final
 state of this model for two sets of parameter choices. 
 
 In Figure~\ref{DMHF-4top-scan1} we present the four top cross section
-for the parameter choices of benchmark \#2, for an intermediate choice
+for the parameter choices for the parameter choices
+of \sinp = 0.35, \mA = \mH = \mHc = 600 GeV, for an intermediate choice
 of mass of the light pseudoscalar ($m(a) = 400$ GeV), as a function of
-$tan\beta$. The total four-top production cross section, which
+$tan\beta$. 
+\color{red}[Caterina: this may be too technical?]\color{black}
+The total four-top production cross section, which
 accounts for both SM and new physics (NP) contributions and is indicated
 as $|SM+NP|^2$ in the legend, is compared with the production cross
 section contributions separately due to SM and NP terms. 
 This is achieved technically by setting a requirement on the number of
 QCD and QED vertices in madgraph, as indicated in Table~\ref{tab-dmhf-4tops}.
-Furthermore, the different contributions from on-shell production of
-each CP-odd and CP-even mediators associated with a top pair and
-decaying into a top pair is indicated. The dominant contribution is
+%CD: removed, not clear to me where things are indicated
+%Furthermore, the different contributions from on-shell production of
+%each CP-odd and CP-even mediators associated with a top pair and
+%decaying into a top pair is indicated. 
+The dominant contribution is
 driven by the on-shell production of $A$ and $H$ for all choices of
 $tan\beta$ in this benchmark. 
 In the lower panel of Figure~\ref{DMHF-4top-scan1}, the effect of the
 interference term between the 2HDM+a and the SM is assessed, and is
 found to have an impact almost always smaller than 5\% on the
-inclusive cross-section. \textbf{Checking whether true for some
-fiducial cuts, would be important to add statement or clarify that is
-is not fully conclusive as it is only inclusive.}
+inclusive cross-section. 
+We note however that the validity of this statement depends
+on the selection in the experimental analysis. 
 
-In Figure~\ref{DMHF-4top-scan2} we present instead the cross-section
-study for the parameter choices of benchmark \#3b, for $sin\theta
-= \frac{1}{\sqrt{2}}$ and as a function of the light pseudoscalar mass. 
-Very interestingly, for this parameter choices the cross-section is
-quite independent of $m(a)$. As it can
+\color{red}[Caterina: clarify what benchmark 3a and 3b are in the following?]\color{black}
+In Figure~\ref{DMHF-4top-scan2} we present the cross-section
+study when using $sin\theta = \frac{1}{\sqrt{2}}$, as a function of the light
+pseudoscalar mass. 
+For these parameter choices the cross-section is
+independent of $m(a)$. As it can
 be observed from the on-shell contribution breakdown, at the
 low-end of the mass spectrum the $\ttbar+a$ production dominates, with a
 peak at $400$ GeV due to the competition between
-$a\rightarrow \chi\chi$ and $a\rightarrow \ttbar$ and the natural
+$a\rightarrow \chi\chi$ and $a\rightarrow \ttbar$ and the 
 decreasing of the cross section with the increase of $m(a)$.  The contribution of
 $\ttbar+H$ and $\ttbar+A$ processes compensates the latter effect in
 the higher end of the mass-spectrum, with the turn on starting around
 $800$ GeV due to the competition between $A/H\rightarrow\ttbar$ and
 cascade decays of the heavy higgses into the light pseudoscalar
 mediator ($A\rightarrow ah/H\rightarrow aZ$). 
-The little bump at 1 TeV is due to interference effects between the
+The small feature at 1 TeV is due to interference effects between the
 three higgs mediators, which are all set to the
 same mass for this parameter choice.  
-The inclusive production cross-section of the 2HDM+a
-model is also compared with the one obtained by the DMSimp pseudoscalar
-implementation. Furthremore, as for the previous benchmark,  the impact of the SM interference
-term on the inclusive cross-section is found to be very small
-($<2\%$), except for $m(a)$ values close to the top theshold. 
+The inclusive production cross-section of the \hdma
+model is also compared with the one obtained by the \texttt{DMSimp} pseudoscalar
+implementation. 
+Similarly to the previous benchmark points, the impact of the SM interference term on the inclusive cross-section is found to be very small ($<2\%$), except for $m(a)$ values close to the top theshold. 
 
 Finally, in Figure~\ref{DMHF-4top-scan3} we compare for a small $\tan\beta$ value, the cross section of four-top production from NP processes (see Tab.~\ref{tab-dmhf-4tops}) of benchmarks \#3a and \#3b. This cross-section increases for benchmark \#3b for increasing $sin\theta$, as the production mechanism is dominated by $\ttbar+a(\ttbar)$. A different and more flat trend is instead observed for benchmark \#3a, for which the $sin\theta$ dependence is more complex and driven by the branching ratios of $A$ and $H$ in a top pair, as the $a\rightarrow \ttbar$ threshold is closed in this case. 
 
