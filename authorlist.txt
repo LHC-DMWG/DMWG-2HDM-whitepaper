@@ -120,7 +120,12 @@
 
 %Alexander Grohsjean
 %Stefania Gori
-%Darren Price
+
+
+-- Name: Darren D. Price
+-- Affiliation / address: School of Physics & Astronomy, University of
+Manchester, Manchester M13 9PL, UK
+-- Acknowledgement: D. D. P. supported by STFC under grant ST/M005437/1
 
 %- David Sperka
 %- Boston University
