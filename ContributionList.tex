@@ -1,0 +1,240 @@
+\documentclass[a4paper, 11pt,notoc]{article}
+\pdfoutput=1
+\usepackage{jcappub}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{verbatim}
+\usepackage{caption}
+\usepackage{xspace}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{placeins}
+\usepackage{array}
+\usepackage{subcaption}
+
+\usepackage{comment}
+
+\usepackage{units}
+\usepackage{draftwatermark}
+\SetWatermarkText{LHC DM WG DRAFT}
+\SetWatermarkLightness{0.9}
+\SetWatermarkScale{3.0}
+
+% Variables
+\newcommand{\sigv}{\ensuremath{\langle \sigma v_{\rm{rel}} \rangle}\xspace}
+\newcommand{\MET}{\ensuremath{E_T^\mathrm{miss}}\xspace}
+\newcommand{\met}{\MET}
+\newcommand{\MT}{\ensuremath{M_{T}}\xspace}
+\newcommand{\pt}{\ensuremath{p_{T}}\xspace}
+
+% Units
+\newcommand{\GeV}{\textrm{GeV}\xspace}
+\newcommand{\gev}{\GeV\xspace}
+\newcommand{\TeV}{\textrm{TeV}\xspace}
+\newcommand{\tev}{\TeV\xspace}
+
+% Particle names
+\newcommand{\lp}{\ensuremath{l^{+}}\xspace}
+\newcommand{\lm}{\ensuremath{l^{-}}\xspace}
+\newcommand{\ttbar}{\ensuremath{\bar{t}t}}
+\newcommand{\bbbar}{\ensuremath{\bar{b}b}}
+\newcommand{\A}{A}
+\newcommand{\pa}{a}
+\newcommand{\pH}{H}
+\newcommand{\pZ}{Z}
+\newcommand{\Hc}{\ensuremath{H^{\pm}}\xspace}
+
+% Particle masses
+\newcommand{\mDM}{\ensuremath{M_{\chi}}\xspace}
+\newcommand{\mdm}{\ensuremath{M_{\chi}}\xspace}
+\newcommand{\mmed}{\ensuremath{M_{\rm{med}}}\xspace}
+\newcommand{\mMed}{\ensuremath{M_{\rm{med}}}\xspace}
+\newcommand{\mZ}{\ensuremath{M_{\rm{Z}}}\xspace}
+\newcommand{\mA}{\ensuremath{M_{A}}\xspace}
+\newcommand{\ma}{\ensuremath{M_{a}}\xspace}
+\newcommand{\mH}{\ensuremath{M_{H}}\xspace}
+\newcommand{\mHc}{\ensuremath{M_{H^{\pm}}}\xspace}
+\newcommand{\mh}{\ensuremath{M_{h}}\xspace}
+\newcommand{\mt}{\ensuremath{M_{t}}\xspace}
+
+% Couplings
+\newcommand{\gDM}{\ensuremath{g_{\rm{DM}}}\xspace}
+\newcommand{\gq}{\ensuremath{g_q}\xspace}
+\newcommand{\gSM}{\gq}
+\newcommand{\gdm}{\gDM}
+\newcommand{\ifb}{\ensuremath{\rm{fb}^{-1}}\xspace}
+
+% Other parameters
+\newcommand{\sinp}{\ensuremath{\sin\theta}\xspace}
+\newcommand{\cosp}{\ensuremath{\cos\theta}\xspace}
+\newcommand{\sinbma}{\ensuremath{\sin(\beta - \alpha)}\xspace}
+\newcommand{\cosbma}{\ensuremath{\cos(\beta - \alpha)}\xspace}
+\newcommand{\tanb}{\ensuremath{\tan\beta}\xspace}
+\newcommand{\lap}[1]{\lambda_{P#1}} % can use like \lap1 , \lap2
+\newcommand{\lam}[1]{\lambda_{#1}} % can use like \lam3
+
+% Search channels
+\newcommand{\hdm}{\ensuremath{h+\textrm{DM}}\xspace}
+\newcommand{\monoh}{\ensuremath{h+\MET}\xspace}
+\newcommand{\monohbb}{\ensuremath{h(bb)+\MET}\xspace}
+\newcommand{\monoz}{\ensuremath{Z+\MET}\xspace}
+\newcommand{\monozll}{\ensuremath{Z(\ell\ell)+\MET}\xspace}
+\newcommand{\monozhad}{\ensuremath{Z(\textrm{had})+\MET}\xspace}
+
+% Software/Program/Model names
+\newcommand{\mg}{\textsc{MadGraph~5}\xspace}
+\newcommand{\mgamcnlo}{MG5\_aMC@NLO\xspace}
+\newcommand{\dmsimp}{\textsc{DMsimp}\xspace}
+\newcommand{\maddm}{\textsc{MadDM}\xspace}
+\newcommand{\hdma}{\ensuremath{\textrm{2HDM+a}}\xspace}
+
+% Misc
+\newcommand{\GamA}{\ensuremath{\Gamma_{A}}\xspace}
+\newcommand{\Uli}{\color{red}}
+\definecolor{cerulean}{RGB}{44,150,207}
+\newcommand{\ATLASComments}{\color{cerulean}}
+\newcommand{\bra}[1]{\langle #1|}
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\sens}{\mathcal{S}\xspace}
+\newcommand{\senstot}{\mathcal{S}_\textrm{tot}\xspace}
+\newcommand{\mathsc}[1]{\text{\textsc{#1}}}
+\newcommand{\vev}[1]{\langle {#1} \rangle}
+
+\DeclareMathOperator{\arccot}{arccot}
+
+\def\be   {\begin{equation}}   \def\ee   {\end{equation}}
+\def\ba   {\begin{array}}      \def\ea   {\end{array}}
+\def\bea  {\begin{eqnarray}}   \def\eea  {\end{eqnarray}}
+\def\bean {\begin{eqnarray*}}  \def\eean {\end{eqnarray*}}
+\def\nn{\nonumber}
+
+
+\allowdisplaybreaks
+
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\def\bm#1{\mbox{\boldmath$#1$\unboldmath}} 
+
+\begin{document}
+\title{\begin{boldmath} \huge LHC Dark Matter Working Group:  \\ Next-generation spin-0  dark matter models \vspace{7mm} \end{boldmath} \\ List of contributions}
+
+\maketitle
+
+%%%%%%
+\begin{itemize}
+
+\item \textbf{Tomohiro~Abe,} Inputs on the direct detection part of the white paper. 
+
+\item \textbf{Andreas~Albert,}
+
+\item \textbf{Christopher~R.~Anelli,} Design of \hdma parameter scans,  kinematic distributions for mono-Z(lep), \hdma cross-sections and sensitivity estimates for mono-Z(lep).
+
+\item \textbf{Nicole~F.~Bell,} Work on direct detection constraints, relic density, 2HDM+scalar model.
+
+\item \textbf{Janna~K.~Behr,} Help with coordination of ATLAS studies; re-interpretation of $A/H-->t\bar{t}$ search.
+
+\item \textbf{Liron~Barak,} Final reviewer of the white paper. 
+
+\item \textbf{Martin~Bauer,} Theory section. 
+
+\item \textbf{Antonio~Boveia,} Inputs as DMWG organizer for this effort. 
+
+\item \textbf{Oleg~Brandt,} Design of \hdma parameter scans, supervision of L. Henkelmann. 
+
+\item \textbf{Giorgio~Busoni,} Work on direct detection constraints, relic density, 2HDM+scalar model.
+
+\item \textbf{Linda~M.~Carpenter,} Indirect Detection annihilation signatures of 2HDM.
+
+\item \textbf{Yu-Heng~Chen,} Re-interpretation of $A/H-->t\bar{t}$ search; modification of UFO to include signal-background interference.
+
+\item \textbf{Caterina~Doglioni,} Editor, organization of material, inputs on experimental part of the document. 
+
+\item \textbf{Alison~Elliot,} Kinematic distributions for mono-Z(lep). 
+
+\item \textbf{Motoko~Fujiwara,} Comments on the direct detection part of the white paper. 
+
+\item \textbf{Marie-Helene~Genest,} Final reviewer of the white paper. 
+
+\item \textbf{Raffaele~Gerosa,} Final reviewer of the white paper. 
+
+\item \textbf{Johanna~Gramling,} 4-top studies (cross-section, model implementation, interference with SM checks).
+
+\item \textbf{Stefania~Gori,} Final reviewer of the white paper. 
+
+\item \textbf{Alexander~Grohsjean,} Final reviewer of the white paper. 
+
+\item \textbf{Giuliano~Gustavino,} Inputs on experimental monojet constraints. 
+
+\item \textbf{Kristian~Hahn,} Inputs as DMWG organizer for this effort. 
+
+\item \textbf{Ulrich~Haisch,} Main editor, organization of material, inputs on both theory and experimental part of the document. 
+ 
+\item \textbf{Lars~Henkelmann,} Design of \hdma parameter scans,  kinematic distributions for mono-Higgs, \hdma cross-sections and sensitivity estimates for mono-Higgs.
+
+\item \textbf{Junji~Hisano,} Comments on the direct detection part of the white paper. 
+
+\item \textbf{Anders~Huitfeldt,} Sensitivity projections for the scalar model, simplified models to scalar model re-scaling studies. 
+
+\item \textbf{Valerio~Ippolito,} Inputs on experimental monojet constraints. 
+
+\item \textbf{Felix~Kahlhoefer,} Final reviewer of the white paper. Inputs on treatment of resonances, indirect detection, relic density. 
+
+\item \textbf{Greg~Landsberg,} Contributions to $bb+\MET$ part of the paper and Fig. 43.
+
+\item \textbf{Fabio~Maltoni,} Review of document, addition of relevant references.
+
+\item \textbf{Benedikt~Maier,} Design of \hdma parameter scans, CMS studies on mono-Higgs.
+
+\item \textbf{Kentarou~Mawatari,} Review of document, addition of relevant references.
+
+\item \textbf{Margarete~Muehlleitner,} Final reviewer of the white paper. 
+
+\item \textbf{Jose~M.~No,} Stability study of the 2HDM+a, towards definition of benchmarks for mono-h and mono-Z analyses.
+
+\item \textbf{Priscilla~Pani,} 4-top studies (cross-section, model implementation, interference with SM checks). Wt+MEt signature studies. 
+
+\item \textbf{Giacomo~Polesello,} Rescaling of DMSimp to \hdma, heavy flavor signature studies. 
+
+\item \textbf{Darren~D.~Price,}  Final reviewer of the white paper. 
+
+\item \textbf{Tania~Robens,} Input on inert doublet model. Final reviewer of the white paper. 
+
+\item \textbf{Isaac~W.~Sanderson,}  Work on direct detection constraints, relic density, 2HDM+scalar model.
+
+\item \textbf{Rui~Santos,}  Final reviewer of the white paper. 
+
+\item \textbf{Stanislava~Sevova,} CMS studies on heavy flavor signatures. 
+
+\item \textbf{David~Sperka,}  Final reviewer of the white paper. 
+
+\item \textbf{Kevin~Sung,} Inputs on heavy flavor signatures. 
+
+\item \textbf{Tim~M.~P.~Tait,} Inputs as DMWG organizer for this effort. 
+
+\item \textbf{Francesca~C.~Ungaro,} Help with coordination of ATLAS heavy flavour signatures, MC simulations of the scalar model, validation of the results. 
+
+\item \textbf{Eleni~Vryonidou,} Review of document, addition of relevant references.
+
+\item \textbf{Shin-Shan~Yu,} Design of \hdma parameter scans, CMS studies on mono-Higgs.
+
+\end{itemize}
+
+\end{document}
